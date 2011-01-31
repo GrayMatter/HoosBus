@@ -1,0 +1,9 @@
+http://hoosbus.appspot.com/v1/expiry_date?udid=12345
+
+# Add two months ad-free via MDotM
+curl -d "deviceid=f8e2ffd6afa32988ee52d4b7034403086a67b4c1&currency=2" "http://hoosbus.appspot.com/v1/mdotm_callback"
+
+# Add one month ad-free via Tapjoy
+curl "http://hoosbus.appspot.com/v1/tapjoy_callback?snuid=f8e2ffd6afa32988ee52d4b7034403086a67b4c1&currency=1"
+
+f8e2ffd6afa32988ee52d4b7034403086a67b4c1

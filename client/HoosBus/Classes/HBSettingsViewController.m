@@ -82,11 +82,11 @@
 {
 	UITableViewCell *cell;
 	if (indexPath.section == 2 && indexPath.row > 2) {
-		static NSString *CellIdentifier = @"HBSettingsCellID";
+		static NSString *HBSettingsCellIdentifier = @"HBSettingsCellID";
 		
-		cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
+		cell = [tableView dequeueReusableCellWithIdentifier:HBSettingsCellIdentifier];
 		if (cell == nil) {
-			cell = [[[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier] autorelease];
+			cell = [[[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:HBSettingsCellIdentifier] autorelease];
 		}
 		
 		for (UIView *v in cell.contentView.subviews) {
@@ -96,11 +96,13 @@
 		switch (indexPath.row) {
 			case 3:
 				cell.textLabel.text = @"Show CTS Stops";
+				cell.textLabel.backgroundColor = [UIColor clearColor];
 				switchCtl1.frame = CGRectMake(196, 8, kSwitchButtonWidth, kSwitchButtonHeight);
 				[cell.contentView addSubview:switchCtl1];
 				break;
 			case 4:
 				cell.textLabel.text = @"Show CTS Routes";
+				cell.textLabel.backgroundColor = [UIColor clearColor];
 				switchCtl2.frame = CGRectMake(196, 8, kSwitchButtonWidth, kSwitchButtonHeight);
 				[cell.contentView addSubview:switchCtl2];
 				break;

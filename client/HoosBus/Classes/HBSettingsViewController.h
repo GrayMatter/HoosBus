@@ -9,7 +9,8 @@
 
 #import "BTSettingsViewController.h"
 
-@interface HBSettingsViewController : BTSettingsViewController {
+@interface HBSettingsViewController : BTSettingsViewController
+{
 	UISwitch *switchCtl1;
 	UISwitch *switchCtl2;
 }

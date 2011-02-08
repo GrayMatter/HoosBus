@@ -7,7 +7,11 @@
 //
 
 #import "HBSettingsViewController.h"
-#import "HBTransit.h"
+#import "AppSettings+HoosBus.h"
+
+#define kSwitchButtonWidth		94.0
+#define kSwitchButtonHeight		27.0
+
 
 @implementation HBSettingsViewController
 
@@ -19,42 +23,43 @@
 	switchCtl1 = [[UISwitch alloc] initWithFrame:frame];
 	[switchCtl1 addTarget:self action:@selector(switchAction1:) forControlEvents:UIControlEventValueChanged];
 	
-	HBTransit *t = (HBTransit *)self.transit;
 	// in case the parent view draws with a custom color or gradient, use a transparent color
 	switchCtl1.backgroundColor = [UIColor clearColor];
-	switchCtl1.on = t.displayCTSStops;
+	switchCtl1.on = [AppSettings shouldDisplayCTSStops];
 	
 	switchCtl2 = [[UISwitch alloc] initWithFrame:frame];
 	[switchCtl2 addTarget:self action:@selector(switchAction2:) forControlEvents:UIControlEventValueChanged];
 	switchCtl2.backgroundColor = [UIColor clearColor];
-	switchCtl2.on = t.displayCTSRoutes;
+	switchCtl2.on = [AppSettings shouldDisplayCTSRoutes];
 }
 
 - (void)switchAction1:(id)sender
 {
-	HBTransit *t = (HBTransit *)self.transit;
-	t.displayCTSStops = [sender isOn];
+	[AppSettings setShouldDisplayCTSStops:[sender isOn]];
 }
 
 - (void)switchAction2:(id)sender
 {
-	HBTransit *t = (HBTransit *)self.transit;
-	t.displayCTSRoutes = [sender isOn];
+	[AppSettings setShouldDisplayCTSRoutes:[sender isOn]];
 }
 
-- (void)viewDidLoad {
+- (void)viewDidLoad
+{
     [super viewDidLoad];
 	[self createControls];
 }
 
-- (void)didReceiveMemoryWarning {
+- (void)didReceiveMemoryWarning
+{
 	// Releases the view if it doesn't have a superview.
     [super didReceiveMemoryWarning];
 	
 	// Release any cached data, images, etc that aren't in use.
 }
 
-- (void)viewDidUnload {
+- (void)viewDidUnload
+{
+	[super viewDidUnload];
 	// Release any retained subviews of the main view.
 	// e.g. self.myOutlet = nil;
 }
@@ -73,44 +78,43 @@
 	return numberOfRows;
 }
 
-- (UITableViewCell *)tableView:(UITableView *)tv cellForRowAtIndexPath:(NSIndexPath *)indexPath 
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath 
 {
-	UITableViewCell *res;
+	UITableViewCell *cell;
 	if (indexPath.section == 2 && indexPath.row > 2) {
-		static NSString *CellIdentifier = @"BTSettingsCellID";
-    
-		BTSettingsCell *cell = (BTSettingsCell *)[tv dequeueReusableCellWithIdentifier:CellIdentifier];
+		static NSString *CellIdentifier = @"HBSettingsCellID";
+		
+		cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
 		if (cell == nil) {
-			cell = [[[BTSettingsCell alloc] initWithFrame:CGRectZero reuseIdentifier:CellIdentifier] autorelease];
+			cell = [[[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier] autorelease];
 		}
 		
+		for (UIView *v in cell.contentView.subviews) {
+			[v removeFromSuperview];
+		}
 		
-		/*
-		 CGRect contentRect = [self.contentView bounds];
-		 frame = CGRectMake(contentRect.size.width - self.view.bounds.size.width - kCellLeftOffset,
-		 round((contentRect.size.height - self.view.bounds.size.height) / 2.0),
-		 self.view.bounds.size.width,
-		 self.view.bounds.size.height);
-		 */
 		switch (indexPath.row) {
 			case 3:
-				cell.nameLabel.text = @"Show CTS Stops";
-				cell.view = switchCtl1;
-				cell.accessoryType = UITableViewCellAccessoryNone;
+				cell.textLabel.text = @"Show CTS Stops";
+				switchCtl1.frame = CGRectMake(196, 8, kSwitchButtonWidth, kSwitchButtonHeight);
+				[cell.contentView addSubview:switchCtl1];
 				break;
 			case 4:
-				cell.nameLabel.text = @"Show CTS Routes";
-				cell.view = switchCtl2;
-				cell.accessoryType = UITableViewCellAccessoryNone;
+				cell.textLabel.text = @"Show CTS Routes";
+				switchCtl2.frame = CGRectMake(196, 8, kSwitchButtonWidth, kSwitchButtonHeight);
+				[cell.contentView addSubview:switchCtl2];
 				break;
 			default:
 				break;
 		}
-		res = cell;
+		
+		cell.accessoryType = UITableViewCellAccessoryNone;
+		cell.selectionStyle = UITableViewCellSelectionStyleNone;
 	} else {
-		res = [super tableView:tv cellForRowAtIndexPath:indexPath];
+		cell = [super tableView:tableView cellForRowAtIndexPath:indexPath];
 	}
-	return res;
+	
+	return cell;
 }
 
 - (void)tableView:(UITableView *)tv didSelectRowAtIndexPath:(NSIndexPath *)indexPath 
@@ -122,7 +126,8 @@
 	}
 }
 
-- (void)dealloc {
+- (void)dealloc
+{
 	[switchCtl1 release];
 	[switchCtl2 release];
     [super dealloc];

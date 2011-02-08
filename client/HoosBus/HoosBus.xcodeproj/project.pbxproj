@@ -15,6 +15,7 @@
 		28AD733F0D9D9553002E5188 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 28AD733E0D9D9553002E5188 /* MainWindow.xib */; };
 		896E2E8A130185490060AE33 /* HBSettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 89BD8F371300433700ED4EE5 /* HBSettingsViewController.m */; };
 		896E2EA6130187A80060AE33 /* AppSettings+HoosBus.m in Sources */ = {isa = PBXBuildFile; fileRef = 896E2EA5130187A80060AE33 /* AppSettings+HoosBus.m */; };
+		896E2F5E1301942B0060AE33 /* HBTransit.m in Sources */ = {isa = PBXBuildFile; fileRef = 896E2F5D1301942B0060AE33 /* HBTransit.m */; };
 		89BD8E44130042CA00ED4EE5 /* TJCAdRequestHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 89BD8C8B130042C900ED4EE5 /* TJCAdRequestHandler.m */; };
 		89BD8E45130042CA00ED4EE5 /* TJCAdView.m in Sources */ = {isa = PBXBuildFile; fileRef = 89BD8C8D130042C900ED4EE5 /* TJCAdView.m */; };
 		89BD8E46130042CA00ED4EE5 /* TJCAutoOrientView.m in Sources */ = {isa = PBXBuildFile; fileRef = 89BD8C90130042C900ED4EE5 /* TJCAutoOrientView.m */; };
@@ -381,6 +382,8 @@
 		32CA4F630368D1EE00C91783 /* HoosBus_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HoosBus_Prefix.pch; sourceTree = "<group>"; };
 		896E2EA4130187A80060AE33 /* AppSettings+HoosBus.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "AppSettings+HoosBus.h"; sourceTree = "<group>"; };
 		896E2EA5130187A80060AE33 /* AppSettings+HoosBus.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "AppSettings+HoosBus.m"; sourceTree = "<group>"; };
+		896E2F5C1301942B0060AE33 /* HBTransit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HBTransit.h; sourceTree = "<group>"; };
+		896E2F5D1301942B0060AE33 /* HBTransit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HBTransit.m; sourceTree = "<group>"; };
 		89BD8C89130042C900ED4EE5 /* TJCAdDelegateProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TJCAdDelegateProtocol.h; sourceTree = "<group>"; };
 		89BD8C8A130042C900ED4EE5 /* TJCAdRequestHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TJCAdRequestHandler.h; sourceTree = "<group>"; };
 		89BD8C8B130042C900ED4EE5 /* TJCAdRequestHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TJCAdRequestHandler.m; sourceTree = "<group>"; };
@@ -963,10 +966,12 @@
 				89BD90341300444200ED4EE5 /* Settings.h */,
 				896E2EA4130187A80060AE33 /* AppSettings+HoosBus.h */,
 				896E2EA5130187A80060AE33 /* AppSettings+HoosBus.m */,
-				89BD90351300444200ED4EE5 /* HBFeedLoader.h */,
-				89BD90361300444200ED4EE5 /* HBFeedLoader.m */,
 				89BD8F361300433700ED4EE5 /* HBSettingsViewController.h */,
 				89BD8F371300433700ED4EE5 /* HBSettingsViewController.m */,
+				89BD90351300444200ED4EE5 /* HBFeedLoader.h */,
+				89BD90361300444200ED4EE5 /* HBFeedLoader.m */,
+				896E2F5C1301942B0060AE33 /* HBTransit.h */,
+				896E2F5D1301942B0060AE33 /* HBTransit.m */,
 				1D3623240D0F684500981E51 /* HoosBusAppDelegate.h */,
 				1D3623250D0F684500981E51 /* HoosBusAppDelegate.m */,
 			);
@@ -2322,6 +2327,7 @@
 				89BD90371300444200ED4EE5 /* HBFeedLoader.m in Sources */,
 				896E2E8A130185490060AE33 /* HBSettingsViewController.m in Sources */,
 				896E2EA6130187A80060AE33 /* AppSettings+HoosBus.m in Sources */,
+				896E2F5E1301942B0060AE33 /* HBTransit.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

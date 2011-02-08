@@ -10,8 +10,6 @@
 #import "BTTransitDelegate.h"
 
 @interface HoosBusAppDelegate : BTTransitDelegate
-{
-}
 
 @end
 

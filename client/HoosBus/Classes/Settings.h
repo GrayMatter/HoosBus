@@ -14,6 +14,7 @@
 
 // Custom settings
 #define MAIN_DB @"HoosBus"
+#define PRODUCT_ID_REMOVE_ADS @"com.yaoganglian.hoosbus.removeads"
 #define ADD_TO_FAVS_PNG @"addToFavs.png"
 #define NUM_STOPS 480
 #define NUM_ROUTES 30

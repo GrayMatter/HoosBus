@@ -70,6 +70,7 @@
 				<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
 				<bool key="IBUIHorizontal">NO</bool>
 				<object class="IBUINavigationController" key="IBUISelectedViewController" id="940039350">
+					<string key="IBUITitle">Settings</string>
 					<object class="IBUITabBarItem" key="IBUITabBarItem" id="179620030">
 						<string key="IBUITitle">Settings</string>
 						<object class="NSCustomResource" key="IBUIImage">
@@ -162,6 +163,7 @@
 						</object>
 					</object>
 					<object class="IBUINavigationController" id="154129663">
+						<string key="IBUITitle">Map</string>
 						<object class="IBUITabBarItem" key="IBUITabBarItem" id="342797757">
 							<string key="IBUITitle">Map</string>
 							<object class="NSCustomResource" key="IBUIImage">
@@ -206,6 +208,7 @@
 						</object>
 					</object>
 					<object class="IBUINavigationController" id="664579293">
+						<string key="IBUITitle">Routes</string>
 						<object class="IBUITabBarItem" key="IBUITabBarItem" id="159378031">
 							<string key="IBUITitle">Routes</string>
 							<object class="NSCustomResource" key="IBUIImage">
@@ -250,6 +253,7 @@
 						</object>
 					</object>
 					<object class="IBUINavigationController" id="958286985">
+						<string key="IBUITitle">Search</string>
 						<object class="IBUITabBarItem" key="IBUITabBarItem" id="805630595">
 							<string key="IBUITitle"/>
 							<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>

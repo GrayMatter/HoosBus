@@ -69,7 +69,8 @@
 - (NSInteger)tableView:(UITableView *)tv numberOfRowsInSection:(NSInteger)section 
 {
 	int numberOfRows;
-	if (section == 2) {
+	int newSection = section + sectionOffset;
+	if (newSection == 1) {
 		numberOfRows = 5;
 	} else {
 		numberOfRows = [super tableView:tv numberOfRowsInSection:section];
@@ -81,7 +82,8 @@
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath 
 {
 	UITableViewCell *cell;
-	if (indexPath.section == 2 && indexPath.row > 2) {
+	int newSection = indexPath.section + sectionOffset;
+	if (newSection == 1 && indexPath.row > 2) {
 		static NSString *HBSettingsCellIdentifier = @"HBSettingsCellID";
 		
 		cell = [tableView dequeueReusableCellWithIdentifier:HBSettingsCellIdentifier];
@@ -121,7 +123,8 @@
 
 - (void)tableView:(UITableView *)tv didSelectRowAtIndexPath:(NSIndexPath *)indexPath 
 {
-	if (indexPath.section == 2 && indexPath.row > 2) {
+	int newSection = indexPath.section + sectionOffset;
+	if (newSection == 1 && indexPath.row > 2) {
 		// do nothing
 	} else {
 		[super tableView:tv didSelectRowAtIndexPath:indexPath];

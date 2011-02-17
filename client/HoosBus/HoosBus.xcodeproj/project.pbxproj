@@ -2422,6 +2422,12 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 3.0;
+				OTHER_LDFLAGS = (
+					"-all_load",
+					"-Objc",
+					"-weak_library",
+					/usr/lib/libSystem.B.dylib,
+				);
 				PREBINDING = NO;
 				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "EAB5DD0F-5F91-4A2D-8242-D9EA7E381E81";
 				SDKROOT = iphoneos;
@@ -2436,7 +2442,14 @@
 				GCC_C_LANGUAGE_STANDARD = c99;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 3.0;
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				OTHER_LDFLAGS = (
+					"-all_load",
+					"-Objc",
+					"-weak_library",
+					/usr/lib/libSystem.B.dylib,
+				);
 				PREBINDING = NO;
 				SDKROOT = iphoneos;
 			};

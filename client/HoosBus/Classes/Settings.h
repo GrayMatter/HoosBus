@@ -32,7 +32,6 @@
 
 #define AD_ZONE_1 1 // stations view, rail view
 #define AD_ZONE_2 2 // routes view
-#define AD_ZONE_3 3 // prediction view
 
 //#define AD_FREE [AdWhirlManager testAdFree]
 #define AD_FREE [AppSettings adFree]

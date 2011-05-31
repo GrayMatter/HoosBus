@@ -7,6 +7,7 @@
 //
 
 #import "HBFeedLoader.h"
+#import "NSString+Trim.h"
 
 @implementation HBFeedLoader
 
@@ -131,6 +132,9 @@
 		}
 		
 		if (tdCount > 0 && tdCount%3 == 2) {
+			// Check if the route id is valid
+			if ([[entry.routeId trim] isEqualToString:@""]) return;
+			
 			// Check if this route already exists in time table
 			BOOL routeAlreadyExists = NO;
 			NSString *newRoute = entry.routeId;

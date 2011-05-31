@@ -2262,7 +2262,7 @@
 					/usr/lib/libSystem.B.dylib,
 				);
 				PREBINDING = NO;
-				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "EAB5DD0F-5F91-4A2D-8242-D9EA7E381E81";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "81660AC1-96EB-4C26-953C-6FDD1A44AD3D";
 				SDKROOT = iphoneos;
 			};
 			name = Debug;

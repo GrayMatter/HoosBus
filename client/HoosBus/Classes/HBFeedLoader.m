@@ -16,7 +16,6 @@
 {
 	if (self = [super init]) {
 		entry = [[BTPredictionEntry alloc] init];
-		hostName = @"avlweb.charlottesville.org";
 	}
 	return self;
 }
@@ -47,7 +46,7 @@
 		// The feed has been acquired; start XML processing.
 		// Reset self.prediction
 		[self.prediction removeAllObjects];
-	
+		
 		// Parse XML
 		NSError *parseError = nil;
 		[self parseXMLData:[request responseData] parseError:&parseError];

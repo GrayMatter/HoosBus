@@ -19,7 +19,7 @@
 	} else {
 		NSMutableArray *res = [NSMutableArray array];
 		for (BTStation *station in ss) {
-			if (![station.owner isEqualToString:@"CTS"]) {
+			if (station.owner != CTS) {
 				[res addObject:station];
 			}
 		}
@@ -32,7 +32,7 @@
 	if ([AppSettings shouldDisplayCTSStops]) {
 		return YES;
 	} else {
-		return (![s.owner isEqualToString:@"CTS"]);
+		return (s.owner != CTS);
 	}
 }
 
@@ -44,7 +44,7 @@
 		NSMutableArray *res = [NSMutableArray array];
 		for (BTPredictionEntry *entry in p) {
 			BTRoute *route = [self routeWithId:entry.routeId];
-			if (![route.owner isEqualToString:@"CTS"]) {
+			if (route.owner != CTS) {
 				[res addObject:entry];
 			}
 		}

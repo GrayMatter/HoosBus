@@ -16,14 +16,14 @@
 		896E2E8A130185490060AE33 /* HBSettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 89BD8F371300433700ED4EE5 /* HBSettingsViewController.m */; };
 		896E2EA6130187A80060AE33 /* AppSettings+HoosBus.m in Sources */ = {isa = PBXBuildFile; fileRef = 896E2EA5130187A80060AE33 /* AppSettings+HoosBus.m */; };
 		896E2F5E1301942B0060AE33 /* HBTransit.m in Sources */ = {isa = PBXBuildFile; fileRef = 896E2F5D1301942B0060AE33 /* HBTransit.m */; };
-		89BD900A1300436A00ED4EE5 /* station_UTS.png in Resources */ = {isa = PBXBuildFile; fileRef = 89BD8F9D1300436A00ED4EE5 /* station_UTS.png */; };
-		89BD900B1300436A00ED4EE5 /* station_UTS@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 89BD8F9E1300436A00ED4EE5 /* station_UTS@2x.png */; };
-		89BD900C1300436A00ED4EE5 /* station_UTS_sign.png in Resources */ = {isa = PBXBuildFile; fileRef = 89BD8F9F1300436A00ED4EE5 /* station_UTS_sign.png */; };
-		89BD900D1300436A00ED4EE5 /* station_UTS_sign@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 89BD8FA01300436A00ED4EE5 /* station_UTS_sign@2x.png */; };
-		89BD900E1300436A00ED4EE5 /* station_CTS.png in Resources */ = {isa = PBXBuildFile; fileRef = 89BD8FA11300436A00ED4EE5 /* station_CTS.png */; };
-		89BD900F1300436A00ED4EE5 /* station_CTS@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 89BD8FA21300436A00ED4EE5 /* station_CTS@2x.png */; };
-		89BD90101300436A00ED4EE5 /* station_CTS_sign.png in Resources */ = {isa = PBXBuildFile; fileRef = 89BD8FA31300436A00ED4EE5 /* station_CTS_sign.png */; };
-		89BD90111300436A00ED4EE5 /* station_CTS_sign@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 89BD8FA41300436A00ED4EE5 /* station_CTS_sign@2x.png */; };
+		89BD900A1300436A00ED4EE5 /* station_1.png in Resources */ = {isa = PBXBuildFile; fileRef = 89BD8F9D1300436A00ED4EE5 /* station_1.png */; };
+		89BD900B1300436A00ED4EE5 /* station_1@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 89BD8F9E1300436A00ED4EE5 /* station_1@2x.png */; };
+		89BD900C1300436A00ED4EE5 /* station_sign_1.png in Resources */ = {isa = PBXBuildFile; fileRef = 89BD8F9F1300436A00ED4EE5 /* station_sign_1.png */; };
+		89BD900D1300436A00ED4EE5 /* station_sign_1@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 89BD8FA01300436A00ED4EE5 /* station_sign_1@2x.png */; };
+		89BD900E1300436A00ED4EE5 /* station_2.png in Resources */ = {isa = PBXBuildFile; fileRef = 89BD8FA11300436A00ED4EE5 /* station_2.png */; };
+		89BD900F1300436A00ED4EE5 /* station_2@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 89BD8FA21300436A00ED4EE5 /* station_2@2x.png */; };
+		89BD90101300436A00ED4EE5 /* station_sign_2.png in Resources */ = {isa = PBXBuildFile; fileRef = 89BD8FA31300436A00ED4EE5 /* station_sign_2.png */; };
+		89BD90111300436A00ED4EE5 /* station_sign_2@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 89BD8FA41300436A00ED4EE5 /* station_sign_2@2x.png */; };
 		89BD90121300436A00ED4EE5 /* HoosBus.db in Resources */ = {isa = PBXBuildFile; fileRef = 89BD8FA61300436A00ED4EE5 /* HoosBus.db */; };
 		89BD90141300436A00ED4EE5 /* routesToDisplay.plist in Resources */ = {isa = PBXBuildFile; fileRef = 89BD8FA81300436A00ED4EE5 /* routesToDisplay.plist */; };
 		89BD90171300437F00ED4EE5 /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 89BD90151300437F00ED4EE5 /* Icon.png */; };
@@ -402,14 +402,14 @@
 		896E2F5D1301942B0060AE33 /* HBTransit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HBTransit.m; sourceTree = "<group>"; };
 		89BD8F361300433700ED4EE5 /* HBSettingsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HBSettingsViewController.h; sourceTree = "<group>"; };
 		89BD8F371300433700ED4EE5 /* HBSettingsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HBSettingsViewController.m; sourceTree = "<group>"; };
-		89BD8F9D1300436A00ED4EE5 /* station_UTS.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = station_UTS.png; sourceTree = "<group>"; };
-		89BD8F9E1300436A00ED4EE5 /* station_UTS@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "station_UTS@2x.png"; sourceTree = "<group>"; };
-		89BD8F9F1300436A00ED4EE5 /* station_UTS_sign.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = station_UTS_sign.png; sourceTree = "<group>"; };
-		89BD8FA01300436A00ED4EE5 /* station_UTS_sign@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "station_UTS_sign@2x.png"; sourceTree = "<group>"; };
-		89BD8FA11300436A00ED4EE5 /* station_CTS.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = station_CTS.png; sourceTree = "<group>"; };
-		89BD8FA21300436A00ED4EE5 /* station_CTS@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "station_CTS@2x.png"; sourceTree = "<group>"; };
-		89BD8FA31300436A00ED4EE5 /* station_CTS_sign.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = station_CTS_sign.png; sourceTree = "<group>"; };
-		89BD8FA41300436A00ED4EE5 /* station_CTS_sign@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "station_CTS_sign@2x.png"; sourceTree = "<group>"; };
+		89BD8F9D1300436A00ED4EE5 /* station_1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = station_1.png; sourceTree = "<group>"; };
+		89BD8F9E1300436A00ED4EE5 /* station_1@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "station_1@2x.png"; sourceTree = "<group>"; };
+		89BD8F9F1300436A00ED4EE5 /* station_sign_1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = station_sign_1.png; sourceTree = "<group>"; };
+		89BD8FA01300436A00ED4EE5 /* station_sign_1@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "station_sign_1@2x.png"; sourceTree = "<group>"; };
+		89BD8FA11300436A00ED4EE5 /* station_2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = station_2.png; sourceTree = "<group>"; };
+		89BD8FA21300436A00ED4EE5 /* station_2@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "station_2@2x.png"; sourceTree = "<group>"; };
+		89BD8FA31300436A00ED4EE5 /* station_sign_2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = station_sign_2.png; sourceTree = "<group>"; };
+		89BD8FA41300436A00ED4EE5 /* station_sign_2@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "station_sign_2@2x.png"; sourceTree = "<group>"; };
 		89BD8FA61300436A00ED4EE5 /* HoosBus.db */ = {isa = PBXFileReference; lastKnownFileType = file; path = HoosBus.db; sourceTree = "<group>"; };
 		89BD8FA71300436A00ED4EE5 /* HoosBus.xls */ = {isa = PBXFileReference; lastKnownFileType = file; path = HoosBus.xls; sourceTree = "<group>"; };
 		89BD8FA81300436A00ED4EE5 /* routesToDisplay.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = routesToDisplay.plist; sourceTree = "<group>"; };
@@ -1070,14 +1070,14 @@
 		89BD8F9C1300436A00ED4EE5 /* Station Icons */ = {
 			isa = PBXGroup;
 			children = (
-				89BD8F9D1300436A00ED4EE5 /* station_UTS.png */,
-				89BD8F9E1300436A00ED4EE5 /* station_UTS@2x.png */,
-				89BD8F9F1300436A00ED4EE5 /* station_UTS_sign.png */,
-				89BD8FA01300436A00ED4EE5 /* station_UTS_sign@2x.png */,
-				89BD8FA11300436A00ED4EE5 /* station_CTS.png */,
-				89BD8FA21300436A00ED4EE5 /* station_CTS@2x.png */,
-				89BD8FA31300436A00ED4EE5 /* station_CTS_sign.png */,
-				89BD8FA41300436A00ED4EE5 /* station_CTS_sign@2x.png */,
+				89BD8F9D1300436A00ED4EE5 /* station_1.png */,
+				89BD8F9E1300436A00ED4EE5 /* station_1@2x.png */,
+				89BD8F9F1300436A00ED4EE5 /* station_sign_1.png */,
+				89BD8FA01300436A00ED4EE5 /* station_sign_1@2x.png */,
+				89BD8FA11300436A00ED4EE5 /* station_2.png */,
+				89BD8FA21300436A00ED4EE5 /* station_2@2x.png */,
+				89BD8FA31300436A00ED4EE5 /* station_sign_2.png */,
+				89BD8FA41300436A00ED4EE5 /* station_sign_2@2x.png */,
 			);
 			name = "Station Icons";
 			sourceTree = "<group>";
@@ -2005,14 +2005,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				28AD733F0D9D9553002E5188 /* MainWindow.xib in Resources */,
-				89BD900A1300436A00ED4EE5 /* station_UTS.png in Resources */,
-				89BD900B1300436A00ED4EE5 /* station_UTS@2x.png in Resources */,
-				89BD900C1300436A00ED4EE5 /* station_UTS_sign.png in Resources */,
-				89BD900D1300436A00ED4EE5 /* station_UTS_sign@2x.png in Resources */,
-				89BD900E1300436A00ED4EE5 /* station_CTS.png in Resources */,
-				89BD900F1300436A00ED4EE5 /* station_CTS@2x.png in Resources */,
-				89BD90101300436A00ED4EE5 /* station_CTS_sign.png in Resources */,
-				89BD90111300436A00ED4EE5 /* station_CTS_sign@2x.png in Resources */,
+				89BD900A1300436A00ED4EE5 /* station_1.png in Resources */,
+				89BD900B1300436A00ED4EE5 /* station_1@2x.png in Resources */,
+				89BD900C1300436A00ED4EE5 /* station_sign_1.png in Resources */,
+				89BD900D1300436A00ED4EE5 /* station_sign_1@2x.png in Resources */,
+				89BD900E1300436A00ED4EE5 /* station_2.png in Resources */,
+				89BD900F1300436A00ED4EE5 /* station_2@2x.png in Resources */,
+				89BD90101300436A00ED4EE5 /* station_sign_2.png in Resources */,
+				89BD90111300436A00ED4EE5 /* station_sign_2@2x.png in Resources */,
 				89BD90121300436A00ED4EE5 /* HoosBus.db in Resources */,
 				89BD90141300436A00ED4EE5 /* routesToDisplay.plist in Resources */,
 				89BD90171300437F00ED4EE5 /* Icon.png in Resources */,

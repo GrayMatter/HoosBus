@@ -66,6 +66,10 @@
 // Cross promotion
 #define APP_LIST_XML @"http://artisticfrog.com/cross_promote/hoosbus/app_list.xml"
 
+// FAQ, Blog
+#define URL_FAQ @"http://artisticfrog.com/cross_promote/hoosbus/faq.xml"
+#define URL_BLOG @"http://happenapps.tumblr.com"
+
 // Twitter
 #define OAUTH_CONSUMER_KEY @"4lz7dcG5YHDD8EJEi95okg"
 #define OAUTH_CONSUMER_SECRET @"Af4Fp5s8cTzjgRpiOzddh0LeoCQg8NaDg6VdMC8Aw"

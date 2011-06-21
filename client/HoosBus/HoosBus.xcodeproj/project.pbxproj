@@ -2320,10 +2320,8 @@
 				INFOPLIST_FILE = "HoosBus-Info.plist";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
-					"\"$(SRCROOT)/../../../BetterTransit/client/BetterTransit/AdMob\"",
 					"\"$(SRCROOT)/../../../BetterTransit/client/BetterTransit/YAJL\"",
 					"\"$(SRCROOT)/../../../BetterTransit/client/BetterTransit/FlurryLib2.8.4\"",
-					"\"$(SRCROOT)/../../../BetterTransit/client/BetterTransit/MMSDK\"",
 					"\"$(SRCROOT)/../../../BetterTransit/client/BetterTransit/InMobi2.0\"",
 					"\"$(SRCROOT)/../../../BetterTransit/client/BetterTransit/GoogleAdMob\"",
 				);
@@ -2341,10 +2339,8 @@
 				INFOPLIST_FILE = "HoosBus-Info.plist";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
-					"\"$(SRCROOT)/../../../BetterTransit/client/BetterTransit/AdMob\"",
 					"\"$(SRCROOT)/../../../BetterTransit/client/BetterTransit/YAJL\"",
 					"\"$(SRCROOT)/../../../BetterTransit/client/BetterTransit/FlurryLib2.8.4\"",
-					"\"$(SRCROOT)/../../../BetterTransit/client/BetterTransit/MMSDK\"",
 					"\"$(SRCROOT)/../../../BetterTransit/client/BetterTransit/InMobi2.0\"",
 					"\"$(SRCROOT)/../../../BetterTransit/client/BetterTransit/GoogleAdMob\"",
 				);
@@ -2388,10 +2384,8 @@
 				INFOPLIST_FILE = "HoosBus-Info.plist";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
-					"\"$(SRCROOT)/../../../BetterTransit/client/BetterTransit/AdMob\"",
 					"\"$(SRCROOT)/../../../BetterTransit/client/BetterTransit/YAJL\"",
 					"\"$(SRCROOT)/../../../BetterTransit/client/BetterTransit/FlurryLib2.8.4\"",
-					"\"$(SRCROOT)/../../../BetterTransit/client/BetterTransit/MMSDK\"",
 					"\"$(SRCROOT)/../../../BetterTransit/client/BetterTransit/InMobi2.0\"",
 					"\"$(SRCROOT)/../../../BetterTransit/client/BetterTransit/GoogleAdMob\"",
 				);

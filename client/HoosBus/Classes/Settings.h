@@ -52,9 +52,7 @@
 // Ad networks settings
 #define ADWHIRL_API_KEY @"00e9827988454c9d8079529617fe540f"
 #define ADMOB_APP_ID @"a14cee7368e76fb"
-#define MM_APP_ID @"35056"
-#define MDOTM_API_KEY @"601b55b299f0224ca9722c7cc5fc0b25"
-#define TAPJOY_APP_ID @"c2548499-732b-479a-952e-e87d2b4335ec"
+#define INMOBI_APP_ID @"4028cba630724cd90130a9788bd10134"
 
 // Appirater
 #define APP_NAME	@"HoosBus"

@@ -117,7 +117,7 @@
   namespaceURI:(NSString *)namespaceURI qualifiedName:(NSString *)qName
 {
 	if ([elementName isEqualToString:@"td"]) {
-		switch (tdCount%3) {
+		switch ((tdCount-1)%3) {
 			case 0:
 				entry.routeId = self.contentOfCurrentElement;
 				break;
@@ -131,7 +131,7 @@
 				break;
 		}
 		
-		if (tdCount > 0 && tdCount%3 == 2) {
+		if (tdCount > 1 && (tdCount-1)%3 == 2) {
 			// Check if the route id is valid
 			if ([[entry.routeId trim] isEqualToString:@""]) return;
 			

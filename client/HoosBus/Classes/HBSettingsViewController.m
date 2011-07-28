@@ -97,13 +97,13 @@
 		
 		switch (indexPath.row) {
 			case 3:
-				cell.textLabel.text = @"Show CTS Stops";
+				cell.textLabel.text = @"Show CAT Stops";
 				cell.textLabel.backgroundColor = [UIColor clearColor];
 				switchCtl1.frame = CGRectMake(196, 8, kSwitchButtonWidth, kSwitchButtonHeight);
 				[cell.contentView addSubview:switchCtl1];
 				break;
 			case 4:
-				cell.textLabel.text = @"Show CTS Routes";
+				cell.textLabel.text = @"Show CAT Routes";
 				cell.textLabel.backgroundColor = [UIColor clearColor];
 				switchCtl2.frame = CGRectMake(196, 8, kSwitchButtonWidth, kSwitchButtonHeight);
 				[cell.contentView addSubview:switchCtl2];

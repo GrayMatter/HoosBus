@@ -4,75 +4,71 @@ import wsgiref.handlers
 from google.appengine.ext import webapp
 from google.appengine.ext.webapp.util import run_wsgi_app
 from google.appengine.ext import db
-import simplejson
-import logging
-import datetime
-
-class Device(db.Model):
-    udid = db.StringProperty()
-    expiryDate = db.DateTimeProperty()
+from google.appengine.api import memcache
+from google.appengine.api import urlfetch
+import simplejson, re, logging, datetime
+from datamodel import *
+from BeautifulSoup import BeautifulSoup
 
 class MainHandler(webapp.RequestHandler):
     def get(self):
-        logging.info("main handler")
-
-class ExpiryDateHandler(webapp.RequestHandler):
-    def get(self):
-        udid = self.request.get('udid')
-        device = Device.all().filter('udid =', udid).get()
-        if not device is None:
-            s = device.expiryDate.strftime("%B %d, %Y")
-            self.response.out.write(s)
-        else:
-            self.response.out.write("January 01, 1900")
-
-class MDotMCallbackHandler(webapp.RequestHandler):
-    def post(self):
-        udid = self.request.get('deviceid')
-        months = int(self.request.get('currency'))
-        
-        if months == 0:
-            months = 1
-        
-        device = Device.all().filter('udid =', udid).get()
-        if device is None:
-            expiryDate = datetime.datetime.today()
-            device = Device(udid=udid, expiryDate=expiryDate)
-        elif device.expiryDate < datetime.datetime.today():
-            device.expiryDate = datetime.datetime.today()
-        
-        # add 4 x #payout ad-free months
-        device.expiryDate = device.expiryDate + datetime.timedelta(months*31)
-        device.put()
-        
         self.response.out.write('OK')
-
-class TapjoyCallbackHandler(webapp.RequestHandler):
+        
+class PredictionHandler(webapp.RequestHandler):
     def get(self):
-        udid = self.request.get('snuid')
-        months = int(self.request.get('currency'))
+        json = memcache.get(self.request.url)
+        if json is None:
+            stopNumber = self.request.get('stop')
+            url = "http://avlweb.charlottesville.org/RTT/Public/RoutePositionET.aspx?PlatformNo=%s&Referrer=uvamobile" % (stopNumber)
         
-        if months == 0:
-            months = 1
+            result = urlfetch.fetch(url, deadline=10)
+            if result.status_code == 200:
+                soup = BeautifulSoup(result.content, convertEntities=BeautifulSoup.HTML_ENTITIES)
+            else:
+                self.error(500)
         
-        device = Device.all().filter('udid =', udid).get()
-        if device is None:
-            expiryDate = datetime.datetime.today()
-            device = Device(udid=udid, expiryDate=expiryDate)
-        elif device.expiryDate < datetime.datetime.today():
-            device.expiryDate = datetime.datetime.today()
+            tableTag = soup.find('table', {"class": "tableET"})
+            if tableTag is None:
+                self.error(501) # 501: no bus is coming
+            
+            result = []
+            for trTag in tableTag.tbody.findAll('tr'):
+                count = 0
+                entry = {}
+                for tdTag in trTag.findAll('td'):
+                    if count == 0:
+                        entry["route"] = tdTag.renderContents()
+                    
+                    elif count == 1:
+                        dest = tdTag.renderContents()
+                        note = None
+                        matchObj = re.search("(via .*)", dest)
+                        if matchObj is not None:
+                            note = matchObj.group(1)
+                        else:
+                            matchObj = re.search("(to .*)", dest)
+                            if matchObj is not None:
+                                note = matchObj.group(1)
+                        if note is not None:
+                            entry["note"] = note
+                        
+                    elif count == 2:
+                        entry["eta"] = tdTag.renderContents()
+                    
+                    count = count+1
+                
+                if entry:
+                    result.append(entry)
+            
+            json = simplejson.dumps(result)
+            memcache.set(self.request.url, json, 30) # expire in 30s
         
-        # add #payout ad-free months
-        device.expiryDate = device.expiryDate + datetime.timedelta(months*31)
-        device.put()
-
-        self.response.out.write('OK')
+        self.response.out.write(json)
+        
 
 def main():
     application = webapp.WSGIApplication([('/', MainHandler),
-                                          ('/v1/expiry_date', ExpiryDateHandler),
-                                          ('/v1/mdotm_callback', MDotMCallbackHandler),
-                                          ('/v1/tapjoy_callback', TapjoyCallbackHandler),
+                                          ('/prediction', PredictionHandler),
                                           ], debug=True)
     run_wsgi_app(application)
 

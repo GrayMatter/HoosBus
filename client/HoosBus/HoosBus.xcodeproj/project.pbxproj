@@ -2372,7 +2372,7 @@
 					"-weak_library",
 					/usr/lib/libSystem.B.dylib,
 				);
-				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "D9015B2C-DB38-42E7-80FB-2ECB1FC524E7";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "848B7323-ACBE-40DB-B3FF-8F1A53EDD841";
 				SDKROOT = iphoneos;
 			};
 			name = Distribution;
@@ -2381,7 +2381,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Yaogang Lian";
 				COPY_PHASE_STRIP = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = HoosBus_Prefix.pch;
@@ -2395,7 +2394,6 @@
 					"\"$(SRCROOT)/../../../BetterTransit/client/BetterTransit/GoogleAdMob\"",
 				);
 				PRODUCT_NAME = HoosBus;
-				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "D9015B2C-DB38-42E7-80FB-2ECB1FC524E7";
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Distribution;
@@ -2440,7 +2438,7 @@
 					"-weak_library",
 					/usr/lib/libSystem.B.dylib,
 				);
-				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "D9015B2C-DB38-42E7-80FB-2ECB1FC524E7";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "848B7323-ACBE-40DB-B3FF-8F1A53EDD841";
 				SDKROOT = iphoneos;
 			};
 			name = Release;

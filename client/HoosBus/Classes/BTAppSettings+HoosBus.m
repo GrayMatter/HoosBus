@@ -1,19 +1,19 @@
 //
-//  AppSettings+HoosBus.m
+//  BTAppSettings+HoosBus.m
 //  HoosBus
 //
 //  Created by Yaogang Lian on 2/8/11.
 //  Copyright 2011 Happen Next. All rights reserved.
 //
 
-#import "AppSettings+HoosBus.h"
+#import "BTAppSettings+HoosBus.h"
 
 
 #define KEY_SHOULD_DISPLAY_CTS_STOPS @"displayCTSStops"
 #define KEY_SHOULD_DISPLAY_CTS_ROUTES @"displayCTSRoutes"
 
 
-@implementation AppSettings (HoosBus)
+@implementation BTAppSettings (HoosBus)
 
 + (BOOL)shouldDisplayCTSStops
 {

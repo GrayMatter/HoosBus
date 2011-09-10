@@ -13,6 +13,7 @@
 {
 	UISwitch *switchCtl1;
 	UISwitch *switchCtl2;
+    NSInteger sectionOffset;
 }
 
 @property (nonatomic, retain) UISwitch *switchCtl1;

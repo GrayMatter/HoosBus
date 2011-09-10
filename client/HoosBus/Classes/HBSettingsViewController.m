@@ -7,7 +7,7 @@
 //
 
 #import "HBSettingsViewController.h"
-#import "AppSettings+HoosBus.h"
+#import "BTAppSettings+HoosBus.h"
 
 #define kSwitchButtonWidth		94.0
 #define kSwitchButtonHeight		27.0
@@ -25,22 +25,22 @@
 	
 	// in case the parent view draws with a custom color or gradient, use a transparent color
 	switchCtl1.backgroundColor = [UIColor clearColor];
-	switchCtl1.on = [AppSettings shouldDisplayCTSStops];
+	switchCtl1.on = [BTAppSettings shouldDisplayCTSStops];
 	
 	switchCtl2 = [[UISwitch alloc] initWithFrame:frame];
 	[switchCtl2 addTarget:self action:@selector(switchAction2:) forControlEvents:UIControlEventValueChanged];
 	switchCtl2.backgroundColor = [UIColor clearColor];
-	switchCtl2.on = [AppSettings shouldDisplayCTSRoutes];
+	switchCtl2.on = [BTAppSettings shouldDisplayCTSRoutes];
 }
 
 - (void)switchAction1:(id)sender
 {
-	[AppSettings setShouldDisplayCTSStops:[sender isOn]];
+	[BTAppSettings setShouldDisplayCTSStops:[sender isOn]];
 }
 
 - (void)switchAction2:(id)sender
 {
-	[AppSettings setShouldDisplayCTSRoutes:[sender isOn]];
+	[BTAppSettings setShouldDisplayCTSRoutes:[sender isOn]];
 }
 
 - (void)viewDidLoad

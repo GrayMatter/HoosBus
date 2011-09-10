@@ -7,14 +7,14 @@
 //
 
 #import "HBTransit.h"
-#import "AppSettings+HoosBus.h"
+#import "BTAppSettings+HoosBus.h"
 #import "BTPredictionEntry.h"
 
 @implementation HBTransit
 
 - (NSArray *)filterStations:(NSArray *)ss 
 {
-	if ([AppSettings shouldDisplayCTSStops]) {
+	if ([BTAppSettings shouldDisplayCTSStops]) {
 		return [[ss retain] autorelease];
 	} else {
 		NSMutableArray *res = [NSMutableArray array];
@@ -29,7 +29,7 @@
 
 - (BOOL)checkStation:(BTStation *)s
 {
-	if ([AppSettings shouldDisplayCTSStops]) {
+	if ([BTAppSettings shouldDisplayCTSStops]) {
 		return YES;
 	} else {
 		return (s.owner != CTS);
@@ -38,7 +38,7 @@
 
 - (NSMutableArray *)filterPrediction:(NSMutableArray *)p
 {
-	if ([AppSettings shouldDisplayCTSRoutes]) {
+	if ([BTAppSettings shouldDisplayCTSRoutes]) {
 		return [[p retain] autorelease];
 	} else {
 		NSMutableArray *res = [NSMutableArray array];
@@ -54,7 +54,7 @@
 
 - (NSDictionary *)filterRoutes:(NSDictionary *)rs
 {
-	if ([AppSettings shouldDisplayCTSRoutes]) {
+	if ([BTAppSettings shouldDisplayCTSRoutes]) {
 		return [[rs retain] autorelease];
 	} else {
 		NSMutableDictionary *rsCopy = [rs mutableCopy];

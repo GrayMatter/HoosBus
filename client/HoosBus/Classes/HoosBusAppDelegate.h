@@ -11,5 +11,12 @@
 
 @interface HoosBusAppDelegate : BTTransitDelegate
 
+
+// App settings
+- (void)updateAppSettings;
+- (void)updateExpiryDate;
+- (void)downloadVideoAd;
+- (void)playVideoAd;
+
 @end
 

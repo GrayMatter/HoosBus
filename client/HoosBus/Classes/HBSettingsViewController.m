@@ -8,6 +8,7 @@
 
 #import "HBSettingsViewController.h"
 #import "BTAppSettings+HoosBus.h"
+#import "BTTransitDelegate.h"
 
 #define kSwitchButtonWidth		94.0
 #define kSwitchButtonHeight		27.0
@@ -15,6 +16,7 @@
 
 @implementation HBSettingsViewController
 
+@synthesize startupScreenOptions, nearbyRadiusOptions, maxNumNearbyStopsOptions;
 @synthesize switchCtl1, switchCtl2;
 
 - (void)createControls
@@ -46,8 +48,26 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    
+    self.title = NSLocalizedString(@"Settings", @"");
+    sectionOffset = 1;
+	
+	transit = [AppDelegate transit];
+	
+	self.startupScreenOptions = [NSArray arrayWithObjects:@"Nearby", @"Favorites", @"Map", @"Routes", @"Search", nil];
+	self.maxNumNearbyStopsOptions = [NSArray arrayWithObjects:@"10", @"20", @"30", @"50", @"100", @"No Limit", nil];
+#ifdef METRIC_UNIT
+	self.nearbyRadiusOptions = [NSArray arrayWithObjects:@"0.2 km", @"0.5 km", @"1 km", @"2 km", @"5 km", @"No Limit", nil];
+#else
+	self.nearbyRadiusOptions = [NSArray arrayWithObjects:@"0.2 mi", @"0.5 mi", @"1 mi", @"2 mi", @"5 mi", @"No Limit", nil];
+#endif
+    
 	[self createControls];
 }
+
+
+#pragma mark -
+#pragma mark Memory management
 
 - (void)didReceiveMemoryWarning
 {
@@ -64,13 +84,25 @@
 	// e.g. self.myOutlet = nil;
 }
 
+- (void)dealloc
+{
+    [startupScreenOptions release], startupScreenOptions = nil;
+	[nearbyRadiusOptions release], nearbyRadiusOptions = nil;
+	[maxNumNearbyStopsOptions release], maxNumNearbyStopsOptions = nil;
+    
+	[switchCtl1 release];
+	[switchCtl2 release];
+    [super dealloc];
+}
+
+
+#pragma mark -
 #pragma mark Table view methods
 
 - (NSInteger)tableView:(UITableView *)tv numberOfRowsInSection:(NSInteger)section 
 {
 	int numberOfRows;
-	int newSection = section + sectionOffset;
-	if (newSection == 1) {
+    if (section == 0) {
 		numberOfRows = 5;
 	} else {
 		numberOfRows = [super tableView:tv numberOfRowsInSection:section];
@@ -81,62 +113,126 @@
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath 
 {
-	UITableViewCell *cell;
-	int newSection = indexPath.section + sectionOffset;
-	if (newSection == 1 && indexPath.row > 2) {
-		static NSString *HBSettingsCellIdentifier = @"HBSettingsCellID";
-		
-		cell = [tableView dequeueReusableCellWithIdentifier:HBSettingsCellIdentifier];
+	if (indexPath.section == 0)
+	{
+        static NSString *CellIdentifier1 = @"SettingsCell1";
+        
+		UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier1];
 		if (cell == nil) {
-			cell = [[[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:HBSettingsCellIdentifier] autorelease];
+			cell = [[[UITableViewCell alloc] initWithStyle:UITableViewCellStyleValue1 reuseIdentifier:CellIdentifier1] autorelease];
 		}
-		
-		for (UIView *v in cell.contentView.subviews) {
+        
+        for (UIView *v in cell.contentView.subviews) {
 			[v removeFromSuperview];
 		}
 		
 		switch (indexPath.row) {
-			case 3:
+			case 0:
+				cell.textLabel.text = @"Startup Screen";
+				cell.detailTextLabel.text = [BTAppSettings startupScreen];
+                cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
+				cell.selectionStyle = UITableViewCellSelectionStyleBlue;
+				break;
+			case 1:
+				cell.textLabel.text = @"Nearby Radius";
+				cell.detailTextLabel.text = [BTAppSettings nearbyRadius];
+                cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
+				cell.selectionStyle = UITableViewCellSelectionStyleBlue;
+				break;
+			case 2:
+				cell.textLabel.text = @"Max No. of Nearby Stops";
+				cell.detailTextLabel.text = [BTAppSettings maxNumNearbyStops];
+                cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
+				cell.selectionStyle = UITableViewCellSelectionStyleBlue;
+				break;
+            case 3:
 				cell.textLabel.text = @"Show CAT Stops";
 				cell.textLabel.backgroundColor = [UIColor clearColor];
 				switchCtl1.frame = CGRectMake(196, 8, kSwitchButtonWidth, kSwitchButtonHeight);
 				[cell.contentView addSubview:switchCtl1];
+                cell.accessoryType = UITableViewCellAccessoryNone;
+                cell.selectionStyle = UITableViewCellSelectionStyleNone;
 				break;
 			case 4:
 				cell.textLabel.text = @"Show CAT Routes";
 				cell.textLabel.backgroundColor = [UIColor clearColor];
 				switchCtl2.frame = CGRectMake(196, 8, kSwitchButtonWidth, kSwitchButtonHeight);
 				[cell.contentView addSubview:switchCtl2];
+                cell.accessoryType = UITableViewCellAccessoryNone;
+                cell.selectionStyle = UITableViewCellSelectionStyleNone;
 				break;
 			default:
 				break;
 		}
-		
-		cell.accessoryType = UITableViewCellAccessoryNone;
-		cell.selectionStyle = UITableViewCellSelectionStyleNone;
+        return cell;
 	} else {
-		cell = [super tableView:tableView cellForRowAtIndexPath:indexPath];
-	}
-	
-	return cell;
+        return [super tableView:tableView cellForRowAtIndexPath:indexPath];
+    }
 }
 
-- (void)tableView:(UITableView *)tv didSelectRowAtIndexPath:(NSIndexPath *)indexPath 
+- (NSString *)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section 
 {
-	int newSection = indexPath.section + sectionOffset;
-	if (newSection == 1 && indexPath.row > 2) {
-		// do nothing
+    if (section == 0) {
+        return @"Application Settings";
+    } else {
+        return [super tableView:tableView titleForHeaderInSection:section];
+    }
+}
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath 
+{
+	if (indexPath.section == 0) {
+        [tableView deselectRowAtIndexPath:indexPath animated:YES];
+        
+        HAListViewController *controller = [[HAListViewController alloc] init];
+		switch (indexPath.row) {
+			case 0:
+				controller.list = self.startupScreenOptions;
+				controller.selectedIndex = [self.startupScreenOptions indexOfObject:[BTAppSettings startupScreen]];
+				controller.title = @"Startup Screen";
+				controller.name = LIST_STARTUP_SCREEN;
+				break;
+			case 1:
+				controller.list = self.nearbyRadiusOptions;
+				controller.selectedIndex = [self.nearbyRadiusOptions indexOfObject:[BTAppSettings nearbyRadius]];
+				controller.title = @"Nearby Radius";
+				controller.name = LIST_NEARBY_RADIUS;
+				break;
+			case 2:
+				controller.list = self.maxNumNearbyStopsOptions;
+				controller.selectedIndex = [self.maxNumNearbyStopsOptions indexOfObject:[BTAppSettings maxNumNearbyStops]];
+				controller.title = @"Max Number of Stops";
+				controller.name = LIST_MAX_NUM_NEARBY_STOPS;
+				break;
+			default:
+				break;
+		}
+		controller.delegate = self;
+		[self.navigationController pushViewController:controller animated:YES];
+		[controller release];
 	} else {
-		[super tableView:tv didSelectRowAtIndexPath:indexPath];
-	}
+        [super tableView:tableView didSelectRowAtIndexPath:indexPath];
+    }
 }
 
-- (void)dealloc
+
+#pragma mark -
+#pragma mark ListViewControllerDelegate methods
+
+- (void)setSelectedIndex:(NSUInteger)index forListName:(NSString *)name
 {
-	[switchCtl1 release];
-	[switchCtl2 release];
-    [super dealloc];
+	NSUserDefaults *prefs = [NSUserDefaults standardUserDefaults];
+	if ([name isEqualToString:LIST_STARTUP_SCREEN]) {
+		NSString *s = [self.startupScreenOptions objectAtIndex:index];
+		[prefs setObject:s forKey:KEY_STARTUP_SCREEN];
+	} else if ([name isEqualToString:LIST_NEARBY_RADIUS]) {
+		NSString *s = [self.nearbyRadiusOptions objectAtIndex:index];
+		[prefs setObject:s forKey:KEY_NEARBY_RADIUS];
+	} else if ([name isEqualToString:LIST_MAX_NUM_NEARBY_STOPS]) {
+		NSString *s = [self.maxNumNearbyStopsOptions objectAtIndex:index];
+		[prefs setObject:s forKey:KEY_MAX_NUM_NEARBY_STOPS];
+	}
+	[prefs synchronize];
 }
-
 
 @end

@@ -7,16 +7,24 @@
 //
 
 
-#import "BTSettingsViewController.h"
+#import "HAAboutViewController.h"
+#import "BTTransit.h"
+#import "HAListViewController.h"
 
-@interface HBSettingsViewController : BTSettingsViewController
+
+@interface HBSettingsViewController : HAAboutViewController
+<HAListViewControllerDelegate>
 {
-	UISwitch *switchCtl1;
-	UISwitch *switchCtl2;
-    NSInteger sectionOffset;
+    BTTransit *transit;
 }
 
+@property (nonatomic, retain) NSArray *startupScreenOptions;
+@property (nonatomic, retain) NSArray *nearbyRadiusOptions;
+@property (nonatomic, retain) NSArray *maxNumNearbyStopsOptions;
 @property (nonatomic, retain) UISwitch *switchCtl1;
 @property (nonatomic, retain) UISwitch *switchCtl2;
+
+// Lists
+- (void)setSelectedIndex:(NSUInteger)index forListName:(NSString *)name;
 
 @end

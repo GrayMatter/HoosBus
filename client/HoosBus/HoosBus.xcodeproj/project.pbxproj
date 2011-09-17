@@ -13,28 +13,6 @@
 		1DF5F4E00D08C38300B7A737 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DF5F4DF0D08C38300B7A737 /* UIKit.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		288765FD0DF74451002DB57D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 288765FC0DF74451002DB57D /* CoreGraphics.framework */; };
 		28AD733F0D9D9553002E5188 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 28AD733E0D9D9553002E5188 /* MainWindow.xib */; };
-		89635657141C1549002042F9 /* AppViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 89635615141C1549002042F9 /* AppViewController.m */; };
-		89635658141C1549002042F9 /* AppViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 89635616141C1549002042F9 /* AppViewController.xib */; };
-		89635659141C1549002042F9 /* ClipView.m in Sources */ = {isa = PBXBuildFile; fileRef = 89635618141C1549002042F9 /* ClipView.m */; };
-		8963565A141C1549002042F9 /* HAAboutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8963561A141C1549002042F9 /* HAAboutViewController.m */; };
-		8963565B141C1549002042F9 /* HAAboutViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8963561B141C1549002042F9 /* HAAboutViewController.xib */; };
-		8963565C141C1549002042F9 /* HAFAQItemViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8963561D141C1549002042F9 /* HAFAQItemViewController.m */; };
-		8963565D141C1549002042F9 /* HAFAQViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8963561F141C1549002042F9 /* HAFAQViewController.m */; };
-		89635664141C1549002042F9 /* HAListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 89635630141C1549002042F9 /* HAListViewController.m */; };
-		89635665141C1549002042F9 /* HAListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 89635631141C1549002042F9 /* HAListViewController.xib */; };
-		89635666141C1549002042F9 /* HASettings.m in Sources */ = {isa = PBXBuildFile; fileRef = 89635634141C1549002042F9 /* HASettings.m */; };
-		8963566A141C1549002042F9 /* EnhancedDefaultCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8963563D141C1549002042F9 /* EnhancedDefaultCell.m */; };
-		8963566B141C1549002042F9 /* FastScrollingCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8963563F141C1549002042F9 /* FastScrollingCell.m */; };
-		8963566C141C1549002042F9 /* LoadingCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 89635641141C1549002042F9 /* LoadingCell.m */; };
-		8963566F141C1549002042F9 /* HAWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 89635648141C1549002042F9 /* HAWebViewController.m */; };
-		89635670141C1549002042F9 /* HAWebViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 89635649141C1549002042F9 /* HAWebViewController.xib */; };
-		89635671141C1549002042F9 /* back-arrow.png in Resources */ = {isa = PBXBuildFile; fileRef = 8963564B141C1549002042F9 /* back-arrow.png */; };
-		89635672141C1549002042F9 /* back-arrow@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8963564C141C1549002042F9 /* back-arrow@2x.png */; };
-		89635673141C1549002042F9 /* forward-arrow.png in Resources */ = {isa = PBXBuildFile; fileRef = 8963564D141C1549002042F9 /* forward-arrow.png */; };
-		89635674141C1549002042F9 /* forward-arrow@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8963564E141C1549002042F9 /* forward-arrow@2x.png */; };
-		89635675141C1549002042F9 /* TitleViewLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 89635651141C1549002042F9 /* TitleViewLabel.m */; };
-		89635676141C1549002042F9 /* NSString+Trim.m in Sources */ = {isa = PBXBuildFile; fileRef = 89635654141C1549002042F9 /* NSString+Trim.m */; };
-		89635677141C1549002042F9 /* Utility.m in Sources */ = {isa = PBXBuildFile; fileRef = 89635656141C1549002042F9 /* Utility.m */; };
 		896E2E8A130185490060AE33 /* HBSettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 89BD8F371300433700ED4EE5 /* HBSettingsViewController.m */; };
 		896E2EA6130187A80060AE33 /* BTAppSettings+HoosBus.m in Sources */ = {isa = PBXBuildFile; fileRef = 896E2EA5130187A80060AE33 /* BTAppSettings+HoosBus.m */; };
 		896E2F5E1301942B0060AE33 /* HBTransit.m in Sources */ = {isa = PBXBuildFile; fileRef = 896E2F5D1301942B0060AE33 /* HBTransit.m */; };
@@ -273,6 +251,29 @@
 		89C433BC141B962B006088D2 /* BTStationCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 89C43346141B962B006088D2 /* BTStationCell.m */; };
 		89CCFE8F130768D200E4B9D1 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 89CCFE8E130768D200E4B9D1 /* StoreKit.framework */; };
 		89DB9B6B13A8DAA400A6EB4E /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 89DB9B6A13A8DAA400A6EB4E /* libz.dylib */; };
+		89FE97AA142421A500FF18EC /* AppViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 89FE9747142421A500FF18EC /* AppViewController.m */; };
+		89FE97AB142421A500FF18EC /* AppViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 89FE9748142421A500FF18EC /* AppViewController.xib */; };
+		89FE97AC142421A500FF18EC /* ClipView.m in Sources */ = {isa = PBXBuildFile; fileRef = 89FE974A142421A500FF18EC /* ClipView.m */; };
+		89FE97AD142421A500FF18EC /* HAAboutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 89FE974C142421A500FF18EC /* HAAboutViewController.m */; };
+		89FE97AE142421A500FF18EC /* HAAboutViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 89FE974D142421A500FF18EC /* HAAboutViewController.xib */; };
+		89FE97AF142421A500FF18EC /* HAFAQItemViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 89FE974F142421A500FF18EC /* HAFAQItemViewController.m */; };
+		89FE97B0142421A500FF18EC /* HAFAQViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 89FE9751142421A500FF18EC /* HAFAQViewController.m */; };
+		89FE97B1142421A500FF18EC /* download.png in Resources */ = {isa = PBXBuildFile; fileRef = 89FE9753142421A500FF18EC /* download.png */; };
+		89FE97B2142421A500FF18EC /* download_selected.png in Resources */ = {isa = PBXBuildFile; fileRef = 89FE9754142421A500FF18EC /* download_selected.png */; };
+		89FE97BA142421A500FF18EC /* HAListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 89FE9768142421A500FF18EC /* HAListViewController.m */; };
+		89FE97BB142421A500FF18EC /* HAListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 89FE9769142421A500FF18EC /* HAListViewController.xib */; };
+		89FE97C3142421A500FF18EC /* EnhancedDefaultCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 89FE9779142421A500FF18EC /* EnhancedDefaultCell.m */; };
+		89FE97C4142421A500FF18EC /* FastScrollingCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 89FE977B142421A500FF18EC /* FastScrollingCell.m */; };
+		89FE97C5142421A500FF18EC /* LoadingCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 89FE977D142421A500FF18EC /* LoadingCell.m */; };
+		89FE97D9142421A500FF18EC /* HAWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 89FE9797142421A500FF18EC /* HAWebViewController.m */; };
+		89FE97DA142421A500FF18EC /* HAWebViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 89FE9798142421A500FF18EC /* HAWebViewController.xib */; };
+		89FE97DB142421A500FF18EC /* back-arrow.png in Resources */ = {isa = PBXBuildFile; fileRef = 89FE979A142421A500FF18EC /* back-arrow.png */; };
+		89FE97DC142421A500FF18EC /* back-arrow@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 89FE979B142421A500FF18EC /* back-arrow@2x.png */; };
+		89FE97DD142421A500FF18EC /* forward-arrow.png in Resources */ = {isa = PBXBuildFile; fileRef = 89FE979C142421A500FF18EC /* forward-arrow.png */; };
+		89FE97DE142421A500FF18EC /* forward-arrow@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 89FE979D142421A500FF18EC /* forward-arrow@2x.png */; };
+		89FE97E0142421A500FF18EC /* TitleViewLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 89FE97A3142421A500FF18EC /* TitleViewLabel.m */; };
+		89FE97E1142421A500FF18EC /* NSString+Trim.m in Sources */ = {isa = PBXBuildFile; fileRef = 89FE97A6142421A500FF18EC /* NSString+Trim.m */; };
+		89FE97E2142421A500FF18EC /* Utility.m in Sources */ = {isa = PBXBuildFile; fileRef = 89FE97A8142421A500FF18EC /* Utility.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -285,42 +286,6 @@
 		28AD733E0D9D9553002E5188 /* MainWindow.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainWindow.xib; sourceTree = "<group>"; };
 		29B97316FDCFA39411CA2CEA /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		32CA4F630368D1EE00C91783 /* HoosBus_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HoosBus_Prefix.pch; sourceTree = "<group>"; };
-		89635614141C1549002042F9 /* AppViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppViewController.h; sourceTree = "<group>"; };
-		89635615141C1549002042F9 /* AppViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppViewController.m; sourceTree = "<group>"; };
-		89635616141C1549002042F9 /* AppViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AppViewController.xib; sourceTree = "<group>"; };
-		89635617141C1549002042F9 /* ClipView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ClipView.h; sourceTree = "<group>"; };
-		89635618141C1549002042F9 /* ClipView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ClipView.m; sourceTree = "<group>"; };
-		89635619141C1549002042F9 /* HAAboutViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HAAboutViewController.h; sourceTree = "<group>"; };
-		8963561A141C1549002042F9 /* HAAboutViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HAAboutViewController.m; sourceTree = "<group>"; };
-		8963561B141C1549002042F9 /* HAAboutViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HAAboutViewController.xib; sourceTree = "<group>"; };
-		8963561C141C1549002042F9 /* HAFAQItemViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HAFAQItemViewController.h; sourceTree = "<group>"; };
-		8963561D141C1549002042F9 /* HAFAQItemViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HAFAQItemViewController.m; sourceTree = "<group>"; };
-		8963561E141C1549002042F9 /* HAFAQViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HAFAQViewController.h; sourceTree = "<group>"; };
-		8963561F141C1549002042F9 /* HAFAQViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HAFAQViewController.m; sourceTree = "<group>"; };
-		8963562F141C1549002042F9 /* HAListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HAListViewController.h; sourceTree = "<group>"; };
-		89635630141C1549002042F9 /* HAListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HAListViewController.m; sourceTree = "<group>"; };
-		89635631141C1549002042F9 /* HAListViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HAListViewController.xib; sourceTree = "<group>"; };
-		89635633141C1549002042F9 /* HASettings.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HASettings.h; sourceTree = "<group>"; };
-		89635634141C1549002042F9 /* HASettings.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HASettings.m; sourceTree = "<group>"; };
-		8963563C141C1549002042F9 /* EnhancedDefaultCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EnhancedDefaultCell.h; sourceTree = "<group>"; };
-		8963563D141C1549002042F9 /* EnhancedDefaultCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EnhancedDefaultCell.m; sourceTree = "<group>"; };
-		8963563E141C1549002042F9 /* FastScrollingCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FastScrollingCell.h; sourceTree = "<group>"; };
-		8963563F141C1549002042F9 /* FastScrollingCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FastScrollingCell.m; sourceTree = "<group>"; };
-		89635640141C1549002042F9 /* LoadingCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoadingCell.h; sourceTree = "<group>"; };
-		89635641141C1549002042F9 /* LoadingCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoadingCell.m; sourceTree = "<group>"; };
-		89635647141C1549002042F9 /* HAWebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HAWebViewController.h; sourceTree = "<group>"; };
-		89635648141C1549002042F9 /* HAWebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HAWebViewController.m; sourceTree = "<group>"; };
-		89635649141C1549002042F9 /* HAWebViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HAWebViewController.xib; sourceTree = "<group>"; };
-		8963564B141C1549002042F9 /* back-arrow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "back-arrow.png"; sourceTree = "<group>"; };
-		8963564C141C1549002042F9 /* back-arrow@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "back-arrow@2x.png"; sourceTree = "<group>"; };
-		8963564D141C1549002042F9 /* forward-arrow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "forward-arrow.png"; sourceTree = "<group>"; };
-		8963564E141C1549002042F9 /* forward-arrow@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "forward-arrow@2x.png"; sourceTree = "<group>"; };
-		89635650141C1549002042F9 /* TitleViewLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TitleViewLabel.h; sourceTree = "<group>"; };
-		89635651141C1549002042F9 /* TitleViewLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TitleViewLabel.m; sourceTree = "<group>"; };
-		89635653141C1549002042F9 /* NSString+Trim.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Trim.h"; sourceTree = "<group>"; };
-		89635654141C1549002042F9 /* NSString+Trim.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Trim.m"; sourceTree = "<group>"; };
-		89635655141C1549002042F9 /* Utility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Utility.h; sourceTree = "<group>"; };
-		89635656141C1549002042F9 /* Utility.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Utility.m; sourceTree = "<group>"; };
 		896E2EA4130187A80060AE33 /* BTAppSettings+HoosBus.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "BTAppSettings+HoosBus.h"; sourceTree = "<group>"; };
 		896E2EA5130187A80060AE33 /* BTAppSettings+HoosBus.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "BTAppSettings+HoosBus.m"; sourceTree = "<group>"; };
 		896E2F5C1301942B0060AE33 /* HBTransit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HBTransit.h; sourceTree = "<group>"; };
@@ -671,6 +636,42 @@
 		89C43346141B962B006088D2 /* BTStationCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BTStationCell.m; sourceTree = "<group>"; };
 		89CCFE8E130768D200E4B9D1 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
 		89DB9B6A13A8DAA400A6EB4E /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
+		89FE9746142421A500FF18EC /* AppViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppViewController.h; sourceTree = "<group>"; };
+		89FE9747142421A500FF18EC /* AppViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppViewController.m; sourceTree = "<group>"; };
+		89FE9748142421A500FF18EC /* AppViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AppViewController.xib; sourceTree = "<group>"; };
+		89FE9749142421A500FF18EC /* ClipView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ClipView.h; sourceTree = "<group>"; };
+		89FE974A142421A500FF18EC /* ClipView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ClipView.m; sourceTree = "<group>"; };
+		89FE974B142421A500FF18EC /* HAAboutViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HAAboutViewController.h; sourceTree = "<group>"; };
+		89FE974C142421A500FF18EC /* HAAboutViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HAAboutViewController.m; sourceTree = "<group>"; };
+		89FE974D142421A500FF18EC /* HAAboutViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HAAboutViewController.xib; sourceTree = "<group>"; };
+		89FE974E142421A500FF18EC /* HAFAQItemViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HAFAQItemViewController.h; sourceTree = "<group>"; };
+		89FE974F142421A500FF18EC /* HAFAQItemViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HAFAQItemViewController.m; sourceTree = "<group>"; };
+		89FE9750142421A500FF18EC /* HAFAQViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HAFAQViewController.h; sourceTree = "<group>"; };
+		89FE9751142421A500FF18EC /* HAFAQViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HAFAQViewController.m; sourceTree = "<group>"; };
+		89FE9753142421A500FF18EC /* download.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = download.png; sourceTree = "<group>"; };
+		89FE9754142421A500FF18EC /* download_selected.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = download_selected.png; sourceTree = "<group>"; };
+		89FE9767142421A500FF18EC /* HAListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HAListViewController.h; sourceTree = "<group>"; };
+		89FE9768142421A500FF18EC /* HAListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HAListViewController.m; sourceTree = "<group>"; };
+		89FE9769142421A500FF18EC /* HAListViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HAListViewController.xib; sourceTree = "<group>"; };
+		89FE9778142421A500FF18EC /* EnhancedDefaultCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EnhancedDefaultCell.h; sourceTree = "<group>"; };
+		89FE9779142421A500FF18EC /* EnhancedDefaultCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EnhancedDefaultCell.m; sourceTree = "<group>"; };
+		89FE977A142421A500FF18EC /* FastScrollingCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FastScrollingCell.h; sourceTree = "<group>"; };
+		89FE977B142421A500FF18EC /* FastScrollingCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FastScrollingCell.m; sourceTree = "<group>"; };
+		89FE977C142421A500FF18EC /* LoadingCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoadingCell.h; sourceTree = "<group>"; };
+		89FE977D142421A500FF18EC /* LoadingCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoadingCell.m; sourceTree = "<group>"; };
+		89FE9796142421A500FF18EC /* HAWebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HAWebViewController.h; sourceTree = "<group>"; };
+		89FE9797142421A500FF18EC /* HAWebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HAWebViewController.m; sourceTree = "<group>"; };
+		89FE9798142421A500FF18EC /* HAWebViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HAWebViewController.xib; sourceTree = "<group>"; };
+		89FE979A142421A500FF18EC /* back-arrow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "back-arrow.png"; sourceTree = "<group>"; };
+		89FE979B142421A500FF18EC /* back-arrow@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "back-arrow@2x.png"; sourceTree = "<group>"; };
+		89FE979C142421A500FF18EC /* forward-arrow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "forward-arrow.png"; sourceTree = "<group>"; };
+		89FE979D142421A500FF18EC /* forward-arrow@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "forward-arrow@2x.png"; sourceTree = "<group>"; };
+		89FE97A2142421A500FF18EC /* TitleViewLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TitleViewLabel.h; sourceTree = "<group>"; };
+		89FE97A3142421A500FF18EC /* TitleViewLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TitleViewLabel.m; sourceTree = "<group>"; };
+		89FE97A5142421A500FF18EC /* NSString+Trim.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Trim.h"; sourceTree = "<group>"; };
+		89FE97A6142421A500FF18EC /* NSString+Trim.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Trim.m"; sourceTree = "<group>"; };
+		89FE97A7142421A500FF18EC /* Utility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Utility.h; sourceTree = "<group>"; };
+		89FE97A8142421A500FF18EC /* Utility.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Utility.m; sourceTree = "<group>"; };
 		8D1107310486CEB800E47090 /* HoosBus-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "HoosBus-Info.plist"; plistStructureDefinitionIdentifier = "com.apple.xcode.plist.structure-definition.iphone.info-plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -736,7 +737,7 @@
 		29B97314FDCFA39411CA2CEA /* CustomTemplate */ = {
 			isa = PBXGroup;
 			children = (
-				89635612141C1549002042F9 /* HATools */,
+				89FE9741142421A500FF18EC /* HATools */,
 				89C42FF3141B8EFC006088D2 /* ThirdParty */,
 				89C432B5141B962B006088D2 /* BetterTransit */,
 				080E96DDFE201D6D7F000001 /* Classes */,
@@ -795,114 +796,6 @@
 				89DB9B6A13A8DAA400A6EB4E /* libz.dylib */,
 			);
 			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		89635612141C1549002042F9 /* HATools */ = {
-			isa = PBXGroup;
-			children = (
-				89635613141C1549002042F9 /* HAAboutController */,
-				8963562E141C1549002042F9 /* HAListViewController */,
-				89635632141C1549002042F9 /* HASettings */,
-				8963563B141C1549002042F9 /* HATableViewCells */,
-				89635646141C1549002042F9 /* HAWebViewController */,
-				8963564F141C1549002042F9 /* TitleViewLabel */,
-				89635652141C1549002042F9 /* Utilities */,
-			);
-			name = HATools;
-			path = ../../../HATools/HATools;
-			sourceTree = "<group>";
-		};
-		89635613141C1549002042F9 /* HAAboutController */ = {
-			isa = PBXGroup;
-			children = (
-				89635614141C1549002042F9 /* AppViewController.h */,
-				89635615141C1549002042F9 /* AppViewController.m */,
-				89635616141C1549002042F9 /* AppViewController.xib */,
-				89635617141C1549002042F9 /* ClipView.h */,
-				89635618141C1549002042F9 /* ClipView.m */,
-				89635619141C1549002042F9 /* HAAboutViewController.h */,
-				8963561A141C1549002042F9 /* HAAboutViewController.m */,
-				8963561B141C1549002042F9 /* HAAboutViewController.xib */,
-				8963561C141C1549002042F9 /* HAFAQItemViewController.h */,
-				8963561D141C1549002042F9 /* HAFAQItemViewController.m */,
-				8963561E141C1549002042F9 /* HAFAQViewController.h */,
-				8963561F141C1549002042F9 /* HAFAQViewController.m */,
-			);
-			path = HAAboutController;
-			sourceTree = "<group>";
-		};
-		8963562E141C1549002042F9 /* HAListViewController */ = {
-			isa = PBXGroup;
-			children = (
-				8963562F141C1549002042F9 /* HAListViewController.h */,
-				89635630141C1549002042F9 /* HAListViewController.m */,
-				89635631141C1549002042F9 /* HAListViewController.xib */,
-			);
-			path = HAListViewController;
-			sourceTree = "<group>";
-		};
-		89635632141C1549002042F9 /* HASettings */ = {
-			isa = PBXGroup;
-			children = (
-				89635633141C1549002042F9 /* HASettings.h */,
-				89635634141C1549002042F9 /* HASettings.m */,
-			);
-			path = HASettings;
-			sourceTree = "<group>";
-		};
-		8963563B141C1549002042F9 /* HATableViewCells */ = {
-			isa = PBXGroup;
-			children = (
-				8963563C141C1549002042F9 /* EnhancedDefaultCell.h */,
-				8963563D141C1549002042F9 /* EnhancedDefaultCell.m */,
-				8963563E141C1549002042F9 /* FastScrollingCell.h */,
-				8963563F141C1549002042F9 /* FastScrollingCell.m */,
-				89635640141C1549002042F9 /* LoadingCell.h */,
-				89635641141C1549002042F9 /* LoadingCell.m */,
-			);
-			path = HATableViewCells;
-			sourceTree = "<group>";
-		};
-		89635646141C1549002042F9 /* HAWebViewController */ = {
-			isa = PBXGroup;
-			children = (
-				89635647141C1549002042F9 /* HAWebViewController.h */,
-				89635648141C1549002042F9 /* HAWebViewController.m */,
-				89635649141C1549002042F9 /* HAWebViewController.xib */,
-				8963564A141C1549002042F9 /* Resources */,
-			);
-			path = HAWebViewController;
-			sourceTree = "<group>";
-		};
-		8963564A141C1549002042F9 /* Resources */ = {
-			isa = PBXGroup;
-			children = (
-				8963564B141C1549002042F9 /* back-arrow.png */,
-				8963564C141C1549002042F9 /* back-arrow@2x.png */,
-				8963564D141C1549002042F9 /* forward-arrow.png */,
-				8963564E141C1549002042F9 /* forward-arrow@2x.png */,
-			);
-			path = Resources;
-			sourceTree = "<group>";
-		};
-		8963564F141C1549002042F9 /* TitleViewLabel */ = {
-			isa = PBXGroup;
-			children = (
-				89635650141C1549002042F9 /* TitleViewLabel.h */,
-				89635651141C1549002042F9 /* TitleViewLabel.m */,
-			);
-			path = TitleViewLabel;
-			sourceTree = "<group>";
-		};
-		89635652141C1549002042F9 /* Utilities */ = {
-			isa = PBXGroup;
-			children = (
-				89635653141C1549002042F9 /* NSString+Trim.h */,
-				89635654141C1549002042F9 /* NSString+Trim.m */,
-				89635655141C1549002042F9 /* Utility.h */,
-				89635656141C1549002042F9 /* Utility.m */,
-			);
-			path = Utilities;
 			sourceTree = "<group>";
 		};
 		8977611A141C514100390D27 /* Data */ = {
@@ -1458,6 +1351,114 @@
 			path = Views;
 			sourceTree = "<group>";
 		};
+		89FE9741142421A500FF18EC /* HATools */ = {
+			isa = PBXGroup;
+			children = (
+				89FE9745142421A500FF18EC /* HAAboutController */,
+				89FE9766142421A500FF18EC /* HAListViewController */,
+				89FE9777142421A500FF18EC /* HATableViewCells */,
+				89FE9795142421A500FF18EC /* HAWebViewController */,
+				89FE97A1142421A500FF18EC /* TitleViewLabel */,
+				89FE97A4142421A500FF18EC /* Utilities */,
+			);
+			name = HATools;
+			path = ../../../HATools/HATools;
+			sourceTree = "<group>";
+		};
+		89FE9745142421A500FF18EC /* HAAboutController */ = {
+			isa = PBXGroup;
+			children = (
+				89FE9746142421A500FF18EC /* AppViewController.h */,
+				89FE9747142421A500FF18EC /* AppViewController.m */,
+				89FE9748142421A500FF18EC /* AppViewController.xib */,
+				89FE9749142421A500FF18EC /* ClipView.h */,
+				89FE974A142421A500FF18EC /* ClipView.m */,
+				89FE974B142421A500FF18EC /* HAAboutViewController.h */,
+				89FE974C142421A500FF18EC /* HAAboutViewController.m */,
+				89FE974D142421A500FF18EC /* HAAboutViewController.xib */,
+				89FE974E142421A500FF18EC /* HAFAQItemViewController.h */,
+				89FE974F142421A500FF18EC /* HAFAQItemViewController.m */,
+				89FE9750142421A500FF18EC /* HAFAQViewController.h */,
+				89FE9751142421A500FF18EC /* HAFAQViewController.m */,
+				89FE9752142421A500FF18EC /* Resources */,
+			);
+			path = HAAboutController;
+			sourceTree = "<group>";
+		};
+		89FE9752142421A500FF18EC /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				89FE9753142421A500FF18EC /* download.png */,
+				89FE9754142421A500FF18EC /* download_selected.png */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		89FE9766142421A500FF18EC /* HAListViewController */ = {
+			isa = PBXGroup;
+			children = (
+				89FE9767142421A500FF18EC /* HAListViewController.h */,
+				89FE9768142421A500FF18EC /* HAListViewController.m */,
+				89FE9769142421A500FF18EC /* HAListViewController.xib */,
+			);
+			path = HAListViewController;
+			sourceTree = "<group>";
+		};
+		89FE9777142421A500FF18EC /* HATableViewCells */ = {
+			isa = PBXGroup;
+			children = (
+				89FE9778142421A500FF18EC /* EnhancedDefaultCell.h */,
+				89FE9779142421A500FF18EC /* EnhancedDefaultCell.m */,
+				89FE977A142421A500FF18EC /* FastScrollingCell.h */,
+				89FE977B142421A500FF18EC /* FastScrollingCell.m */,
+				89FE977C142421A500FF18EC /* LoadingCell.h */,
+				89FE977D142421A500FF18EC /* LoadingCell.m */,
+			);
+			path = HATableViewCells;
+			sourceTree = "<group>";
+		};
+		89FE9795142421A500FF18EC /* HAWebViewController */ = {
+			isa = PBXGroup;
+			children = (
+				89FE9796142421A500FF18EC /* HAWebViewController.h */,
+				89FE9797142421A500FF18EC /* HAWebViewController.m */,
+				89FE9798142421A500FF18EC /* HAWebViewController.xib */,
+				89FE9799142421A500FF18EC /* Resources */,
+			);
+			path = HAWebViewController;
+			sourceTree = "<group>";
+		};
+		89FE9799142421A500FF18EC /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				89FE979A142421A500FF18EC /* back-arrow.png */,
+				89FE979B142421A500FF18EC /* back-arrow@2x.png */,
+				89FE979C142421A500FF18EC /* forward-arrow.png */,
+				89FE979D142421A500FF18EC /* forward-arrow@2x.png */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		89FE97A1142421A500FF18EC /* TitleViewLabel */ = {
+			isa = PBXGroup;
+			children = (
+				89FE97A2142421A500FF18EC /* TitleViewLabel.h */,
+				89FE97A3142421A500FF18EC /* TitleViewLabel.m */,
+			);
+			path = TitleViewLabel;
+			sourceTree = "<group>";
+		};
+		89FE97A4142421A500FF18EC /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				89FE97A5142421A500FF18EC /* NSString+Trim.h */,
+				89FE97A6142421A500FF18EC /* NSString+Trim.m */,
+				89FE97A7142421A500FF18EC /* Utility.h */,
+				89FE97A8142421A500FF18EC /* Utility.m */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -1588,14 +1589,6 @@
 				89C433B7141B962B006088D2 /* yellow_rail.png in Resources */,
 				89C433B8141B962B006088D2 /* yellow_rail@2x.png in Resources */,
 				89C433BA141B962B006088D2 /* BTPredictionCell.xib in Resources */,
-				89635658141C1549002042F9 /* AppViewController.xib in Resources */,
-				8963565B141C1549002042F9 /* HAAboutViewController.xib in Resources */,
-				89635665141C1549002042F9 /* HAListViewController.xib in Resources */,
-				89635670141C1549002042F9 /* HAWebViewController.xib in Resources */,
-				89635671141C1549002042F9 /* back-arrow.png in Resources */,
-				89635672141C1549002042F9 /* back-arrow@2x.png in Resources */,
-				89635673141C1549002042F9 /* forward-arrow.png in Resources */,
-				89635674141C1549002042F9 /* forward-arrow@2x.png in Resources */,
 				8977616C141C514100390D27 /* HoosBus.db in Resources */,
 				8977616D141C514100390D27 /* HoosBus.xls in Resources */,
 				8977616E141C514100390D27 /* routesToDisplay.plist in Resources */,
@@ -1674,6 +1667,16 @@
 				897761B7141C514100390D27 /* station_sign_1@2x.png in Resources */,
 				897761B8141C514100390D27 /* station_sign_2.png in Resources */,
 				897761B9141C514100390D27 /* station_sign_2@2x.png in Resources */,
+				89FE97AB142421A500FF18EC /* AppViewController.xib in Resources */,
+				89FE97AE142421A500FF18EC /* HAAboutViewController.xib in Resources */,
+				89FE97B1142421A500FF18EC /* download.png in Resources */,
+				89FE97B2142421A500FF18EC /* download_selected.png in Resources */,
+				89FE97BB142421A500FF18EC /* HAListViewController.xib in Resources */,
+				89FE97DA142421A500FF18EC /* HAWebViewController.xib in Resources */,
+				89FE97DB142421A500FF18EC /* back-arrow.png in Resources */,
+				89FE97DC142421A500FF18EC /* back-arrow@2x.png in Resources */,
+				89FE97DD142421A500FF18EC /* forward-arrow.png in Resources */,
+				89FE97DE142421A500FF18EC /* forward-arrow@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1750,20 +1753,19 @@
 				89C433B9141B962B006088D2 /* BTPredictionCell.m in Sources */,
 				89C433BB141B962B006088D2 /* BTRouteCell.m in Sources */,
 				89C433BC141B962B006088D2 /* BTStationCell.m in Sources */,
-				89635657141C1549002042F9 /* AppViewController.m in Sources */,
-				89635659141C1549002042F9 /* ClipView.m in Sources */,
-				8963565A141C1549002042F9 /* HAAboutViewController.m in Sources */,
-				8963565C141C1549002042F9 /* HAFAQItemViewController.m in Sources */,
-				8963565D141C1549002042F9 /* HAFAQViewController.m in Sources */,
-				89635664141C1549002042F9 /* HAListViewController.m in Sources */,
-				89635666141C1549002042F9 /* HASettings.m in Sources */,
-				8963566A141C1549002042F9 /* EnhancedDefaultCell.m in Sources */,
-				8963566B141C1549002042F9 /* FastScrollingCell.m in Sources */,
-				8963566C141C1549002042F9 /* LoadingCell.m in Sources */,
-				8963566F141C1549002042F9 /* HAWebViewController.m in Sources */,
-				89635675141C1549002042F9 /* TitleViewLabel.m in Sources */,
-				89635676141C1549002042F9 /* NSString+Trim.m in Sources */,
-				89635677141C1549002042F9 /* Utility.m in Sources */,
+				89FE97AA142421A500FF18EC /* AppViewController.m in Sources */,
+				89FE97AC142421A500FF18EC /* ClipView.m in Sources */,
+				89FE97AD142421A500FF18EC /* HAAboutViewController.m in Sources */,
+				89FE97AF142421A500FF18EC /* HAFAQItemViewController.m in Sources */,
+				89FE97B0142421A500FF18EC /* HAFAQViewController.m in Sources */,
+				89FE97BA142421A500FF18EC /* HAListViewController.m in Sources */,
+				89FE97C3142421A500FF18EC /* EnhancedDefaultCell.m in Sources */,
+				89FE97C4142421A500FF18EC /* FastScrollingCell.m in Sources */,
+				89FE97C5142421A500FF18EC /* LoadingCell.m in Sources */,
+				89FE97D9142421A500FF18EC /* HAWebViewController.m in Sources */,
+				89FE97E0142421A500FF18EC /* TitleViewLabel.m in Sources */,
+				89FE97E1142421A500FF18EC /* NSString+Trim.m in Sources */,
+				89FE97E2142421A500FF18EC /* Utility.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

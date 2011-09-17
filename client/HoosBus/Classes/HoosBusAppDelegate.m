@@ -7,7 +7,19 @@
 //
 
 #import "HoosBusAppDelegate.h"
+#import "Appirater.h"
+
 
 @implementation HoosBusAppDelegate
+
+- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
+{
+    [super application:application didFinishLaunchingWithOptions:launchOptions];
+    
+    // Set up Appirater
+    [Appirater appLaunched];
+    
+    return YES;
+}
 
 @end

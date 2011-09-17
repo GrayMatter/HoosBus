@@ -24,7 +24,4 @@
 @property (nonatomic, retain) UISwitch *switchCtl1;
 @property (nonatomic, retain) UISwitch *switchCtl2;
 
-// Lists
-- (void)setSelectedIndex:(NSUInteger)index forListName:(NSString *)name;
-
 @end

@@ -7,20 +7,12 @@
 //
 
 
-#import "HAAboutViewController.h"
-#import "BTTransit.h"
-#import "HAListViewController.h"
+#import "BTSettingsViewController.h"
 
 
-@interface HBSettingsViewController : HAAboutViewController
-<HAListViewControllerDelegate>
-{
-    BTTransit *transit;
+@interface HBSettingsViewController : BTSettingsViewController {
 }
 
-@property (nonatomic, retain) NSArray *startupScreenOptions;
-@property (nonatomic, retain) NSArray *nearbyRadiusOptions;
-@property (nonatomic, retain) NSArray *maxNumNearbyStopsOptions;
 @property (nonatomic, retain) UISwitch *switchCtl1;
 @property (nonatomic, retain) UISwitch *switchCtl2;
 

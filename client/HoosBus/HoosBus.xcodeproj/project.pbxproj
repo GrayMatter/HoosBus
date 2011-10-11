@@ -55,9 +55,6 @@
 		89776194141C514100390D27 /* G_small@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 89776145141C514100390D27 /* G_small@2x.png */; };
 		89776195141C514100390D27 /* G_white.png in Resources */ = {isa = PBXBuildFile; fileRef = 89776146141C514100390D27 /* G_white.png */; };
 		89776196141C514100390D27 /* G_white@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 89776147141C514100390D27 /* G_white@2x.png */; };
-		89776197141C514100390D27 /* JV.png in Resources */ = {isa = PBXBuildFile; fileRef = 89776148141C514100390D27 /* JV.png */; };
-		89776198141C514100390D27 /* JV_small.png in Resources */ = {isa = PBXBuildFile; fileRef = 89776149141C514100390D27 /* JV_small.png */; };
-		89776199141C514100390D27 /* JV_white.png in Resources */ = {isa = PBXBuildFile; fileRef = 8977614A141C514100390D27 /* JV_white.png */; };
 		8977619A141C514100390D27 /* NL.png in Resources */ = {isa = PBXBuildFile; fileRef = 8977614B141C514100390D27 /* NL.png */; };
 		8977619B141C514100390D27 /* NL@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8977614C141C514100390D27 /* NL@2x.png */; };
 		8977619C141C514100390D27 /* NL_small.png in Resources */ = {isa = PBXBuildFile; fileRef = 8977614D141C514100390D27 /* NL_small.png */; };
@@ -91,6 +88,7 @@
 		897761B8141C514100390D27 /* station_sign_2.png in Resources */ = {isa = PBXBuildFile; fileRef = 8977616A141C514100390D27 /* station_sign_2.png */; };
 		897761B9141C514100390D27 /* station_sign_2@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8977616B141C514100390D27 /* station_sign_2@2x.png */; };
 		89A9F7DE1443C39C00951A61 /* HoosBus-GTFS.db in Resources */ = {isa = PBXBuildFile; fileRef = 89A9F7DD1443C39C00951A61 /* HoosBus-GTFS.db */; };
+		89A9F7F21443EF1800951A61 /* UIColor+HexString.m in Sources */ = {isa = PBXBuildFile; fileRef = 89A9F7F11443EF1800951A61 /* UIColor+HexString.m */; };
 		89BD90171300437F00ED4EE5 /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 89BD90151300437F00ED4EE5 /* Icon.png */; };
 		89BD90181300437F00ED4EE5 /* HoosBusIcon114x114.png in Resources */ = {isa = PBXBuildFile; fileRef = 89BD90161300437F00ED4EE5 /* HoosBusIcon114x114.png */; };
 		89BD90371300444200ED4EE5 /* HBFeedLoader.m in Sources */ = {isa = PBXBuildFile; fileRef = 89BD90361300444200ED4EE5 /* HBFeedLoader.m */; };
@@ -319,9 +317,6 @@
 		89776145141C514100390D27 /* G_small@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "G_small@2x.png"; sourceTree = "<group>"; };
 		89776146141C514100390D27 /* G_white.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = G_white.png; sourceTree = "<group>"; };
 		89776147141C514100390D27 /* G_white@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "G_white@2x.png"; sourceTree = "<group>"; };
-		89776148141C514100390D27 /* JV.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = JV.png; sourceTree = "<group>"; };
-		89776149141C514100390D27 /* JV_small.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = JV_small.png; sourceTree = "<group>"; };
-		8977614A141C514100390D27 /* JV_white.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = JV_white.png; sourceTree = "<group>"; };
 		8977614B141C514100390D27 /* NL.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = NL.png; sourceTree = "<group>"; };
 		8977614C141C514100390D27 /* NL@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "NL@2x.png"; sourceTree = "<group>"; };
 		8977614D141C514100390D27 /* NL_small.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = NL_small.png; sourceTree = "<group>"; };
@@ -355,6 +350,8 @@
 		8977616A141C514100390D27 /* station_sign_2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = station_sign_2.png; sourceTree = "<group>"; };
 		8977616B141C514100390D27 /* station_sign_2@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "station_sign_2@2x.png"; sourceTree = "<group>"; };
 		89A9F7DD1443C39C00951A61 /* HoosBus-GTFS.db */ = {isa = PBXFileReference; lastKnownFileType = file; path = "HoosBus-GTFS.db"; sourceTree = "<group>"; };
+		89A9F7F01443EF1800951A61 /* UIColor+HexString.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+HexString.h"; sourceTree = "<group>"; };
+		89A9F7F11443EF1800951A61 /* UIColor+HexString.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+HexString.m"; sourceTree = "<group>"; };
 		89BD90151300437F00ED4EE5 /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = "<group>"; };
 		89BD90161300437F00ED4EE5 /* HoosBusIcon114x114.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = HoosBusIcon114x114.png; sourceTree = "<group>"; };
 		89BD90341300444200ED4EE5 /* Settings.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Settings.h; sourceTree = "<group>"; };
@@ -822,9 +819,6 @@
 				89776145141C514100390D27 /* G_small@2x.png */,
 				89776146141C514100390D27 /* G_white.png */,
 				89776147141C514100390D27 /* G_white@2x.png */,
-				89776148141C514100390D27 /* JV.png */,
-				89776149141C514100390D27 /* JV_small.png */,
-				8977614A141C514100390D27 /* JV_white.png */,
 				8977614B141C514100390D27 /* NL.png */,
 				8977614C141C514100390D27 /* NL@2x.png */,
 				8977614D141C514100390D27 /* NL_small.png */,
@@ -1418,6 +1412,8 @@
 				89FE97A6142421A500FF18EC /* NSString+Trim.m */,
 				89FE97A7142421A500FF18EC /* Utility.h */,
 				89FE97A8142421A500FF18EC /* Utility.m */,
+				89A9F7F01443EF1800951A61 /* UIColor+HexString.h */,
+				89A9F7F11443EF1800951A61 /* UIColor+HexString.m */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";
@@ -1593,9 +1589,6 @@
 				89776194141C514100390D27 /* G_small@2x.png in Resources */,
 				89776195141C514100390D27 /* G_white.png in Resources */,
 				89776196141C514100390D27 /* G_white@2x.png in Resources */,
-				89776197141C514100390D27 /* JV.png in Resources */,
-				89776198141C514100390D27 /* JV_small.png in Resources */,
-				89776199141C514100390D27 /* JV_white.png in Resources */,
 				8977619A141C514100390D27 /* NL.png in Resources */,
 				8977619B141C514100390D27 /* NL@2x.png in Resources */,
 				8977619C141C514100390D27 /* NL_small.png in Resources */,
@@ -1725,6 +1718,7 @@
 				89FE97E0142421A500FF18EC /* TitleViewLabel.m in Sources */,
 				89FE97E1142421A500FF18EC /* NSString+Trim.m in Sources */,
 				89FE97E2142421A500FF18EC /* Utility.m in Sources */,
+				89A9F7F21443EF1800951A61 /* UIColor+HexString.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

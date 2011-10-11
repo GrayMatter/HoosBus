@@ -159,8 +159,8 @@
 		89C4334D141B962B006088D2 /* BTMapViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 89C432C4141B962B006088D2 /* BTMapViewController.xib */; };
 		89C4334E141B962B006088D2 /* BTPredictionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 89C432C6141B962B006088D2 /* BTPredictionViewController.m */; };
 		89C4334F141B962B006088D2 /* BTPredictionViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 89C432C7141B962B006088D2 /* BTPredictionViewController.xib */; };
-		89C43350141B962B006088D2 /* BTRailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 89C432C9141B962B006088D2 /* BTRailViewController.m */; };
-		89C43351141B962B006088D2 /* BTRailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 89C432CA141B962B006088D2 /* BTRailViewController.xib */; };
+		89C43350141B962B006088D2 /* BTTripViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 89C432C9141B962B006088D2 /* BTTripViewController.m */; };
+		89C43351141B962B006088D2 /* BTTripViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 89C432CA141B962B006088D2 /* BTTripViewController.xib */; };
 		89C43352141B962B006088D2 /* BTRoutesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 89C432CC141B962B006088D2 /* BTRoutesViewController.m */; };
 		89C43353141B962B006088D2 /* BTRoutesViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 89C432CD141B962B006088D2 /* BTRoutesViewController.xib */; };
 		89C43354141B962B006088D2 /* BTScheduleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 89C432CF141B962B006088D2 /* BTScheduleViewController.m */; };
@@ -487,9 +487,9 @@
 		89C432C5141B962B006088D2 /* BTPredictionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BTPredictionViewController.h; sourceTree = "<group>"; };
 		89C432C6141B962B006088D2 /* BTPredictionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BTPredictionViewController.m; sourceTree = "<group>"; };
 		89C432C7141B962B006088D2 /* BTPredictionViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BTPredictionViewController.xib; sourceTree = "<group>"; };
-		89C432C8141B962B006088D2 /* BTRailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BTRailViewController.h; sourceTree = "<group>"; };
-		89C432C9141B962B006088D2 /* BTRailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BTRailViewController.m; sourceTree = "<group>"; };
-		89C432CA141B962B006088D2 /* BTRailViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BTRailViewController.xib; sourceTree = "<group>"; };
+		89C432C8141B962B006088D2 /* BTTripViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; path = BTTripViewController.h; sourceTree = "<group>"; };
+		89C432C9141B962B006088D2 /* BTTripViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BTTripViewController.m; sourceTree = "<group>"; };
+		89C432CA141B962B006088D2 /* BTTripViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BTTripViewController.xib; sourceTree = "<group>"; };
 		89C432CB141B962B006088D2 /* BTRoutesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BTRoutesViewController.h; sourceTree = "<group>"; };
 		89C432CC141B962B006088D2 /* BTRoutesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BTRoutesViewController.m; sourceTree = "<group>"; };
 		89C432CD141B962B006088D2 /* BTRoutesViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BTRoutesViewController.xib; sourceTree = "<group>"; };
@@ -1157,9 +1157,9 @@
 				89C432C5141B962B006088D2 /* BTPredictionViewController.h */,
 				89C432C6141B962B006088D2 /* BTPredictionViewController.m */,
 				89C432C7141B962B006088D2 /* BTPredictionViewController.xib */,
-				89C432C8141B962B006088D2 /* BTRailViewController.h */,
-				89C432C9141B962B006088D2 /* BTRailViewController.m */,
-				89C432CA141B962B006088D2 /* BTRailViewController.xib */,
+				89C432C8141B962B006088D2 /* BTTripViewController.h */,
+				89C432C9141B962B006088D2 /* BTTripViewController.m */,
+				89C432CA141B962B006088D2 /* BTTripViewController.xib */,
 				89C432CB141B962B006088D2 /* BTRoutesViewController.h */,
 				89C432CC141B962B006088D2 /* BTRoutesViewController.m */,
 				89C432CD141B962B006088D2 /* BTRoutesViewController.xib */,
@@ -1483,7 +1483,7 @@
 				89C4307E141B8F45006088D2 /* whiteArrow@2x.png in Resources */,
 				89C4334D141B962B006088D2 /* BTMapViewController.xib in Resources */,
 				89C4334F141B962B006088D2 /* BTPredictionViewController.xib in Resources */,
-				89C43351141B962B006088D2 /* BTRailViewController.xib in Resources */,
+				89C43351141B962B006088D2 /* BTTripViewController.xib in Resources */,
 				89C43353141B962B006088D2 /* BTRoutesViewController.xib in Resources */,
 				89C43355141B962B006088D2 /* BTScheduleViewController.xib in Resources */,
 				89C43357141B962B006088D2 /* BTSearchViewController.xib in Resources */,
@@ -1690,7 +1690,7 @@
 				89C4334B141B962B006088D2 /* BTLocationManager.m in Sources */,
 				89C4334C141B962B006088D2 /* BTMapViewController.m in Sources */,
 				89C4334E141B962B006088D2 /* BTPredictionViewController.m in Sources */,
-				89C43350141B962B006088D2 /* BTRailViewController.m in Sources */,
+				89C43350141B962B006088D2 /* BTTripViewController.m in Sources */,
 				89C43352141B962B006088D2 /* BTRoutesViewController.m in Sources */,
 				89C43354141B962B006088D2 /* BTScheduleViewController.m in Sources */,
 				89C43356141B962B006088D2 /* BTSearchViewController.m in Sources */,

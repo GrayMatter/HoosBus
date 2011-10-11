@@ -14,9 +14,6 @@
 		288765FD0DF74451002DB57D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 288765FC0DF74451002DB57D /* CoreGraphics.framework */; };
 		28AD733F0D9D9553002E5188 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 28AD733E0D9D9553002E5188 /* MainWindow.xib */; };
 		893BAF0714256BC00002BA86 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 893BAF0614256BC00002BA86 /* QuartzCore.framework */; };
-		896E2E8A130185490060AE33 /* HBSettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 89BD8F371300433700ED4EE5 /* HBSettingsViewController.m */; };
-		896E2EA6130187A80060AE33 /* BTAppSettings+HoosBus.m in Sources */ = {isa = PBXBuildFile; fileRef = 896E2EA5130187A80060AE33 /* BTAppSettings+HoosBus.m */; };
-		896E2F5E1301942B0060AE33 /* HBTransit.m in Sources */ = {isa = PBXBuildFile; fileRef = 896E2F5D1301942B0060AE33 /* HBTransit.m */; };
 		8977616E141C514100390D27 /* routesToDisplay.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8977611D141C514100390D27 /* routesToDisplay.plist */; };
 		8977616F141C514100390D27 /* 1.png in Resources */ = {isa = PBXBuildFile; fileRef = 89776120141C514100390D27 /* 1.png */; };
 		89776170141C514100390D27 /* 10.png in Resources */ = {isa = PBXBuildFile; fileRef = 89776121141C514100390D27 /* 10.png */; };
@@ -281,10 +278,6 @@
 		29B97316FDCFA39411CA2CEA /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		32CA4F630368D1EE00C91783 /* HoosBus_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HoosBus_Prefix.pch; sourceTree = "<group>"; };
 		893BAF0614256BC00002BA86 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
-		896E2EA4130187A80060AE33 /* BTAppSettings+HoosBus.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "BTAppSettings+HoosBus.h"; sourceTree = "<group>"; };
-		896E2EA5130187A80060AE33 /* BTAppSettings+HoosBus.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "BTAppSettings+HoosBus.m"; sourceTree = "<group>"; };
-		896E2F5C1301942B0060AE33 /* HBTransit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HBTransit.h; sourceTree = "<group>"; };
-		896E2F5D1301942B0060AE33 /* HBTransit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HBTransit.m; sourceTree = "<group>"; };
 		8977611D141C514100390D27 /* routesToDisplay.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = routesToDisplay.plist; sourceTree = "<group>"; };
 		89776120141C514100390D27 /* 1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 1.png; sourceTree = "<group>"; };
 		89776121141C514100390D27 /* 10.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 10.png; sourceTree = "<group>"; };
@@ -362,8 +355,6 @@
 		8977616A141C514100390D27 /* station_sign_2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = station_sign_2.png; sourceTree = "<group>"; };
 		8977616B141C514100390D27 /* station_sign_2@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "station_sign_2@2x.png"; sourceTree = "<group>"; };
 		89A9F7DD1443C39C00951A61 /* HoosBus-GTFS.db */ = {isa = PBXFileReference; lastKnownFileType = file; path = "HoosBus-GTFS.db"; sourceTree = "<group>"; };
-		89BD8F361300433700ED4EE5 /* HBSettingsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HBSettingsViewController.h; sourceTree = "<group>"; };
-		89BD8F371300433700ED4EE5 /* HBSettingsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HBSettingsViewController.m; sourceTree = "<group>"; };
 		89BD90151300437F00ED4EE5 /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = "<group>"; };
 		89BD90161300437F00ED4EE5 /* HoosBusIcon114x114.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = HoosBusIcon114x114.png; sourceTree = "<group>"; };
 		89BD90341300444200ED4EE5 /* Settings.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Settings.h; sourceTree = "<group>"; };
@@ -514,7 +505,7 @@
 		89C432D4141B962B006088D2 /* BTSettingsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BTSettingsViewController.h; sourceTree = "<group>"; };
 		89C432D5141B962B006088D2 /* BTSettingsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BTSettingsViewController.m; sourceTree = "<group>"; };
 		89C432D6141B962B006088D2 /* BTSettingsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BTSettingsViewController.xib; sourceTree = "<group>"; };
-		89C432D7141B962B006088D2 /* BTStopsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; path = BTStopsViewController.h; sourceTree = "<group>"; };
+		89C432D7141B962B006088D2 /* BTStopsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BTStopsViewController.h; sourceTree = "<group>"; };
 		89C432D8141B962B006088D2 /* BTStopsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BTStopsViewController.m; sourceTree = "<group>"; };
 		89C432D9141B962B006088D2 /* BTStationsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BTStationsViewController.xib; sourceTree = "<group>"; };
 		89C432DA141B962B006088D2 /* BTUIViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BTUIViewController.h; sourceTree = "<group>"; };
@@ -527,7 +518,7 @@
 		89C432E2141B962B006088D2 /* BTRoute.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BTRoute.m; sourceTree = "<group>"; };
 		89C432E3141B962B006088D2 /* BTStop.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BTStop.h; sourceTree = "<group>"; };
 		89C432E4141B962B006088D2 /* BTStop.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BTStop.m; sourceTree = "<group>"; };
-		89C432E5141B962B006088D2 /* BTStopList.h */ = {isa = PBXFileReference; fileEncoding = 4; path = BTStopList.h; sourceTree = "<group>"; };
+		89C432E5141B962B006088D2 /* BTStopList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BTStopList.h; sourceTree = "<group>"; };
 		89C432E6141B962B006088D2 /* BTStopList.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BTStopList.m; sourceTree = "<group>"; };
 		89C432E8141B962B006088D2 /* addToFavs.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = addToFavs.png; sourceTree = "<group>"; };
 		89C432E9141B962B006088D2 /* app_icon_placeholder.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = app_icon_placeholder.png; sourceTree = "<group>"; };
@@ -621,7 +612,7 @@
 		89C43342141B962B006088D2 /* BTPredictionCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BTPredictionCell.xib; sourceTree = "<group>"; };
 		89C43343141B962B006088D2 /* BTRouteCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BTRouteCell.h; sourceTree = "<group>"; };
 		89C43344141B962B006088D2 /* BTRouteCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BTRouteCell.m; sourceTree = "<group>"; };
-		89C43345141B962B006088D2 /* BTStopCell.h */ = {isa = PBXFileReference; fileEncoding = 4; path = BTStopCell.h; sourceTree = "<group>"; };
+		89C43345141B962B006088D2 /* BTStopCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BTStopCell.h; sourceTree = "<group>"; };
 		89C43346141B962B006088D2 /* BTStopCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BTStopCell.m; sourceTree = "<group>"; };
 		89DB9B6A13A8DAA400A6EB4E /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
 		89FE9746142421A500FF18EC /* AppViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppViewController.h; sourceTree = "<group>"; };
@@ -695,14 +686,8 @@
 			isa = PBXGroup;
 			children = (
 				89BD90341300444200ED4EE5 /* Settings.h */,
-				896E2EA4130187A80060AE33 /* BTAppSettings+HoosBus.h */,
-				896E2EA5130187A80060AE33 /* BTAppSettings+HoosBus.m */,
-				89BD8F361300433700ED4EE5 /* HBSettingsViewController.h */,
-				89BD8F371300433700ED4EE5 /* HBSettingsViewController.m */,
 				89BD90351300444200ED4EE5 /* HBFeedLoader.h */,
 				89BD90361300444200ED4EE5 /* HBFeedLoader.m */,
-				896E2F5C1301942B0060AE33 /* HBTransit.h */,
-				896E2F5D1301942B0060AE33 /* HBTransit.m */,
 				1D3623240D0F684500981E51 /* HoosBusAppDelegate.h */,
 				1D3623250D0F684500981E51 /* HoosBusAppDelegate.m */,
 			);
@@ -1667,9 +1652,6 @@
 				1D60589B0D05DD56006BFB54 /* main.m in Sources */,
 				1D3623260D0F684500981E51 /* HoosBusAppDelegate.m in Sources */,
 				89BD90371300444200ED4EE5 /* HBFeedLoader.m in Sources */,
-				896E2E8A130185490060AE33 /* HBSettingsViewController.m in Sources */,
-				896E2EA6130187A80060AE33 /* BTAppSettings+HoosBus.m in Sources */,
-				896E2F5E1301942B0060AE33 /* HBTransit.m in Sources */,
 				89C4306D141B8F45006088D2 /* Appirater.m in Sources */,
 				89C4306E141B8F45006088D2 /* ASIAuthenticationDialog.m in Sources */,
 				89C4306F141B8F45006088D2 /* ASIDataCompressor.m in Sources */,

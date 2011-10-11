@@ -79,13 +79,13 @@
 				</object>
 				<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
 				<bool key="IBUIHorizontal">NO</bool>
-				<object class="IBUINavigationController" key="IBUISelectedViewController" id="1020345962">
-					<string key="IBUITitle">Stops</string>
-					<object class="IBUITabBarItem" key="IBUITabBarItem" id="801564563">
-						<string key="IBUITitle">Stops</string>
+				<object class="IBUINavigationController" key="IBUISelectedViewController" id="940039350">
+					<string key="IBUITitle">Settings</string>
+					<object class="IBUITabBarItem" key="IBUITabBarItem" id="179620030">
+						<string key="IBUITitle">Settings</string>
 						<object class="NSCustomResource" key="IBUIImage">
 							<string key="NSClassName">NSImage</string>
-							<string key="NSResourceName">bus.png</string>
+							<string key="NSResourceName">settings_icon.png</string>
 						</object>
 						<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
 					</object>
@@ -97,7 +97,7 @@
 					</object>
 					<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
 					<bool key="IBUIHorizontal">NO</bool>
-					<object class="IBUINavigationBar" key="IBUINavigationBar" id="649126835">
+					<object class="IBUINavigationBar" key="IBUINavigationBar" id="680965583">
 						<nil key="NSNextResponder"/>
 						<int key="NSvFlags">256</int>
 						<string key="NSFrameSize">{320, 44}</string>
@@ -108,14 +108,14 @@
 					</object>
 					<object class="NSMutableArray" key="IBUIViewControllers">
 						<bool key="EncodedWithXMLCoder">YES</bool>
-						<object class="IBUIViewController" id="1025998740">
+						<object class="IBUIViewController" id="1023757683">
 							<reference key="IBUIToolbarItems" ref="0"/>
-							<object class="IBUINavigationItem" key="IBUINavigationItem" id="374204887">
+							<object class="IBUINavigationItem" key="IBUINavigationItem" id="251452264">
 								<string key="IBUITitle">Item</string>
 								<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
 							</object>
-							<reference key="IBUIParentViewController" ref="1020345962"/>
-							<string key="IBUINibName">BTStationsViewController</string>
+							<reference key="IBUIParentViewController" ref="940039350"/>
+							<string key="IBUINibName">BTSettingsViewController</string>
 							<object class="IBUISimulatedOrientationMetrics" key="IBUISimulatedOrientationMetrics">
 								<int key="IBUIInterfaceOrientation">1</int>
 								<int key="interfaceOrientation">1</int>
@@ -127,7 +127,52 @@
 				</object>
 				<object class="NSMutableArray" key="IBUIViewControllers">
 					<bool key="EncodedWithXMLCoder">YES</bool>
-					<reference ref="1020345962"/>
+					<object class="IBUINavigationController" id="1020345962">
+						<string key="IBUITitle">Stops</string>
+						<object class="IBUITabBarItem" key="IBUITabBarItem" id="801564563">
+							<string key="IBUITitle">Stops</string>
+							<object class="NSCustomResource" key="IBUIImage">
+								<string key="NSClassName">NSImage</string>
+								<string key="NSResourceName">bus.png</string>
+							</object>
+							<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
+						</object>
+						<reference key="IBUIToolbarItems" ref="0"/>
+						<reference key="IBUIParentViewController" ref="118870150"/>
+						<object class="IBUISimulatedOrientationMetrics" key="IBUISimulatedOrientationMetrics">
+							<int key="IBUIInterfaceOrientation">1</int>
+							<int key="interfaceOrientation">1</int>
+						</object>
+						<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
+						<bool key="IBUIHorizontal">NO</bool>
+						<object class="IBUINavigationBar" key="IBUINavigationBar" id="649126835">
+							<nil key="NSNextResponder"/>
+							<int key="NSvFlags">256</int>
+							<string key="NSFrameSize">{320, 44}</string>
+							<bool key="IBUIOpaque">NO</bool>
+							<bool key="IBUIClipsSubviews">YES</bool>
+							<bool key="IBUIMultipleTouchEnabled">YES</bool>
+							<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
+						</object>
+						<object class="NSMutableArray" key="IBUIViewControllers">
+							<bool key="EncodedWithXMLCoder">YES</bool>
+							<object class="IBUIViewController" id="1025998740">
+								<reference key="IBUIToolbarItems" ref="0"/>
+								<object class="IBUINavigationItem" key="IBUINavigationItem" id="374204887">
+									<string key="IBUITitle">Item</string>
+									<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
+								</object>
+								<reference key="IBUIParentViewController" ref="1020345962"/>
+								<string key="IBUINibName">BTStationsViewController</string>
+								<object class="IBUISimulatedOrientationMetrics" key="IBUISimulatedOrientationMetrics">
+									<int key="IBUIInterfaceOrientation">1</int>
+									<int key="interfaceOrientation">1</int>
+								</object>
+								<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
+								<bool key="IBUIHorizontal">NO</bool>
+							</object>
+						</object>
+					</object>
 					<object class="IBUINavigationController" id="154129663">
 						<string key="IBUITitle">Map</string>
 						<object class="IBUITabBarItem" key="IBUITabBarItem" id="342797757">
@@ -264,52 +309,7 @@
 						</object>
 						<bool key="IBUINavigationBarHidden">YES</bool>
 					</object>
-					<object class="IBUINavigationController" id="940039350">
-						<string key="IBUITitle">Settings</string>
-						<object class="IBUITabBarItem" key="IBUITabBarItem" id="179620030">
-							<string key="IBUITitle">Settings</string>
-							<object class="NSCustomResource" key="IBUIImage">
-								<string key="NSClassName">NSImage</string>
-								<string key="NSResourceName">settings_icon.png</string>
-							</object>
-							<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
-						</object>
-						<reference key="IBUIToolbarItems" ref="0"/>
-						<reference key="IBUIParentViewController" ref="118870150"/>
-						<object class="IBUISimulatedOrientationMetrics" key="IBUISimulatedOrientationMetrics">
-							<int key="IBUIInterfaceOrientation">1</int>
-							<int key="interfaceOrientation">1</int>
-						</object>
-						<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
-						<bool key="IBUIHorizontal">NO</bool>
-						<object class="IBUINavigationBar" key="IBUINavigationBar" id="680965583">
-							<nil key="NSNextResponder"/>
-							<int key="NSvFlags">256</int>
-							<string key="NSFrameSize">{320, 44}</string>
-							<bool key="IBUIOpaque">NO</bool>
-							<bool key="IBUIClipsSubviews">YES</bool>
-							<bool key="IBUIMultipleTouchEnabled">YES</bool>
-							<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
-						</object>
-						<object class="NSMutableArray" key="IBUIViewControllers">
-							<bool key="EncodedWithXMLCoder">YES</bool>
-							<object class="IBUIViewController" id="1023757683">
-								<reference key="IBUIToolbarItems" ref="0"/>
-								<object class="IBUINavigationItem" key="IBUINavigationItem" id="251452264">
-									<string key="IBUITitle">Item</string>
-									<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
-								</object>
-								<reference key="IBUIParentViewController" ref="940039350"/>
-								<string key="IBUINibName">BTSettingsViewController</string>
-								<object class="IBUISimulatedOrientationMetrics" key="IBUISimulatedOrientationMetrics">
-									<int key="IBUIInterfaceOrientation">1</int>
-									<int key="interfaceOrientation">1</int>
-								</object>
-								<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
-								<bool key="IBUIHorizontal">NO</bool>
-							</object>
-						</object>
-					</object>
+					<reference ref="940039350"/>
 				</object>
 				<object class="IBUITabBar" key="IBUITabBar" id="64942385">
 					<reference key="NSNextResponder"/>
@@ -710,11 +710,11 @@
 					<string>com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
 					<string>com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
 					<string>com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
-					<string>HBSettingsViewController</string>
+					<string>BTSettingsViewController</string>
 					<string>com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
 					<string>com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
 					<string>com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
-					<string>HBTransit</string>
+					<string>BTTransit</string>
 					<string>com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
 				</object>
 			</object>

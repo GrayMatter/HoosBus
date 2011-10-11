@@ -7,8 +7,7 @@
  *
  */
 
-#define PRODUCTION_READY
-//#define SHOW_ADS
+//#define PRODUCTION_READY
 
 #define FAKE_LOCATION_LATITUDE 38.034039
 #define FAKE_LOCATION_LONGITUDE -78.499479
@@ -17,7 +16,7 @@
 #define CTS 2
 
 // Custom settings
-#define MAIN_DB @"HoosBus"
+#define MAIN_DB @"HoosBus-GTFS"
 #define PRODUCT_ID_REMOVE_ADS @"com.yaoganglian.hoosbus.removeads"
 #define ADD_TO_FAVS_PNG @"addToFavs.png"
 #define NUM_STOPS 480

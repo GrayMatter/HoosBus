@@ -12,7 +12,7 @@
 @interface HBTransit : BTTransit
 
 - (NSArray *)filterStations:(NSArray *)ss;
-- (BOOL)checkStation:(BTStation *)s;
+- (BOOL)checkStation:(BTStop *)s;
 - (NSMutableArray *)filterPrediction:(NSMutableArray *)p;
 - (NSDictionary *)filterRoutes:(NSDictionary *)rs;
 

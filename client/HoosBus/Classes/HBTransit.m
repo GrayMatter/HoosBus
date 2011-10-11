@@ -18,7 +18,7 @@
 		return [[ss retain] autorelease];
 	} else {
 		NSMutableArray *res = [NSMutableArray array];
-		for (BTStation *station in ss) {
+		for (BTStop *station in ss) {
 			if (station.owner != CTS) {
 				[res addObject:station];
 			}
@@ -27,7 +27,7 @@
 	}
 }
 
-- (BOOL)checkStation:(BTStation *)s
+- (BOOL)checkStation:(BTStop *)s
 {
 	if ([BTAppSettings shouldDisplayCTSStops]) {
 		return YES;

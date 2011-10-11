@@ -21,7 +21,7 @@
 	return self;
 }
 
-- (NSString *)dataSourceForStation:(BTStation *)station
+- (NSString *)dataSourceForStation:(BTStop *)station
 {
 	return [NSString stringWithFormat:@"http://avlweb.charlottesville.org/RTT/Public/RoutePositionET.aspx?PlatformNo=%@&Referrer=uvamobile", station.stationId];
 }

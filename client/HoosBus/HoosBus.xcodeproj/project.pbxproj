@@ -17,7 +17,6 @@
 		896E2E8A130185490060AE33 /* HBSettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 89BD8F371300433700ED4EE5 /* HBSettingsViewController.m */; };
 		896E2EA6130187A80060AE33 /* BTAppSettings+HoosBus.m in Sources */ = {isa = PBXBuildFile; fileRef = 896E2EA5130187A80060AE33 /* BTAppSettings+HoosBus.m */; };
 		896E2F5E1301942B0060AE33 /* HBTransit.m in Sources */ = {isa = PBXBuildFile; fileRef = 896E2F5D1301942B0060AE33 /* HBTransit.m */; };
-		8977616C141C514100390D27 /* HoosBus.db in Resources */ = {isa = PBXBuildFile; fileRef = 8977611B141C514100390D27 /* HoosBus.db */; };
 		8977616E141C514100390D27 /* routesToDisplay.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8977611D141C514100390D27 /* routesToDisplay.plist */; };
 		8977616F141C514100390D27 /* 1.png in Resources */ = {isa = PBXBuildFile; fileRef = 89776120141C514100390D27 /* 1.png */; };
 		89776170141C514100390D27 /* 10.png in Resources */ = {isa = PBXBuildFile; fileRef = 89776121141C514100390D27 /* 10.png */; };
@@ -94,6 +93,7 @@
 		897761B7141C514100390D27 /* station_sign_1@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 89776169141C514100390D27 /* station_sign_1@2x.png */; };
 		897761B8141C514100390D27 /* station_sign_2.png in Resources */ = {isa = PBXBuildFile; fileRef = 8977616A141C514100390D27 /* station_sign_2.png */; };
 		897761B9141C514100390D27 /* station_sign_2@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8977616B141C514100390D27 /* station_sign_2@2x.png */; };
+		89A9F7DE1443C39C00951A61 /* HoosBus-GTFS.db in Resources */ = {isa = PBXBuildFile; fileRef = 89A9F7DD1443C39C00951A61 /* HoosBus-GTFS.db */; };
 		89BD90171300437F00ED4EE5 /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 89BD90151300437F00ED4EE5 /* Icon.png */; };
 		89BD90181300437F00ED4EE5 /* HoosBusIcon114x114.png in Resources */ = {isa = PBXBuildFile; fileRef = 89BD90161300437F00ED4EE5 /* HoosBusIcon114x114.png */; };
 		89BD90371300444200ED4EE5 /* HBFeedLoader.m in Sources */ = {isa = PBXBuildFile; fileRef = 89BD90361300444200ED4EE5 /* HBFeedLoader.m */; };
@@ -285,7 +285,6 @@
 		896E2EA5130187A80060AE33 /* BTAppSettings+HoosBus.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "BTAppSettings+HoosBus.m"; sourceTree = "<group>"; };
 		896E2F5C1301942B0060AE33 /* HBTransit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HBTransit.h; sourceTree = "<group>"; };
 		896E2F5D1301942B0060AE33 /* HBTransit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HBTransit.m; sourceTree = "<group>"; };
-		8977611B141C514100390D27 /* HoosBus.db */ = {isa = PBXFileReference; lastKnownFileType = file; path = HoosBus.db; sourceTree = "<group>"; };
 		8977611D141C514100390D27 /* routesToDisplay.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = routesToDisplay.plist; sourceTree = "<group>"; };
 		89776120141C514100390D27 /* 1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 1.png; sourceTree = "<group>"; };
 		89776121141C514100390D27 /* 10.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 10.png; sourceTree = "<group>"; };
@@ -362,6 +361,7 @@
 		89776169141C514100390D27 /* station_sign_1@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "station_sign_1@2x.png"; sourceTree = "<group>"; };
 		8977616A141C514100390D27 /* station_sign_2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = station_sign_2.png; sourceTree = "<group>"; };
 		8977616B141C514100390D27 /* station_sign_2@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "station_sign_2@2x.png"; sourceTree = "<group>"; };
+		89A9F7DD1443C39C00951A61 /* HoosBus-GTFS.db */ = {isa = PBXFileReference; lastKnownFileType = file; path = "HoosBus-GTFS.db"; sourceTree = "<group>"; };
 		89BD8F361300433700ED4EE5 /* HBSettingsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HBSettingsViewController.h; sourceTree = "<group>"; };
 		89BD8F371300433700ED4EE5 /* HBSettingsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HBSettingsViewController.m; sourceTree = "<group>"; };
 		89BD90151300437F00ED4EE5 /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = "<group>"; };
@@ -779,7 +779,7 @@
 		8977611A141C514100390D27 /* Data */ = {
 			isa = PBXGroup;
 			children = (
-				8977611B141C514100390D27 /* HoosBus.db */,
+				89A9F7DD1443C39C00951A61 /* HoosBus-GTFS.db */,
 				8977611D141C514100390D27 /* routesToDisplay.plist */,
 			);
 			path = Data;
@@ -1566,7 +1566,6 @@
 				89C433B7141B962B006088D2 /* yellow_rail.png in Resources */,
 				89C433B8141B962B006088D2 /* yellow_rail@2x.png in Resources */,
 				89C433BA141B962B006088D2 /* BTPredictionCell.xib in Resources */,
-				8977616C141C514100390D27 /* HoosBus.db in Resources */,
 				8977616E141C514100390D27 /* routesToDisplay.plist in Resources */,
 				8977616F141C514100390D27 /* 1.png in Resources */,
 				89776170141C514100390D27 /* 10.png in Resources */,
@@ -1653,6 +1652,7 @@
 				89FE97DC142421A500FF18EC /* back-arrow@2x.png in Resources */,
 				89FE97DD142421A500FF18EC /* forward-arrow.png in Resources */,
 				89FE97DE142421A500FF18EC /* forward-arrow@2x.png in Resources */,
+				89A9F7DE1443C39C00951A61 /* HoosBus-GTFS.db in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

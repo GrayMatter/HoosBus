@@ -13,6 +13,7 @@
 		1DF5F4E00D08C38300B7A737 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DF5F4DF0D08C38300B7A737 /* UIKit.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		288765FD0DF74451002DB57D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 288765FC0DF74451002DB57D /* CoreGraphics.framework */; };
 		28AD733F0D9D9553002E5188 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 28AD733E0D9D9553002E5188 /* MainWindow.xib */; };
+		890CCE9A144484C200797298 /* UIColor+Utilities.m in Sources */ = {isa = PBXBuildFile; fileRef = 890CCE99144484C200797298 /* UIColor+Utilities.m */; };
 		893BAF0714256BC00002BA86 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 893BAF0614256BC00002BA86 /* QuartzCore.framework */; };
 		8977616E141C514100390D27 /* routesToDisplay.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8977611D141C514100390D27 /* routesToDisplay.plist */; };
 		8977616F141C514100390D27 /* 1.png in Resources */ = {isa = PBXBuildFile; fileRef = 89776120141C514100390D27 /* 1.png */; };
@@ -88,7 +89,6 @@
 		897761B8141C514100390D27 /* station_sign_2.png in Resources */ = {isa = PBXBuildFile; fileRef = 8977616A141C514100390D27 /* station_sign_2.png */; };
 		897761B9141C514100390D27 /* station_sign_2@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8977616B141C514100390D27 /* station_sign_2@2x.png */; };
 		89A9F7DE1443C39C00951A61 /* HoosBus-GTFS.db in Resources */ = {isa = PBXBuildFile; fileRef = 89A9F7DD1443C39C00951A61 /* HoosBus-GTFS.db */; };
-		89A9F7F21443EF1800951A61 /* UIColor+HexString.m in Sources */ = {isa = PBXBuildFile; fileRef = 89A9F7F11443EF1800951A61 /* UIColor+HexString.m */; };
 		89BD90171300437F00ED4EE5 /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 89BD90151300437F00ED4EE5 /* Icon.png */; };
 		89BD90181300437F00ED4EE5 /* HoosBusIcon114x114.png in Resources */ = {isa = PBXBuildFile; fileRef = 89BD90161300437F00ED4EE5 /* HoosBusIcon114x114.png */; };
 		89BD90371300444200ED4EE5 /* HBFeedLoader.m in Sources */ = {isa = PBXBuildFile; fileRef = 89BD90361300444200ED4EE5 /* HBFeedLoader.m */; };
@@ -275,6 +275,8 @@
 		28AD733E0D9D9553002E5188 /* MainWindow.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainWindow.xib; sourceTree = "<group>"; };
 		29B97316FDCFA39411CA2CEA /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		32CA4F630368D1EE00C91783 /* HoosBus_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HoosBus_Prefix.pch; sourceTree = "<group>"; };
+		890CCE98144484C200797298 /* UIColor+Utilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+Utilities.h"; sourceTree = "<group>"; };
+		890CCE99144484C200797298 /* UIColor+Utilities.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+Utilities.m"; sourceTree = "<group>"; };
 		893BAF0614256BC00002BA86 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		8977611D141C514100390D27 /* routesToDisplay.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = routesToDisplay.plist; sourceTree = "<group>"; };
 		89776120141C514100390D27 /* 1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 1.png; sourceTree = "<group>"; };
@@ -350,8 +352,6 @@
 		8977616A141C514100390D27 /* station_sign_2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = station_sign_2.png; sourceTree = "<group>"; };
 		8977616B141C514100390D27 /* station_sign_2@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "station_sign_2@2x.png"; sourceTree = "<group>"; };
 		89A9F7DD1443C39C00951A61 /* HoosBus-GTFS.db */ = {isa = PBXFileReference; lastKnownFileType = file; path = "HoosBus-GTFS.db"; sourceTree = "<group>"; };
-		89A9F7F01443EF1800951A61 /* UIColor+HexString.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+HexString.h"; sourceTree = "<group>"; };
-		89A9F7F11443EF1800951A61 /* UIColor+HexString.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+HexString.m"; sourceTree = "<group>"; };
 		89BD90151300437F00ED4EE5 /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = "<group>"; };
 		89BD90161300437F00ED4EE5 /* HoosBusIcon114x114.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = HoosBusIcon114x114.png; sourceTree = "<group>"; };
 		89BD90341300444200ED4EE5 /* Settings.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Settings.h; sourceTree = "<group>"; };
@@ -487,7 +487,7 @@
 		89C432C5141B962B006088D2 /* BTPredictionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BTPredictionViewController.h; sourceTree = "<group>"; };
 		89C432C6141B962B006088D2 /* BTPredictionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BTPredictionViewController.m; sourceTree = "<group>"; };
 		89C432C7141B962B006088D2 /* BTPredictionViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BTPredictionViewController.xib; sourceTree = "<group>"; };
-		89C432C8141B962B006088D2 /* BTTripViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; path = BTTripViewController.h; sourceTree = "<group>"; };
+		89C432C8141B962B006088D2 /* BTTripViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BTTripViewController.h; sourceTree = "<group>"; };
 		89C432C9141B962B006088D2 /* BTTripViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BTTripViewController.m; sourceTree = "<group>"; };
 		89C432CA141B962B006088D2 /* BTTripViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BTTripViewController.xib; sourceTree = "<group>"; };
 		89C432CB141B962B006088D2 /* BTRoutesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BTRoutesViewController.h; sourceTree = "<group>"; };
@@ -515,7 +515,7 @@
 		89C432E2141B962B006088D2 /* BTRoute.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BTRoute.m; sourceTree = "<group>"; };
 		89C432E3141B962B006088D2 /* BTStop.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BTStop.h; sourceTree = "<group>"; };
 		89C432E4141B962B006088D2 /* BTStop.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BTStop.m; sourceTree = "<group>"; };
-		89C432E5141B962B006088D2 /* BTTrip.h */ = {isa = PBXFileReference; fileEncoding = 4; path = BTTrip.h; sourceTree = "<group>"; };
+		89C432E5141B962B006088D2 /* BTTrip.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BTTrip.h; sourceTree = "<group>"; };
 		89C432E6141B962B006088D2 /* BTTrip.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BTTrip.m; sourceTree = "<group>"; };
 		89C432E8141B962B006088D2 /* addToFavs.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = addToFavs.png; sourceTree = "<group>"; };
 		89C432E9141B962B006088D2 /* app_icon_placeholder.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = app_icon_placeholder.png; sourceTree = "<group>"; };
@@ -1410,10 +1410,10 @@
 			children = (
 				89FE97A5142421A500FF18EC /* NSString+Trim.h */,
 				89FE97A6142421A500FF18EC /* NSString+Trim.m */,
+				890CCE98144484C200797298 /* UIColor+Utilities.h */,
+				890CCE99144484C200797298 /* UIColor+Utilities.m */,
 				89FE97A7142421A500FF18EC /* Utility.h */,
 				89FE97A8142421A500FF18EC /* Utility.m */,
-				89A9F7F01443EF1800951A61 /* UIColor+HexString.h */,
-				89A9F7F11443EF1800951A61 /* UIColor+HexString.m */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";
@@ -1718,7 +1718,7 @@
 				89FE97E0142421A500FF18EC /* TitleViewLabel.m in Sources */,
 				89FE97E1142421A500FF18EC /* NSString+Trim.m in Sources */,
 				89FE97E2142421A500FF18EC /* Utility.m in Sources */,
-				89A9F7F21443EF1800951A61 /* UIColor+HexString.m in Sources */,
+				890CCE9A144484C200797298 /* UIColor+Utilities.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -22,14 +22,12 @@
 #define REFRESH_INTERVAL 20
 #define TIMEOUT_INTERVAL 10.0
 #define ENGLISH_UNIT
-#define SUPPORT_CHECKIN FALSE // support the checkin feature
 
 // Colors
 #define COLOR_TABLE_VIEW_BG [UIColor colorWithRed:0.918 green:0.906 blue:0.906 alpha:1.0]
 #define COLOR_TABLE_VIEW_SEPARATOR [UIColor colorWithRed:0.345 green:0.482 blue:0.580 alpha:0.25]
 #define COLOR_TAB_BAR_BG [UIColor colorWithRed:0.0 green:0.42 blue:0.8 alpha:0.3]
 #define COLOR_NAV_BAR_BG [UIColor colorWithRed:0.118 green:0.243 blue:0.357 alpha:1.0]
-#define COLOR_CHECKIN_NAV_BAR [UIColor colorWithRed:1.0 green:0.25 blue:0.11 alpha:1.0]
 
 // API
 #define API_BASE_URL @"http://hoosbus.appspot.com/v1"

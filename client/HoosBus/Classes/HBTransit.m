@@ -18,9 +18,9 @@
 		return [[ss retain] autorelease];
 	} else {
 		NSMutableArray *res = [NSMutableArray array];
-		for (BTStop *station in ss) {
-			if (station.owner != CTS) {
-				[res addObject:station];
+		for (BTStop *stop in ss) {
+			if (stop.owner != CTS) {
+				[res addObject:stop];
 			}
 		}
 		return res;

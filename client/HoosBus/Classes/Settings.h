@@ -41,7 +41,7 @@
 #define APP_SETTINGS_XML @"http://artisticfrog.com/cross_promote/hoosbus/app_settings.xml"
 #define APP_SETTINGS_OS3_XML @"http://artisticfrog.com/cross_promote/hoosbus/app_settings_os3.xml"
 
-#define AD_ZONE_1 1 // stations view, rail view
+#define AD_ZONE_1 1 // stops view, rail view
 #define AD_ZONE_2 2 // routes view
 #define AD_ZONE_3 3 // prediction view
 

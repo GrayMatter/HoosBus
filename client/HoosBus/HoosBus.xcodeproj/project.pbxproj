@@ -774,7 +774,7 @@
 			isa = PBXGroup;
 			children = (
 				8977611F141C514100390D27 /* RouteIcons */,
-				89776163141C514100390D27 /* Stop Icons */,
+				89776163141C514100390D27 /* StopIcons */,
 			);
 			path = Graphics;
 			sourceTree = "<group>";
@@ -853,7 +853,7 @@
 			path = RouteIcons;
 			sourceTree = "<group>";
 		};
-		89776163141C514100390D27 /* Stop Icons */ = {
+		89776163141C514100390D27 /* StopIcons */ = {
 			isa = PBXGroup;
 			children = (
 				89776164141C514100390D27 /* station_1.png */,
@@ -865,7 +865,7 @@
 				8977616A141C514100390D27 /* station_sign_2.png */,
 				8977616B141C514100390D27 /* station_sign_2@2x.png */,
 			);
-			name = "Stop Icons";
+			name = StopIcons;
 			path = StationIcons;
 			sourceTree = "<group>";
 		};

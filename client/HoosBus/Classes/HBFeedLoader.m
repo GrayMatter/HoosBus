@@ -119,7 +119,7 @@
 	if ([elementName isEqualToString:@"td"]) {
 		switch ((tdCount-1)%3) {
 			case 0:
-				entry.routeId = self.contentOfCurrentElement;
+				entry.routeShortName = self.contentOfCurrentElement;
 				break;
 			case 1:
 				entry.destination = self.contentOfCurrentElement;
@@ -133,21 +133,16 @@
 		
 		if (tdCount > 1 && (tdCount-1)%3 == 2) {
 			// Check if the route id is valid
-            NSString *routeId = [entry.routeId trim];
-			if ([routeId isEqualToString:@""]) return;
-            
-            // Change route id "ULA" and "ULB" to "UL"
-            if ([routeId isEqualToString:@"ULA"] || [routeId isEqualToString:@"ULB"]) {
-                entry.routeId = @"UL";
-            }
+            NSString *shortName = [entry.routeShortName trim];
+			if ([shortName isEqualToString:@""]) return;
 			
 			// Check if this route already exists in time table
 			BOOL routeAlreadyExists = NO;
-			NSString *newRoute = entry.routeId;
+			NSString *newRoute = entry.routeShortName;
 			NSString *newDestination = entry.destination;
 			
 			for (BTPredictionEntry *pe in self.prediction) {
-				NSString *existingRoute = pe.routeId;
+				NSString *existingRoute = pe.routeShortName;
 				NSString *existingDestination = pe.destination;
 				
 				if ([newRoute isEqualToString:existingRoute] && 
@@ -162,7 +157,7 @@
 			
 			if (!routeAlreadyExists) {
 				BTPredictionEntry *entryCopy = [[BTPredictionEntry alloc] init];
-				entryCopy.routeId = entry.routeId;
+				entryCopy.routeShortName = entry.routeShortName;
 				entryCopy.destination = entry.destination;
 				entryCopy.eta = entry.eta;
 				[self.prediction addObject:entryCopy];

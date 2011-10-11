@@ -12,9 +12,6 @@
 #define FAKE_LOCATION_LATITUDE 38.034039
 #define FAKE_LOCATION_LONGITUDE -78.499479
 
-#define AGENCY_ID_UTS @"UVA"
-#define AGENCY_ID_CTS @"CTS"
-
 // Custom settings
 #define MAIN_DB @"HoosBus-GTFS"
 #define PRODUCT_ID_REMOVE_ADS @"com.yaoganglian.hoosbus.removeads"

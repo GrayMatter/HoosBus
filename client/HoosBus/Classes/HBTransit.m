@@ -19,7 +19,7 @@
 	} else {
 		NSMutableArray *res = [NSMutableArray array];
 		for (BTStop *stop in ss) {
-			if (stop.owner != CTS) {
+			if (![stop.agencyId isEqualToString:AGENCY_ID_CTS]) {
 				[res addObject:stop];
 			}
 		}
@@ -32,7 +32,7 @@
 	if ([BTAppSettings shouldDisplayCTSStops]) {
 		return YES;
 	} else {
-		return (s.owner != CTS);
+		return ![s.agencyId isEqualToString:AGENCY_ID_CTS];
 	}
 }
 
@@ -44,7 +44,7 @@
 		NSMutableArray *res = [NSMutableArray array];
 		for (BTPredictionEntry *entry in p) {
 			BTRoute *route = [self routeWithId:entry.routeId];
-			if (route.owner != CTS) {
+			if ([route.agencyId isEqualToString:AGENCY_ID_CTS]) {
 				[res addObject:entry];
 			}
 		}
@@ -58,10 +58,10 @@
 		return [[rs retain] autorelease];
 	} else {
 		NSMutableDictionary *rsCopy = [rs mutableCopy];
-		[rsCopy removeObjectForKey:@"CTS"];
+		[rsCopy removeObjectForKey:@"CAT"];
 		
 		NSMutableArray *sectionNames = [[rsCopy objectForKey:@"SectionNames"] mutableCopy];
-		[sectionNames removeObject:@"CTS"];
+		[sectionNames removeObject:@"CAT"];
 		
 		[rsCopy setObject:sectionNames forKey:@"SectionNames"];
 		[sectionNames release];

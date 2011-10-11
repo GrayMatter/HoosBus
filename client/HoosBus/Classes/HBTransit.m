@@ -12,7 +12,7 @@
 
 @implementation HBTransit
 
-- (NSArray *)filterStations:(NSArray *)ss 
+- (NSArray *)filterStops:(NSArray *)ss 
 {
 	if ([BTAppSettings shouldDisplayCTSStops]) {
 		return [[ss retain] autorelease];
@@ -27,7 +27,7 @@
 	}
 }
 
-- (BOOL)checkStation:(BTStop *)s
+- (BOOL)checkStop:(BTStop *)s
 {
 	if ([BTAppSettings shouldDisplayCTSStops]) {
 		return YES;

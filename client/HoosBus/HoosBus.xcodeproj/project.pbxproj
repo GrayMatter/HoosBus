@@ -180,7 +180,7 @@
 		89C4335D141B962B006088D2 /* BTAnnotation.m in Sources */ = {isa = PBXBuildFile; fileRef = 89C432DE141B962B006088D2 /* BTAnnotation.m */; };
 		89C4335E141B962B006088D2 /* BTPredictionEntry.m in Sources */ = {isa = PBXBuildFile; fileRef = 89C432E0141B962B006088D2 /* BTPredictionEntry.m */; };
 		89C4335F141B962B006088D2 /* BTRoute.m in Sources */ = {isa = PBXBuildFile; fileRef = 89C432E2141B962B006088D2 /* BTRoute.m */; };
-		89C43360141B962B006088D2 /* BTStation.m in Sources */ = {isa = PBXBuildFile; fileRef = 89C432E4141B962B006088D2 /* BTStation.m */; };
+		89C43360141B962B006088D2 /* BTStop.m in Sources */ = {isa = PBXBuildFile; fileRef = 89C432E4141B962B006088D2 /* BTStop.m */; };
 		89C43361141B962B006088D2 /* BTStationList.m in Sources */ = {isa = PBXBuildFile; fileRef = 89C432E6141B962B006088D2 /* BTStationList.m */; };
 		89C43362141B962B006088D2 /* addToFavs.png in Resources */ = {isa = PBXBuildFile; fileRef = 89C432E8141B962B006088D2 /* addToFavs.png */; };
 		89C43363141B962B006088D2 /* app_icon_placeholder.png in Resources */ = {isa = PBXBuildFile; fileRef = 89C432E9141B962B006088D2 /* app_icon_placeholder.png */; };
@@ -525,8 +525,8 @@
 		89C432E0141B962B006088D2 /* BTPredictionEntry.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BTPredictionEntry.m; sourceTree = "<group>"; };
 		89C432E1141B962B006088D2 /* BTRoute.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BTRoute.h; sourceTree = "<group>"; };
 		89C432E2141B962B006088D2 /* BTRoute.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BTRoute.m; sourceTree = "<group>"; };
-		89C432E3141B962B006088D2 /* BTStation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BTStation.h; sourceTree = "<group>"; };
-		89C432E4141B962B006088D2 /* BTStation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BTStation.m; sourceTree = "<group>"; };
+		89C432E3141B962B006088D2 /* BTStop.h */ = {isa = PBXFileReference; fileEncoding = 4; path = BTStop.h; sourceTree = "<group>"; };
+		89C432E4141B962B006088D2 /* BTStop.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BTStop.m; sourceTree = "<group>"; };
 		89C432E5141B962B006088D2 /* BTStationList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BTStationList.h; sourceTree = "<group>"; };
 		89C432E6141B962B006088D2 /* BTStationList.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BTStationList.m; sourceTree = "<group>"; };
 		89C432E8141B962B006088D2 /* addToFavs.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = addToFavs.png; sourceTree = "<group>"; };
@@ -1212,8 +1212,8 @@
 				89C432E0141B962B006088D2 /* BTPredictionEntry.m */,
 				89C432E1141B962B006088D2 /* BTRoute.h */,
 				89C432E2141B962B006088D2 /* BTRoute.m */,
-				89C432E3141B962B006088D2 /* BTStation.h */,
-				89C432E4141B962B006088D2 /* BTStation.m */,
+				89C432E3141B962B006088D2 /* BTStop.h */,
+				89C432E4141B962B006088D2 /* BTStop.m */,
 				89C432E5141B962B006088D2 /* BTStationList.h */,
 				89C432E6141B962B006088D2 /* BTStationList.m */,
 			);
@@ -1724,7 +1724,7 @@
 				89C4335D141B962B006088D2 /* BTAnnotation.m in Sources */,
 				89C4335E141B962B006088D2 /* BTPredictionEntry.m in Sources */,
 				89C4335F141B962B006088D2 /* BTRoute.m in Sources */,
-				89C43360141B962B006088D2 /* BTStation.m in Sources */,
+				89C43360141B962B006088D2 /* BTStop.m in Sources */,
 				89C43361141B962B006088D2 /* BTStationList.m in Sources */,
 				89C433B9141B962B006088D2 /* BTPredictionCell.m in Sources */,
 				89C433BB141B962B006088D2 /* BTRouteCell.m in Sources */,

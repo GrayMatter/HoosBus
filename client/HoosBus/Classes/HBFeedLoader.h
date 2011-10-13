@@ -11,13 +11,14 @@
 
 @interface HBFeedLoader : BTFeedLoader <NSXMLParserDelegate>
 {
-	BTPredictionEntry *entry; // info for one route
 	NSMutableString *contentOfCurrentElement;
 	NSUInteger tdCount;
 }
 
-@property (nonatomic, retain) BTPredictionEntry *entry;
 @property (nonatomic, retain) NSMutableString *contentOfCurrentElement;
+@property (nonatomic, retain) NSString * currentRouteShortName;
+@property (nonatomic, retain) NSString * currentDestination;
+@property (nonatomic, retain) NSString * currentETA;
 
 - (void)parseXMLData:(NSData *)xmlData parseError:(NSError **)error;
 

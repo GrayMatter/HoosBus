@@ -210,6 +210,10 @@
 		898FFB041446B43A000B7278 /* BTRouteCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 898FFAA91446B43A000B7278 /* BTRouteCell.m */; };
 		898FFB051446B43A000B7278 /* BTStopCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 898FFAAB1446B43A000B7278 /* BTStopCell.m */; };
 		89A9F7DE1443C39C00951A61 /* HoosBus-GTFS.db in Resources */ = {isa = PBXBuildFile; fileRef = 89A9F7DD1443C39C00951A61 /* HoosBus-GTFS.db */; };
+		89B5774F14472F60008AC5CF /* HIRC_white.png in Resources */ = {isa = PBXBuildFile; fileRef = 89B5774B14472F60008AC5CF /* HIRC_white.png */; };
+		89B5775014472F60008AC5CF /* HIRC_white@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 89B5774C14472F60008AC5CF /* HIRC_white@2x.png */; };
+		89B5775114472F60008AC5CF /* HIRC.png in Resources */ = {isa = PBXBuildFile; fileRef = 89B5774D14472F60008AC5CF /* HIRC.png */; };
+		89B5775214472F60008AC5CF /* HIRC@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 89B5774E14472F60008AC5CF /* HIRC@2x.png */; };
 		89BD90171300437F00ED4EE5 /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 89BD90151300437F00ED4EE5 /* Icon.png */; };
 		89BD90181300437F00ED4EE5 /* HoosBusIcon114x114.png in Resources */ = {isa = PBXBuildFile; fileRef = 89BD90161300437F00ED4EE5 /* HoosBusIcon114x114.png */; };
 		89BD90371300444200ED4EE5 /* HBFeedLoader.m in Sources */ = {isa = PBXBuildFile; fileRef = 89BD90361300444200ED4EE5 /* HBFeedLoader.m */; };
@@ -528,6 +532,10 @@
 		898FFAAA1446B43A000B7278 /* BTStopCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BTStopCell.h; sourceTree = "<group>"; };
 		898FFAAB1446B43A000B7278 /* BTStopCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BTStopCell.m; sourceTree = "<group>"; };
 		89A9F7DD1443C39C00951A61 /* HoosBus-GTFS.db */ = {isa = PBXFileReference; lastKnownFileType = file; path = "HoosBus-GTFS.db"; sourceTree = "<group>"; };
+		89B5774B14472F60008AC5CF /* HIRC_white.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = HIRC_white.png; sourceTree = "<group>"; };
+		89B5774C14472F60008AC5CF /* HIRC_white@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "HIRC_white@2x.png"; sourceTree = "<group>"; };
+		89B5774D14472F60008AC5CF /* HIRC.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = HIRC.png; sourceTree = "<group>"; };
+		89B5774E14472F60008AC5CF /* HIRC@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "HIRC@2x.png"; sourceTree = "<group>"; };
 		89BD90151300437F00ED4EE5 /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = "<group>"; };
 		89BD90161300437F00ED4EE5 /* HoosBusIcon114x114.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = HoosBusIcon114x114.png; sourceTree = "<group>"; };
 		89BD90341300444200ED4EE5 /* Settings.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Settings.h; sourceTree = "<group>"; };
@@ -910,6 +918,10 @@
 				898FF9C11446B178000B7278 /* ULB@2x.png */,
 				898FF9C21446B178000B7278 /* ULB_white.png */,
 				898FF9C31446B178000B7278 /* ULB_white@2x.png */,
+				89B5774B14472F60008AC5CF /* HIRC_white.png */,
+				89B5774C14472F60008AC5CF /* HIRC_white@2x.png */,
+				89B5774D14472F60008AC5CF /* HIRC.png */,
+				89B5774E14472F60008AC5CF /* HIRC@2x.png */,
 			);
 			path = RouteIcons;
 			sourceTree = "<group>";
@@ -1701,6 +1713,10 @@
 				898FFB001446B43A000B7278 /* yellow_rail.png in Resources */,
 				898FFB011446B43A000B7278 /* yellow_rail@2x.png in Resources */,
 				898FFB031446B43A000B7278 /* BTPredictionCell.xib in Resources */,
+				89B5774F14472F60008AC5CF /* HIRC_white.png in Resources */,
+				89B5775014472F60008AC5CF /* HIRC_white@2x.png in Resources */,
+				89B5775114472F60008AC5CF /* HIRC.png in Resources */,
+				89B5775214472F60008AC5CF /* HIRC@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

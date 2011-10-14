@@ -214,6 +214,7 @@
 		89B5775014472F60008AC5CF /* HIRC_white@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 89B5774C14472F60008AC5CF /* HIRC_white@2x.png */; };
 		89B5775114472F60008AC5CF /* HIRC.png in Resources */ = {isa = PBXBuildFile; fileRef = 89B5774D14472F60008AC5CF /* HIRC.png */; };
 		89B5775214472F60008AC5CF /* HIRC@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 89B5774E14472F60008AC5CF /* HIRC@2x.png */; };
+		89B5775814487F35008AC5CF /* ErrorCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 89B5775714487F35008AC5CF /* ErrorCell.m */; };
 		89BD90171300437F00ED4EE5 /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 89BD90151300437F00ED4EE5 /* Icon.png */; };
 		89BD90181300437F00ED4EE5 /* HoosBusIcon114x114.png in Resources */ = {isa = PBXBuildFile; fileRef = 89BD90161300437F00ED4EE5 /* HoosBusIcon114x114.png */; };
 		89BD90371300444200ED4EE5 /* HBFeedLoader.m in Sources */ = {isa = PBXBuildFile; fileRef = 89BD90361300444200ED4EE5 /* HBFeedLoader.m */; };
@@ -536,6 +537,8 @@
 		89B5774C14472F60008AC5CF /* HIRC_white@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "HIRC_white@2x.png"; sourceTree = "<group>"; };
 		89B5774D14472F60008AC5CF /* HIRC.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = HIRC.png; sourceTree = "<group>"; };
 		89B5774E14472F60008AC5CF /* HIRC@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "HIRC@2x.png"; sourceTree = "<group>"; };
+		89B5775614487F35008AC5CF /* ErrorCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ErrorCell.h; sourceTree = "<group>"; };
+		89B5775714487F35008AC5CF /* ErrorCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ErrorCell.m; sourceTree = "<group>"; };
 		89BD90151300437F00ED4EE5 /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = "<group>"; };
 		89BD90161300437F00ED4EE5 /* HoosBusIcon114x114.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = HoosBusIcon114x114.png; sourceTree = "<group>"; };
 		89BD90341300444200ED4EE5 /* Settings.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Settings.h; sourceTree = "<group>"; };
@@ -1419,6 +1422,8 @@
 				89FE977B142421A500FF18EC /* FastScrollingCell.m */,
 				89FE977C142421A500FF18EC /* LoadingCell.h */,
 				89FE977D142421A500FF18EC /* LoadingCell.m */,
+				89B5775614487F35008AC5CF /* ErrorCell.h */,
+				89B5775714487F35008AC5CF /* ErrorCell.m */,
 			);
 			path = HATableViewCells;
 			sourceTree = "<group>";
@@ -1804,6 +1809,7 @@
 				898FFB021446B43A000B7278 /* BTPredictionCell.m in Sources */,
 				898FFB041446B43A000B7278 /* BTRouteCell.m in Sources */,
 				898FFB051446B43A000B7278 /* BTStopCell.m in Sources */,
+				89B5775814487F35008AC5CF /* ErrorCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

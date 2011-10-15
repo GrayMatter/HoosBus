@@ -218,7 +218,7 @@
 		89BD90171300437F00ED4EE5 /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 89BD90151300437F00ED4EE5 /* Icon.png */; };
 		89BD90181300437F00ED4EE5 /* HoosBusIcon114x114.png in Resources */ = {isa = PBXBuildFile; fileRef = 89BD90161300437F00ED4EE5 /* HoosBusIcon114x114.png */; };
 		89BD90371300444200ED4EE5 /* HBFeedLoader.m in Sources */ = {isa = PBXBuildFile; fileRef = 89BD90361300444200ED4EE5 /* HBFeedLoader.m */; };
-		89BD904D1300456F00ED4EE5 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 89BD904C1300456F00ED4EE5 /* MapKit.framework */; };
+		89BD904D1300456F00ED4EE5 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 89BD904C1300456F00ED4EE5 /* MapKit.framework */; settings = {ATTRIBUTES = (Required, ); }; };
 		89BD904F1300456F00ED4EE5 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 89BD904E1300456F00ED4EE5 /* SystemConfiguration.framework */; };
 		89BD90551300458300ED4EE5 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 89BD90541300458300ED4EE5 /* CoreLocation.framework */; };
 		89BD905B1300459500ED4EE5 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 89BD905A1300459500ED4EE5 /* CFNetwork.framework */; };
@@ -1858,7 +1858,10 @@
 		898B320C130D77ED002E8AE1 /* Distribution */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				ARCHS = (
+					armv6,
+					armv7,
+				);
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Yaogang Lian";
 				GCC_C_LANGUAGE_STANDARD = c99;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
@@ -1900,7 +1903,10 @@
 		C01FCF4F08A954540054247B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				ARCHS = (
+					armv6,
+					armv7,
+				);
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Yaogang Lian (648N56XSVL)";
 				GCC_C_LANGUAGE_STANDARD = c99;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
@@ -1922,7 +1928,10 @@
 		C01FCF5008A954540054247B /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				ARCHS = (
+					armv6,
+					armv7,
+				);
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Yaogang Lian";
 				GCC_C_LANGUAGE_STANDARD = c99;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;

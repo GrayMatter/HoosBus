@@ -1876,7 +1876,7 @@
 					"-weak_library",
 					/usr/lib/libSystem.B.dylib,
 				);
-				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "848B7323-ACBE-40DB-B3FF-8F1A53EDD841";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "17EF0666-DE59-40E3-85E0-4376508D48A6";
 				SDKROOT = iphoneos;
 			};
 			name = Distribution;
@@ -1946,7 +1946,7 @@
 					"-weak_library",
 					/usr/lib/libSystem.B.dylib,
 				);
-				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "848B7323-ACBE-40DB-B3FF-8F1A53EDD841";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "17EF0666-DE59-40E3-85E0-4376508D48A6";
 				SDKROOT = iphoneos;
 			};
 			name = Release;

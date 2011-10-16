@@ -1825,7 +1825,6 @@
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = HoosBus_Prefix.pch;
-				GCC_VERSION = com.apple.compilers.llvmgcc42;
 				INFOPLIST_FILE = "HoosBus-Info.plist";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1843,7 +1842,6 @@
 				COPY_PHASE_STRIP = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = HoosBus_Prefix.pch;
-				GCC_VERSION = com.apple.compilers.llvmgcc42;
 				INFOPLIST_FILE = "HoosBus-Info.plist";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1864,6 +1862,7 @@
 				);
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Yaogang Lian";
 				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_VERSION = "";
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				HEADER_SEARCH_PATHS = /usr/include/libxml2;
@@ -1888,7 +1887,6 @@
 				COPY_PHASE_STRIP = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = HoosBus_Prefix.pch;
-				GCC_VERSION = com.apple.compilers.llvmgcc42;
 				INFOPLIST_FILE = "HoosBus-Info.plist";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1909,6 +1907,7 @@
 				);
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Yaogang Lian (648N56XSVL)";
 				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_VERSION = "";
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				HEADER_SEARCH_PATHS = /usr/include/libxml2;
@@ -1920,7 +1919,7 @@
 					"-weak_library",
 					/usr/lib/libSystem.B.dylib,
 				);
-				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "5CD3E6F1-AF82-4F4B-B5C5-317DE3F6B34F";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "5ED2FDA8-FE26-4431-A461-5C4761B74C31";
 				SDKROOT = iphoneos;
 			};
 			name = Debug;
@@ -1934,6 +1933,7 @@
 				);
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Yaogang Lian";
 				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_VERSION = "";
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				HEADER_SEARCH_PATHS = /usr/include/libxml2;

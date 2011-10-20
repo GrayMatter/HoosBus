@@ -61,18 +61,3 @@
 // FAQ, Blog
 #define URL_FAQ @"http://artisticfrog.com/cross_promote/hoosbus/faq.xml"
 #define URL_BLOG @"http://happenapps.tumblr.com"
-
-// Twitter
-#define OAUTH_CONSUMER_KEY @"4lz7dcG5YHDD8EJEi95okg"
-#define OAUTH_CONSUMER_SECRET @"Af4Fp5s8cTzjgRpiOzddh0LeoCQg8NaDg6VdMC8Aw"
-#define TWITTER_SHARE_MESSAGE @"I am using HoosBus to check bus arrival times for UTS and CTS routes! #UVA #Cville #iPhone #HoosBus http://goo.gl/B2J9T"
-
-// Facebook
-#define FB_API_KEY @"76d6e80d1aac383b41662c24bd69f2fc"
-#define FB_API_SECRET @"077b7e9d722d7d7f4619c84b4ba69d4e"
-#define FB_SHARE_MESSAGE @""
-#define FB_SHARE_ATTACHMENT @"{\"name\":\"HoosBus\",\"href\":\"http://bit.ly/9iZokR\",\"description\":\"The must-have iPhone app for every bus rider in C'ville!\",\"media\":[{\"type\":\"image\",\"src\":\"http://artisticfrog.com/cross_promote/hoosbus/icon90.png\",\"href\":\"http://bit.ly/9iZokR\"}],\"properties\":{\"Download now for free\":{\"text\":\"iTunes App Store\",\"href\":\"http://bit.ly/9iZokR\"}}}"
-
-// Email
-#define STRING_EMAIL_SUBJECT @"Hey, check out HoosBus!"
-#define STRING_EMAIL_BODY @"Hey!\n\nCheck out HoosBus, the must-have iPhone app for C'ville bus riders!\n\nDownload here for free:\nhttp://goo.gl/qQ1EJ\n\nHave a nice ride!"

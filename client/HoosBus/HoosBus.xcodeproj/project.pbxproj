@@ -38,13 +38,13 @@
 		8906B6C014E47018007C22AE /* TFHpple.m in Sources */ = {isa = PBXBuildFile; fileRef = 8906B68F14E47018007C22AE /* TFHpple.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		8906B6C114E47018007C22AE /* TFHppleElement.m in Sources */ = {isa = PBXBuildFile; fileRef = 8906B69114E47018007C22AE /* TFHppleElement.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		8906B6C214E47018007C22AE /* XPathQuery.m in Sources */ = {isa = PBXBuildFile; fileRef = 8906B69314E47018007C22AE /* XPathQuery.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		8906B6C314E47018007C22AE /* DDAbstractDatabaseLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = 8906B69614E47018007C22AE /* DDAbstractDatabaseLogger.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		8906B6C414E47018007C22AE /* DDASLLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = 8906B69814E47018007C22AE /* DDASLLogger.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		8906B6C514E47018007C22AE /* DDFileLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = 8906B69A14E47018007C22AE /* DDFileLogger.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		8906B6C614E47018007C22AE /* DDLog.m in Sources */ = {isa = PBXBuildFile; fileRef = 8906B69C14E47018007C22AE /* DDLog.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		8906B6C714E47018007C22AE /* DDTTYLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = 8906B69E14E47018007C22AE /* DDTTYLogger.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		8906B6C814E47018007C22AE /* ContextFilterLogFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = 8906B6A114E47018007C22AE /* ContextFilterLogFormatter.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		8906B6C914E47018007C22AE /* DispatchQueueLogFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = 8906B6A314E47018007C22AE /* DispatchQueueLogFormatter.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		8906B6C314E47018007C22AE /* DDAbstractDatabaseLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = 8906B69614E47018007C22AE /* DDAbstractDatabaseLogger.m */; };
+		8906B6C414E47018007C22AE /* DDASLLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = 8906B69814E47018007C22AE /* DDASLLogger.m */; };
+		8906B6C514E47018007C22AE /* DDFileLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = 8906B69A14E47018007C22AE /* DDFileLogger.m */; };
+		8906B6C614E47018007C22AE /* DDLog.m in Sources */ = {isa = PBXBuildFile; fileRef = 8906B69C14E47018007C22AE /* DDLog.m */; };
+		8906B6C714E47018007C22AE /* DDTTYLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = 8906B69E14E47018007C22AE /* DDTTYLogger.m */; };
+		8906B6C814E47018007C22AE /* ContextFilterLogFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = 8906B6A114E47018007C22AE /* ContextFilterLogFormatter.m */; };
+		8906B6C914E47018007C22AE /* DispatchQueueLogFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = 8906B6A314E47018007C22AE /* DispatchQueueLogFormatter.m */; };
 		8906B6CA14E47018007C22AE /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 8906B6A614E47018007C22AE /* MBProgressHUD.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		8906B6CB14E47018007C22AE /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 8906B6A914E47018007C22AE /* Reachability.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		890CCE9A144484C200797298 /* UIColor+Utilities.m in Sources */ = {isa = PBXBuildFile; fileRef = 890CCE99144484C200797298 /* UIColor+Utilities.m */; };
@@ -1715,6 +1715,7 @@
 					armv6,
 					armv7,
 				);
+				CLANG_ENABLE_OBJC_ARC = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Yaogang Lian";
 				GCC_C_LANGUAGE_STANDARD = c99;
 				GCC_VERSION = "";
@@ -1761,6 +1762,7 @@
 					armv6,
 					armv7,
 				);
+				CLANG_ENABLE_OBJC_ARC = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Yaogang Lian (648N56XSVL)";
 				GCC_C_LANGUAGE_STANDARD = c99;
 				GCC_VERSION = "";
@@ -1787,6 +1789,7 @@
 					armv6,
 					armv7,
 				);
+				CLANG_ENABLE_OBJC_ARC = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Yaogang Lian";
 				GCC_C_LANGUAGE_STANDARD = c99;
 				GCC_VERSION = "";

@@ -13,16 +13,16 @@
 		1DF5F4E00D08C38300B7A737 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DF5F4DF0D08C38300B7A737 /* UIKit.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		288765FD0DF74451002DB57D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 288765FC0DF74451002DB57D /* CoreGraphics.framework */; };
 		28AD733F0D9D9553002E5188 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 28AD733E0D9D9553002E5188 /* MainWindow.xib */; };
-		8906B6AA14E47018007C22AE /* Appirater.m in Sources */ = {isa = PBXBuildFile; fileRef = 8906B65F14E47018007C22AE /* Appirater.m */; };
-		8906B6AB14E47018007C22AE /* ASIAuthenticationDialog.m in Sources */ = {isa = PBXBuildFile; fileRef = 8906B66214E47018007C22AE /* ASIAuthenticationDialog.m */; };
-		8906B6AC14E47018007C22AE /* ASIDataCompressor.m in Sources */ = {isa = PBXBuildFile; fileRef = 8906B66514E47018007C22AE /* ASIDataCompressor.m */; };
-		8906B6AD14E47018007C22AE /* ASIDataDecompressor.m in Sources */ = {isa = PBXBuildFile; fileRef = 8906B66714E47018007C22AE /* ASIDataDecompressor.m */; };
-		8906B6AE14E47018007C22AE /* ASIDownloadCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 8906B66914E47018007C22AE /* ASIDownloadCache.m */; };
-		8906B6AF14E47018007C22AE /* ASIFormDataRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 8906B66B14E47018007C22AE /* ASIFormDataRequest.m */; };
-		8906B6B014E47018007C22AE /* ASIHTTPRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 8906B66D14E47018007C22AE /* ASIHTTPRequest.m */; };
-		8906B6B114E47018007C22AE /* ASIInputStream.m in Sources */ = {isa = PBXBuildFile; fileRef = 8906B67114E47018007C22AE /* ASIInputStream.m */; };
-		8906B6B214E47018007C22AE /* ASINetworkQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = 8906B67314E47018007C22AE /* ASINetworkQueue.m */; };
-		8906B6B314E47018007C22AE /* EGORefreshTableHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8906B67914E47018007C22AE /* EGORefreshTableHeaderView.m */; };
+		8906B6AA14E47018007C22AE /* Appirater.m in Sources */ = {isa = PBXBuildFile; fileRef = 8906B65F14E47018007C22AE /* Appirater.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		8906B6AB14E47018007C22AE /* ASIAuthenticationDialog.m in Sources */ = {isa = PBXBuildFile; fileRef = 8906B66214E47018007C22AE /* ASIAuthenticationDialog.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		8906B6AC14E47018007C22AE /* ASIDataCompressor.m in Sources */ = {isa = PBXBuildFile; fileRef = 8906B66514E47018007C22AE /* ASIDataCompressor.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		8906B6AD14E47018007C22AE /* ASIDataDecompressor.m in Sources */ = {isa = PBXBuildFile; fileRef = 8906B66714E47018007C22AE /* ASIDataDecompressor.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		8906B6AE14E47018007C22AE /* ASIDownloadCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 8906B66914E47018007C22AE /* ASIDownloadCache.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		8906B6AF14E47018007C22AE /* ASIFormDataRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 8906B66B14E47018007C22AE /* ASIFormDataRequest.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		8906B6B014E47018007C22AE /* ASIHTTPRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 8906B66D14E47018007C22AE /* ASIHTTPRequest.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		8906B6B114E47018007C22AE /* ASIInputStream.m in Sources */ = {isa = PBXBuildFile; fileRef = 8906B67114E47018007C22AE /* ASIInputStream.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		8906B6B214E47018007C22AE /* ASINetworkQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = 8906B67314E47018007C22AE /* ASINetworkQueue.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		8906B6B314E47018007C22AE /* EGORefreshTableHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8906B67914E47018007C22AE /* EGORefreshTableHeaderView.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		8906B6B414E47018007C22AE /* blackArrow.png in Resources */ = {isa = PBXBuildFile; fileRef = 8906B67B14E47018007C22AE /* blackArrow.png */; };
 		8906B6B514E47018007C22AE /* blackArrow@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8906B67C14E47018007C22AE /* blackArrow@2x.png */; };
 		8906B6B614E47018007C22AE /* blueArrow.png in Resources */ = {isa = PBXBuildFile; fileRef = 8906B67D14E47018007C22AE /* blueArrow.png */; };
@@ -32,21 +32,21 @@
 		8906B6BA14E47018007C22AE /* whiteArrow.png in Resources */ = {isa = PBXBuildFile; fileRef = 8906B68114E47018007C22AE /* whiteArrow.png */; };
 		8906B6BB14E47018007C22AE /* whiteArrow@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8906B68214E47018007C22AE /* whiteArrow@2x.png */; };
 		8906B6BC14E47018007C22AE /* libFlurryAnalytics.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8906B68514E47018007C22AE /* libFlurryAnalytics.a */; };
-		8906B6BD14E47018007C22AE /* FMDatabase.m in Sources */ = {isa = PBXBuildFile; fileRef = 8906B68814E47018007C22AE /* FMDatabase.m */; };
-		8906B6BE14E47018007C22AE /* FMDatabaseAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 8906B68A14E47018007C22AE /* FMDatabaseAdditions.m */; };
-		8906B6BF14E47018007C22AE /* FMResultSet.m in Sources */ = {isa = PBXBuildFile; fileRef = 8906B68C14E47018007C22AE /* FMResultSet.m */; };
-		8906B6C014E47018007C22AE /* TFHpple.m in Sources */ = {isa = PBXBuildFile; fileRef = 8906B68F14E47018007C22AE /* TFHpple.m */; };
-		8906B6C114E47018007C22AE /* TFHppleElement.m in Sources */ = {isa = PBXBuildFile; fileRef = 8906B69114E47018007C22AE /* TFHppleElement.m */; };
-		8906B6C214E47018007C22AE /* XPathQuery.m in Sources */ = {isa = PBXBuildFile; fileRef = 8906B69314E47018007C22AE /* XPathQuery.m */; };
-		8906B6C314E47018007C22AE /* DDAbstractDatabaseLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = 8906B69614E47018007C22AE /* DDAbstractDatabaseLogger.m */; };
-		8906B6C414E47018007C22AE /* DDASLLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = 8906B69814E47018007C22AE /* DDASLLogger.m */; };
-		8906B6C514E47018007C22AE /* DDFileLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = 8906B69A14E47018007C22AE /* DDFileLogger.m */; };
-		8906B6C614E47018007C22AE /* DDLog.m in Sources */ = {isa = PBXBuildFile; fileRef = 8906B69C14E47018007C22AE /* DDLog.m */; };
-		8906B6C714E47018007C22AE /* DDTTYLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = 8906B69E14E47018007C22AE /* DDTTYLogger.m */; };
-		8906B6C814E47018007C22AE /* ContextFilterLogFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = 8906B6A114E47018007C22AE /* ContextFilterLogFormatter.m */; };
-		8906B6C914E47018007C22AE /* DispatchQueueLogFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = 8906B6A314E47018007C22AE /* DispatchQueueLogFormatter.m */; };
-		8906B6CA14E47018007C22AE /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 8906B6A614E47018007C22AE /* MBProgressHUD.m */; };
-		8906B6CB14E47018007C22AE /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 8906B6A914E47018007C22AE /* Reachability.m */; };
+		8906B6BD14E47018007C22AE /* FMDatabase.m in Sources */ = {isa = PBXBuildFile; fileRef = 8906B68814E47018007C22AE /* FMDatabase.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		8906B6BE14E47018007C22AE /* FMDatabaseAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 8906B68A14E47018007C22AE /* FMDatabaseAdditions.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		8906B6BF14E47018007C22AE /* FMResultSet.m in Sources */ = {isa = PBXBuildFile; fileRef = 8906B68C14E47018007C22AE /* FMResultSet.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		8906B6C014E47018007C22AE /* TFHpple.m in Sources */ = {isa = PBXBuildFile; fileRef = 8906B68F14E47018007C22AE /* TFHpple.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		8906B6C114E47018007C22AE /* TFHppleElement.m in Sources */ = {isa = PBXBuildFile; fileRef = 8906B69114E47018007C22AE /* TFHppleElement.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		8906B6C214E47018007C22AE /* XPathQuery.m in Sources */ = {isa = PBXBuildFile; fileRef = 8906B69314E47018007C22AE /* XPathQuery.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		8906B6C314E47018007C22AE /* DDAbstractDatabaseLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = 8906B69614E47018007C22AE /* DDAbstractDatabaseLogger.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		8906B6C414E47018007C22AE /* DDASLLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = 8906B69814E47018007C22AE /* DDASLLogger.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		8906B6C514E47018007C22AE /* DDFileLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = 8906B69A14E47018007C22AE /* DDFileLogger.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		8906B6C614E47018007C22AE /* DDLog.m in Sources */ = {isa = PBXBuildFile; fileRef = 8906B69C14E47018007C22AE /* DDLog.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		8906B6C714E47018007C22AE /* DDTTYLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = 8906B69E14E47018007C22AE /* DDTTYLogger.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		8906B6C814E47018007C22AE /* ContextFilterLogFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = 8906B6A114E47018007C22AE /* ContextFilterLogFormatter.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		8906B6C914E47018007C22AE /* DispatchQueueLogFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = 8906B6A314E47018007C22AE /* DispatchQueueLogFormatter.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		8906B6CA14E47018007C22AE /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 8906B6A614E47018007C22AE /* MBProgressHUD.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		8906B6CB14E47018007C22AE /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 8906B6A914E47018007C22AE /* Reachability.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		890CCE9A144484C200797298 /* UIColor+Utilities.m in Sources */ = {isa = PBXBuildFile; fileRef = 890CCE99144484C200797298 /* UIColor+Utilities.m */; };
 		893BAF0714256BC00002BA86 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 893BAF0614256BC00002BA86 /* QuartzCore.framework */; };
 		8977616E141C514100390D27 /* routesToDisplay.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8977611D141C514100390D27 /* routesToDisplay.plist */; };
@@ -1673,16 +1673,16 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ENABLE_OBJC_ARC = YES;
 				COPY_PHASE_STRIP = NO;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = HoosBus_Prefix.pch;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				INFOPLIST_FILE = "HoosBus-Info.plist";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
-					"\"$(SRCROOT)/../../../ThirdParty/FlurryLib2.8.4\"",
-					"\"$(SRCROOT)/../../../ThirdParty/YAJL\"",
 					"\"$(SRCROOT)/../../../Vendor/FlurryAnalytics3.0.2\"",
 				);
 				PRODUCT_NAME = HoosBus;
@@ -1693,14 +1693,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ENABLE_OBJC_ARC = YES;
 				COPY_PHASE_STRIP = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = HoosBus_Prefix.pch;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				INFOPLIST_FILE = "HoosBus-Info.plist";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
-					"\"$(SRCROOT)/../../../ThirdParty/FlurryLib2.8.4\"",
-					"\"$(SRCROOT)/../../../ThirdParty/YAJL\"",
 					"\"$(SRCROOT)/../../../Vendor/FlurryAnalytics3.0.2\"",
 				);
 				PRODUCT_NAME = HoosBus;
@@ -1739,14 +1739,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ENABLE_OBJC_ARC = YES;
 				COPY_PHASE_STRIP = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = HoosBus_Prefix.pch;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				INFOPLIST_FILE = "HoosBus-Info.plist";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
-					"\"$(SRCROOT)/../../../ThirdParty/FlurryLib2.8.4\"",
-					"\"$(SRCROOT)/../../../ThirdParty/YAJL\"",
 					"\"$(SRCROOT)/../../../Vendor/FlurryAnalytics3.0.2\"",
 				);
 				PRODUCT_NAME = HoosBus;

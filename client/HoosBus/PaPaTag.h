@@ -18,7 +18,7 @@
 @interface PaPaTag : NSObject
 
 // Initialization
-- (id)initWithNode:(xmlNodePtr)node;
+- (id)initWithNode:(xmlNodePtr)node inDoc:(PaPaDoc *)doc;
 
 // Access properties
 - (NSString *)content;

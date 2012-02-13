@@ -7,12 +7,13 @@
 //
 
 #import "PaPaDoc.h"
+#import "PaPaTag.h"
 
 @interface PaPaDoc () {
 @private
     NSData * data;
     BOOL isXML;
-    xmlDocPtr doc;
+    xmlDocPtr _doc;
     xmlNodePtr _rootNode;
     xmlXPathContextPtr _xpathCtx;
 }
@@ -21,6 +22,8 @@
 
 
 @implementation PaPaDoc
+
+@synthesize rootTag;
 
 + (PaPaDoc *)docWithXMLData:(NSData *)data
 {
@@ -43,29 +46,31 @@
         isXML = b;
         
         if (isXML) {
-            doc = xmlReadMemory([data bytes], (int)[data length], "", NULL, XML_PARSE_RECOVER);
+            _doc = xmlReadMemory([data bytes], (int)[data length], "", NULL, XML_PARSE_RECOVER);
         } else {
-            doc = htmlReadMemory([data bytes], (int)[data length], "", NULL, HTML_PARSE_NOWARNING | HTML_PARSE_NOERROR);
+            _doc = htmlReadMemory([data bytes], (int)[data length], "", NULL, HTML_PARSE_NOWARNING | HTML_PARSE_NOERROR);
         }
         
-        if (doc == NULL) {
+        if (_doc == NULL) {
             NSLog(@"Unable to parse.");
             return nil;
         }
         
-        _rootNode = xmlDocGetRootElement(doc);
+        _rootNode = xmlDocGetRootElement(_doc);
         if (_rootNode == NULL) {
             NSLog(@"empty document");
-            xmlFreeDoc(doc);
+            xmlFreeDoc(_doc);
             return nil;
         }
         
+        rootTag = [[PaPaTag alloc] initWithNode:_rootNode inDoc:self];
+        
         /* Create xpath evaluation context */
-        _xpathCtx = xmlXPathNewContext(doc);
+        _xpathCtx = xmlXPathNewContext(_doc);
         if (_xpathCtx == NULL)
         {
             NSLog(@"Unable to create XPath context.");
-            xmlFreeDoc(doc);
+            xmlFreeDoc(_doc);
             return nil;
         }
     }
@@ -80,7 +85,7 @@
 - (void)dealloc
 {
     xmlXPathFreeContext(_xpathCtx);
-    xmlFreeDoc(doc);
+    xmlFreeDoc(_doc);
 }
 
 @end

@@ -13,7 +13,11 @@
 #import <libxml/xpath.h>
 #import <libxml/xpathInternals.h>
 
+@class PaPaTag;
+
 @interface PaPaDoc : NSObject
+
+@property (nonatomic, strong) PaPaTag * rootTag;
 
 + (PaPaDoc *)docWithXMLData:(NSData *)data;
 + (PaPaDoc *)docWithHTMLData:(NSData *)data;

@@ -12,7 +12,7 @@
 @interface PaPaTag () {
 @private
     xmlNodePtr _node;
-    PaPaDoc * papaDoc;
+    PaPaDoc * _doc;
 }
 - (NSArray *)performXPathQuery:(NSString *)query;
 @end
@@ -23,11 +23,12 @@
 
 #pragma mark - Initialization
 
-- (id)initWithNode:(xmlNodePtr)node
+- (id)initWithNode:(xmlNodePtr)node inDoc:(PaPaDoc *)doc
 {
     self = [super init];
     if (self) {
         _node = node;
+        _doc = doc;
     }
     return self;
 }
@@ -78,7 +79,7 @@
 - (PaPaTag *)parent
 {
     if (_node->parent) {
-        return [[PaPaTag alloc] initWithNode:_node->parent];
+        return [[PaPaTag alloc] initWithNode:_node->parent inDoc:_doc];
     } else {
         return nil;
     }
@@ -90,7 +91,7 @@
     
     xmlNodePtr child;
     for (child = _node->children; child; child = child->next) {
-        PaPaTag * tag = [[PaPaTag alloc] initWithNode:child];
+        PaPaTag * tag = [[PaPaTag alloc] initWithNode:child inDoc:_doc];
         [children addObject:tag];
     }
     
@@ -104,7 +105,7 @@
     for (child = _node->children; child; child = child->next) {
         //if (xmlStrcmp(children->name, (const xmlChar *)"Stories") == 0) {
         if (strcmp((char *)child->name, [name cStringUsingEncoding:NSUTF8StringEncoding])==0) {
-            [ret addObject:[[PaPaTag alloc] initWithNode:child]];
+            [ret addObject:[[PaPaTag alloc] initWithNode:child inDoc:_doc]];
         }
     }
     return [NSArray arrayWithArray:ret];
@@ -113,7 +114,7 @@
 - (PaPaTag *)nextSibling
 {
     if (_node->next) {
-        return [[PaPaTag alloc] initWithNode:_node->next];
+        return [[PaPaTag alloc] initWithNode:_node->next inDoc:_doc];
     } else {
         return nil;
     }
@@ -122,7 +123,7 @@
 - (PaPaTag *)previousSibling
 {
     if (_node->prev) {
-        return [[PaPaTag alloc] initWithNode:_node->prev];
+        return [[PaPaTag alloc] initWithNode:_node->prev inDoc:_doc];
     } else {
         return nil;
     }
@@ -148,7 +149,7 @@
 
 - (NSArray *)performXPathQuery:(NSString *)query
 {
-    xmlXPathContextPtr ctx = [papaDoc xpathCtx];
+    xmlXPathContextPtr ctx = [_doc xpathCtx];
     ctx->node = _node;
     
     xmlXPathObjectPtr xpathObj = xmlXPathEvalExpression((xmlChar *)[query cStringUsingEncoding:NSUTF8StringEncoding],  ctx);
@@ -167,7 +168,7 @@
     NSMutableArray * resultNodes = [NSMutableArray array];
     for (NSInteger i = 0; i < nodes->nodeNr; i++) {
         xmlNodePtr currentNode = nodes->nodeTab[i];
-        PaPaTag * tag = [[PaPaTag alloc] initWithNode:currentNode];
+        PaPaTag * tag = [[PaPaTag alloc] initWithNode:currentNode inDoc:_doc];
         [resultNodes addObject:tag];
     }
     

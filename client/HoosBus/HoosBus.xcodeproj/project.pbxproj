@@ -46,6 +46,8 @@
 		8906B6CB14E47018007C22AE /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 8906B6A914E47018007C22AE /* Reachability.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		890CCE9A144484C200797298 /* UIColor+Utilities.m in Sources */ = {isa = PBXBuildFile; fileRef = 890CCE99144484C200797298 /* UIColor+Utilities.m */; };
 		893BAF0714256BC00002BA86 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 893BAF0614256BC00002BA86 /* QuartzCore.framework */; };
+		89697CB214E8A4110016E7B2 /* PaPaDoc.m in Sources */ = {isa = PBXBuildFile; fileRef = 89697CAF14E8A4110016E7B2 /* PaPaDoc.m */; };
+		89697CB314E8A4110016E7B2 /* PaPaTag.m in Sources */ = {isa = PBXBuildFile; fileRef = 89697CB114E8A4110016E7B2 /* PaPaTag.m */; };
 		8977616E141C514100390D27 /* routesToDisplay.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8977611D141C514100390D27 /* routesToDisplay.plist */; };
 		898FF9C41446B178000B7278 /* 10.png in Resources */ = {isa = PBXBuildFile; fileRef = 898FF9641446B178000B7278 /* 10.png */; };
 		898FF9C51446B178000B7278 /* 10@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 898FF9651446B178000B7278 /* 10@2x.png */; };
@@ -356,6 +358,11 @@
 		890CCE98144484C200797298 /* UIColor+Utilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+Utilities.h"; sourceTree = "<group>"; };
 		890CCE99144484C200797298 /* UIColor+Utilities.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+Utilities.m"; sourceTree = "<group>"; };
 		893BAF0614256BC00002BA86 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		89697CAD14E8A4110016E7B2 /* PaPa.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PaPa.h; sourceTree = "<group>"; };
+		89697CAE14E8A4110016E7B2 /* PaPaDoc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PaPaDoc.h; sourceTree = "<group>"; };
+		89697CAF14E8A4110016E7B2 /* PaPaDoc.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PaPaDoc.m; sourceTree = "<group>"; };
+		89697CB014E8A4110016E7B2 /* PaPaTag.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PaPaTag.h; sourceTree = "<group>"; };
+		89697CB114E8A4110016E7B2 /* PaPaTag.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PaPaTag.m; sourceTree = "<group>"; };
 		8977611D141C514100390D27 /* routesToDisplay.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = routesToDisplay.plist; sourceTree = "<group>"; };
 		898FF9641446B178000B7278 /* 10.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 10.png; sourceTree = "<group>"; };
 		898FF9651446B178000B7278 /* 10@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "10@2x.png"; sourceTree = "<group>"; };
@@ -744,6 +751,7 @@
 		8906B65C14E46FBB007C22AE /* Vendor */ = {
 			isa = PBXGroup;
 			children = (
+				89697CAC14E8A4110016E7B2 /* PaPa */,
 				8906B65D14E47018007C22AE /* Appirater */,
 				8906B66014E47018007C22AE /* ASIHttpRequest */,
 				8906B67514E47018007C22AE /* EGOTableViewPullRefresh */,
@@ -908,6 +916,19 @@
 			);
 			name = Reachability1.5;
 			path = ../../../Vendor/Reachability1.5;
+			sourceTree = "<group>";
+		};
+		89697CAC14E8A4110016E7B2 /* PaPa */ = {
+			isa = PBXGroup;
+			children = (
+				89697CAD14E8A4110016E7B2 /* PaPa.h */,
+				89697CAE14E8A4110016E7B2 /* PaPaDoc.h */,
+				89697CAF14E8A4110016E7B2 /* PaPaDoc.m */,
+				89697CB014E8A4110016E7B2 /* PaPaTag.h */,
+				89697CB114E8A4110016E7B2 /* PaPaTag.m */,
+			);
+			name = PaPa;
+			path = ../../../Vendor/PaPa;
 			sourceTree = "<group>";
 		};
 		8977611A141C514100390D27 /* Data */ = {
@@ -1636,6 +1657,8 @@
 				8906B6C914E47018007C22AE /* DispatchQueueLogFormatter.m in Sources */,
 				8906B6CA14E47018007C22AE /* MBProgressHUD.m in Sources */,
 				8906B6CB14E47018007C22AE /* Reachability.m in Sources */,
+				89697CB214E8A4110016E7B2 /* PaPaDoc.m in Sources */,
+				89697CB314E8A4110016E7B2 /* PaPaTag.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

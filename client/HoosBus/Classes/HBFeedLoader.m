@@ -23,8 +23,7 @@
 
 - (NSString *)dataSourceForStop:(BTStop *)stop
 {
-    return @"http://dl.dropbox.com/u/3445731/hoosbus.html";
-	//return [NSString stringWithFormat:@"http://avlweb.charlottesville.org/RTT/Public/RoutePositionET.aspx?PlatformNo=%@&Referrer=uvamobile", stop.stopCode];
+	return [NSString stringWithFormat:@"http://avlweb.charlottesville.org/RTT/Public/RoutePositionET.aspx?PlatformNo=%@&Referrer=uvamobile", stop.stopCode];
 }
 
 
@@ -39,11 +38,6 @@
         
         PaPaDoc * doc = [PaPaDoc docWithHTMLData:[request responseData]];
         NSArray * rows = [doc findAll:@"//tbody/tr"];
-        
-        if (rows == nil || [rows count] == 0) {
-            [self.delegate updatePrediction:nil];
-            return;
-        }
 		
         // Reset self.prediction
         [self.prediction removeAllObjects];

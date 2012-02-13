@@ -260,8 +260,6 @@
 		89BD907B130045F900ED4EE5 /* AddressBook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 89BD907A130045F900ED4EE5 /* AddressBook.framework */; };
 		89BD907D130045F900ED4EE5 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 89BD907C130045F900ED4EE5 /* AudioToolbox.framework */; };
 		89DB9B6B13A8DAA400A6EB4E /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 89DB9B6A13A8DAA400A6EB4E /* libz.dylib */; };
-		89F8382314E7420E00ED2DF0 /* PaPaDoc.m in Sources */ = {isa = PBXBuildFile; fileRef = 89F8382214E7420E00ED2DF0 /* PaPaDoc.m */; };
-		89F8382614E7421B00ED2DF0 /* PaPaTag.m in Sources */ = {isa = PBXBuildFile; fileRef = 89F8382514E7421B00ED2DF0 /* PaPaTag.m */; };
 		89FE97AA142421A500FF18EC /* AppViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 89FE9747142421A500FF18EC /* AppViewController.m */; };
 		89FE97AB142421A500FF18EC /* AppViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 89FE9748142421A500FF18EC /* AppViewController.xib */; };
 		89FE97AC142421A500FF18EC /* ClipView.m in Sources */ = {isa = PBXBuildFile; fileRef = 89FE974A142421A500FF18EC /* ClipView.m */; };
@@ -357,7 +355,6 @@
 		8906B6A914E47018007C22AE /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Reachability.m; sourceTree = "<group>"; };
 		890CCE98144484C200797298 /* UIColor+Utilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+Utilities.h"; sourceTree = "<group>"; };
 		890CCE99144484C200797298 /* UIColor+Utilities.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+Utilities.m"; sourceTree = "<group>"; };
-		892ACD8814E89E2E002E4030 /* PaPa.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PaPa.h; sourceTree = "<group>"; };
 		893BAF0614256BC00002BA86 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		8977611D141C514100390D27 /* routesToDisplay.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = routesToDisplay.plist; sourceTree = "<group>"; };
 		898FF9641446B178000B7278 /* 10.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 10.png; sourceTree = "<group>"; };
@@ -599,10 +596,6 @@
 		89BD907A130045F900ED4EE5 /* AddressBook.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AddressBook.framework; path = System/Library/Frameworks/AddressBook.framework; sourceTree = SDKROOT; };
 		89BD907C130045F900ED4EE5 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 		89DB9B6A13A8DAA400A6EB4E /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
-		89F8382114E7420E00ED2DF0 /* PaPaDoc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PaPaDoc.h; sourceTree = "<group>"; };
-		89F8382214E7420E00ED2DF0 /* PaPaDoc.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PaPaDoc.m; sourceTree = "<group>"; };
-		89F8382414E7421B00ED2DF0 /* PaPaTag.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PaPaTag.h; sourceTree = "<group>"; };
-		89F8382514E7421B00ED2DF0 /* PaPaTag.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PaPaTag.m; sourceTree = "<group>"; };
 		89FE9746142421A500FF18EC /* AppViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppViewController.h; sourceTree = "<group>"; };
 		89FE9747142421A500FF18EC /* AppViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppViewController.m; sourceTree = "<group>"; };
 		89FE9748142421A500FF18EC /* AppViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AppViewController.xib; sourceTree = "<group>"; };
@@ -692,11 +685,6 @@
 		29B97314FDCFA39411CA2CEA /* CustomTemplate */ = {
 			isa = PBXGroup;
 			children = (
-				892ACD8814E89E2E002E4030 /* PaPa.h */,
-				89F8382114E7420E00ED2DF0 /* PaPaDoc.h */,
-				89F8382214E7420E00ED2DF0 /* PaPaDoc.m */,
-				89F8382414E7421B00ED2DF0 /* PaPaTag.h */,
-				89F8382514E7421B00ED2DF0 /* PaPaTag.m */,
 				8906B65C14E46FBB007C22AE /* Vendor */,
 				89FE9741142421A500FF18EC /* HATools */,
 				898FFA351446B43A000B7278 /* BetterTransit */,
@@ -1648,8 +1636,6 @@
 				8906B6C914E47018007C22AE /* DispatchQueueLogFormatter.m in Sources */,
 				8906B6CA14E47018007C22AE /* MBProgressHUD.m in Sources */,
 				8906B6CB14E47018007C22AE /* Reachability.m in Sources */,
-				89F8382314E7420E00ED2DF0 /* PaPaDoc.m in Sources */,
-				89F8382614E7421B00ED2DF0 /* PaPaTag.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

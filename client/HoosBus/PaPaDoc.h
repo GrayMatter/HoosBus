@@ -25,4 +25,8 @@
 // Accessors
 - (xmlXPathContextPtr)xpathCtx;
 
+// Search with XPath queries
+- (NSArray *)findAll:(NSString *)query;
+- (PaPaTag *)findFirst:(NSString *)query;
+
 @end

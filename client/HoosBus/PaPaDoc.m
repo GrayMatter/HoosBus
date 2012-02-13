@@ -88,4 +88,16 @@
     xmlFreeDoc(_doc);
 }
 
+
+// Search with XPath queries
+- (NSArray *)findAll:(NSString *)query
+{
+    return [rootTag findAll:query];
+}
+
+- (PaPaTag *)findFirst:(NSString *)query
+{
+    return [rootTag findFirst:query];
+}
+
 @end

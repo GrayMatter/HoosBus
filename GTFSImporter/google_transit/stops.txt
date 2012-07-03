@@ -59,7 +59,6 @@
 86,15894,"Cherry Avenue at 6th Street SW",38.027377,-78.491004,http://avlweb.charlottesville.org/RTT/Public/RoutePositionET.aspx?PlatformTag=86
 87,15904,"Cherry Avenue at Independence Resource Center",38.028702,-78.493858,http://avlweb.charlottesville.org/RTT/Public/RoutePositionET.aspx?PlatformTag=87
 88,11585,"Cherry Ave at Shopping Ctr",38.028682,-78.494161,http://avlweb.charlottesville.org/RTT/Public/RoutePositionET.aspx?PlatformTag=88
-89,14552,"Cherry Ave & 9th St Sw",38.028690,-78.495480,http://avlweb.charlottesville.org/RTT/Public/RoutePositionET.aspx?PlatformTag=89
 90,14547,"Cherry Avenue at 10th Street SW",38.028455,-78.496840,http://avlweb.charlottesville.org/RTT/Public/RoutePositionET.aspx?PlatformTag=90
 91,14534,"Cherry Avenue at Hanover Street (eastbound)",38.025988,-78.500875,http://avlweb.charlottesville.org/RTT/Public/RoutePositionET.aspx?PlatformTag=91
 92,14523,"Rock Creek Road at Cherry Avenue",38.024343,-78.502744,http://avlweb.charlottesville.org/RTT/Public/RoutePositionET.aspx?PlatformTag=92
@@ -116,7 +115,6 @@
 147,12386,"Rialto Street at Monticello Avenue",38.023516,-78.477551,http://avlweb.charlottesville.org/RTT/Public/RoutePositionET.aspx?PlatformTag=147
 148,12607,"Rialto Street at Blenheim Avenue (southbound)",38.021981,-78.478691,http://avlweb.charlottesville.org/RTT/Public/RoutePositionET.aspx?PlatformTag=148
 149,12408,"Rialto Street at Blenheim Avenue (northbound)",38.022146,-78.478686,http://avlweb.charlottesville.org/RTT/Public/RoutePositionET.aspx?PlatformTag=149
-150,12034,"Avon Street at Bolling Avenue (northbound)",38.023676,-78.479547,http://avlweb.charlottesville.org/RTT/Public/RoutePositionET.aspx?PlatformTag=150
 151,11528,"Avon Street at Bolling Avenue (southbound)",38.023699,-78.479697,http://avlweb.charlottesville.org/RTT/Public/RoutePositionET.aspx?PlatformTag=151
 152,14228,"Monticello Avenue at 6th Street SE",38.025237,-78.480919,http://avlweb.charlottesville.org/RTT/Public/RoutePositionET.aspx?PlatformTag=152
 153,14237,"Monticello Avenue at 2nd Street SE",38.026604,-78.482111,http://avlweb.charlottesville.org/RTT/Public/RoutePositionET.aspx?PlatformTag=153
@@ -299,7 +297,6 @@
 374,14926,"College Drive at PVCC",38.007014,-78.484236,http://avlweb.charlottesville.org/RTT/Public/RoutePositionET.aspx?PlatformTag=374
 375,15106,"Montrose Avenue at Avon Street",38.022073,-78.480585,http://avlweb.charlottesville.org/RTT/Public/RoutePositionET.aspx?PlatformTag=375
 376,17333,"Downtown Transit Station",38.028965,-78.477501,http://avlweb.charlottesville.org/RTT/Public/RoutePositionET.aspx?PlatformTag=376
-377,11846,"JPA at Woodrow St",38.031267,-78.508190,http://avlweb.charlottesville.org/RTT/Public/RoutePositionET.aspx?PlatformTag=377
 378,14373,"Seminole Square Shopping Center at Marshall's",38.063828,-78.485711,http://avlweb.charlottesville.org/RTT/Public/RoutePositionET.aspx?PlatformTag=378
 379,13296,"Walmart",38.097085,-78.466637,http://avlweb.charlottesville.org/RTT/Public/RoutePositionET.aspx?PlatformTag=379
 381,13283,"Sam's Club",38.099941,-78.466628,http://avlweb.charlottesville.org/RTT/Public/RoutePositionET.aspx?PlatformTag=381
@@ -328,7 +325,7 @@
 413,11268,"University Ave at Chancellor St",38.035958,-78.501359,http://avlweb.charlottesville.org/RTT/Public/RoutePositionET.aspx?PlatformTag=413
 414,15272,"Cherry Avenue at Shamrock Road (westbound)",38.023749,-78.506648,http://avlweb.charlottesville.org/RTT/Public/RoutePositionET.aspx?PlatformTag=414
 415,10417,"Grady Avenue at 14th Street",38.040120,-78.496051,http://avlweb.charlottesville.org/RTT/Public/RoutePositionET.aspx?PlatformTag=415
-421,16389,"Emmet Street North at Lambeth (northbound)",38.042479,-78.505846,http://avlweb.charlottesville.org/RTT/Public/RoutePositionET.aspx?PlatformTag=421
+421,16389,"Emmet Street North at Lambeth (southbound)",38.042479,-78.505846,http://avlweb.charlottesville.org/RTT/Public/RoutePositionET.aspx?PlatformTag=421
 427,16701,"UVA Hospital on Lee Street",38.031727,-78.498143,http://avlweb.charlottesville.org/RTT/Public/RoutePositionET.aspx?PlatformTag=427
 432,13265,"Barracks Road Shopping Center at Fedex",38.048990,-78.504350,http://avlweb.charlottesville.org/RTT/Public/RoutePositionET.aspx?PlatformTag=432
 433,13157,"BRSC at McDonalds",38.048800,-78.504350,http://avlweb.charlottesville.org/RTT/Public/RoutePositionET.aspx?PlatformTag=433
@@ -349,7 +346,7 @@
 482,15199,"Hampton St at Rives St",38.019190,-78.469010,http://avlweb.charlottesville.org/RTT/Public/RoutePositionET.aspx?PlatformTag=482
 495,18005,"Garrett Street at Friendship Court",38.028320,-78.481410,http://avlweb.charlottesville.org/RTT/Public/RoutePositionET.aspx?PlatformTag=495
 496,18014,"Garrett Street at 4th Street SE",38.027880,-78.480230,http://avlweb.charlottesville.org/RTT/Public/RoutePositionET.aspx?PlatformTag=496
-498,16370,"Emmet Street North at Lambeth (southbound)",38.042331,-78.505632,http://avlweb.charlottesville.org/RTT/Public/RoutePositionET.aspx?PlatformTag=498
+498,16370,"Emmet Street North at Lambeth (northbound)",38.042331,-78.505632,http://avlweb.charlottesville.org/RTT/Public/RoutePositionET.aspx?PlatformTag=498
 500,17322,"Grove Road at Charlottesville High School",38.053137,-78.476691,http://avlweb.charlottesville.org/RTT/Public/RoutePositionET.aspx?PlatformTag=500
 503,15147,"Angus Road at Emmet Street N",38.059210,-78.495610,http://avlweb.charlottesville.org/RTT/Public/RoutePositionET.aspx?PlatformTag=503
 504,18022,"Gentry Lane at Walker School (northbound)",38.054800,-78.484050,http://avlweb.charlottesville.org/RTT/Public/RoutePositionET.aspx?PlatformTag=504
@@ -376,3 +373,4 @@
 545,17276,"Beverly Drive",38.027960,-78.449978,http://avlweb.charlottesville.org/RTT/Public/RoutePositionET.aspx?PlatformTag=545
 546,18226,"Wilton Farms Shelter @ Avemore",38.038188,-78.446082,http://avlweb.charlottesville.org/RTT/Public/RoutePositionET.aspx?PlatformTag=546
 547,17282,"Stoney Point Road Turnout",38.038003,-78.449679,http://avlweb.charlottesville.org/RTT/Public/RoutePositionET.aspx?PlatformTag=547
+552,,"Avon St & Bolling Ave",38.023644,-78.479609,http://avlweb.charlottesville.org/RTT/Public/RoutePositionET.aspx?PlatformTag=552

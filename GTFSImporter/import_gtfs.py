@@ -79,7 +79,7 @@ if os.path.exists(database_name):
 conn = sqlite3.connect(database_name)
 curs = conn.cursor()
 
-for folder in ("google_transit_UVA", "google_transit_Charlottesville"):
+for folder in ("google_transit_UVA", "google_transit"):
     # Creat the routes table
     table_columns = "route_id TEXT, agency_id TEXT, route_short_name TEXT, route_long_name TEXT"
     createTable(curs, 'routes', table_columns, "routes.txt", source_id)

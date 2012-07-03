@@ -10,8 +10,8 @@
 		<string>1#4</string>
 		<string>1#5</string>
 		<string>1#6</string>
-        <string>1#7</string>
-        <string>1#8</string>
+		<string>1#7</string>
+		<string>1#8</string>
 		<string>1#9</string>
 		<string>1#10</string>
 		<string>1#11</string>
@@ -22,7 +22,7 @@
 		<string>1#16</string>
 		<string>1#17</string>
 		<string>1#18</string>
-        <string>1#19</string>
+		<string>1#19</string>
 	</array>
 	<key>SectionNames</key>
 	<array>
@@ -37,8 +37,6 @@
 		<string>0#4</string>
 		<string>0#5</string>
 		<string>0#6</string>
-        <string>0#7</string>
-        <string>0#8</string>
 	</array>
 </dict>
 </plist>

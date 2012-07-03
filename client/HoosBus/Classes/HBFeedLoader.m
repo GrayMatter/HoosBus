@@ -8,7 +8,7 @@
 
 #import "HBFeedLoader.h"
 #import "BTPredictionEntry.h"
-#import "NSString+Trim.h"
+#import "NSString+Extras.h"
 #import "PaPa.h"
 
 @implementation HBFeedLoader
@@ -26,17 +26,15 @@
 	return [NSString stringWithFormat:@"http://avlweb.charlottesville.org/RTT/Public/RoutePositionET.aspx?PlatformNo=%@&Referrer=uvamobile", stop.stopCode];
 }
 
-
-#pragma mark -
-#pragma mark ASIHTTPRequest delegate methods
-
-- (void)requestDidFinish:(ASIHTTPRequest *)request
+- (void)getPredictionForStop:(BTStop *)stop
 {
-	int requestType = [[[request userInfo] objectForKey:@"request_type"] intValue];
-	if (requestType == REQUEST_TYPE_GET_FEED) {
-		DDLogVerbose(@"%@", [request responseString]);
-        
-        PaPaDoc * doc = [PaPaDoc docWithHTMLData:[request responseData]];
+    // Cancel previous requests
+    [httpClient.operationQueue cancelAllOperations];
+	
+	self.currentStop = stop;
+	
+    [httpClient getPath:[self dataSourceForStop:stop] parameters:nil success:^(AFHTTPRequestOperation *operation, id responseObject) {
+        PaPaDoc * doc = [PaPaDoc docWithHTMLData:(NSData *)responseObject];
         NSArray * rows = [doc findAll:@"//tbody/tr"];
 		
         // Reset self.prediction
@@ -72,14 +70,15 @@
                     entry.eta = eta;
                     [self.prediction addObject:entry];
                 }
-                
             }
         }
-
-done_download:
-		[UIApplication sharedApplication].networkActivityIndicatorVisible = NO;
-		[self.delegate updatePrediction:self.prediction];
-	}
+        
+        [self.delegate updatePrediction:self.prediction];
+        
+    } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
+        DDLogError(@"request did fail with error: %@", error);
+        [self.delegate updatePrediction:nil];
+    }];
 }
 
 @end

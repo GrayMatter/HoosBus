@@ -754,7 +754,7 @@
 				8906B65F14E47018007C22AE /* Appirater.m */,
 			);
 			name = Appirater;
-			path = ../../../Vendor/Appirater;
+			path = ../../Vendor/Appirater;
 			sourceTree = "<group>";
 		};
 		8906B67514E47018007C22AE /* EGOTableViewPullRefresh */ = {
@@ -764,7 +764,7 @@
 				8906B67A14E47018007C22AE /* Resources */,
 			);
 			name = EGOTableViewPullRefresh;
-			path = ../../../Vendor/EGOTableViewPullRefresh;
+			path = ../../Vendor/EGOTableViewPullRefresh;
 			sourceTree = "<group>";
 		};
 		8906B67614E47018007C22AE /* Classes */ = {
@@ -810,7 +810,7 @@
 				8906B68C14E47018007C22AE /* FMResultSet.m */,
 			);
 			name = FMDB;
-			path = ../../../Vendor/FMDB;
+			path = ../../Vendor/FMDB;
 			sourceTree = "<group>";
 		};
 		8906B69414E47018007C22AE /* Lumberjack */ = {
@@ -829,7 +829,7 @@
 				8906B69F14E47018007C22AE /* Extensions */,
 			);
 			name = Lumberjack;
-			path = ../../../Vendor/Lumberjack;
+			path = ../../Vendor/Lumberjack;
 			sourceTree = "<group>";
 		};
 		8906B69F14E47018007C22AE /* Extensions */ = {
@@ -850,7 +850,7 @@
 				8906B6A614E47018007C22AE /* MBProgressHUD.m */,
 			);
 			name = MBProgressHUD;
-			path = ../../../Vendor/MBProgressHUD;
+			path = ../../Vendor/MBProgressHUD;
 			sourceTree = "<group>";
 		};
 		8977611A141C514100390D27 /* Data */ = {
@@ -1009,7 +1009,7 @@
 				898FFAA41446B43A000B7278 /* Views */,
 			);
 			name = BetterTransit;
-			path = ../../../BetterTransit/BetterTransit;
+			path = ../../BetterTransit/BetterTransit;
 			sourceTree = "<group>";
 		};
 		898FFA3D1446B43A000B7278 /* Controllers */ = {
@@ -1176,7 +1176,7 @@
 				8997F66315A29681007454A2 /* libFlurryAnalytics.a */,
 			);
 			name = FlurryAnalytics3.0.9;
-			path = ../../../Vendor/FlurryAnalytics3.0.9;
+			path = ../../Vendor/FlurryAnalytics3.0.9;
 			sourceTree = "<group>";
 		};
 		8997F66515A29695007454A2 /* AFNetworking */ = {
@@ -1205,7 +1205,7 @@
 				8997F67A15A29695007454A2 /* UIImageView+AFNetworking.m */,
 			);
 			name = AFNetworking;
-			path = ../../../Vendor/AFNetworking;
+			path = ../../Vendor/AFNetworking;
 			sourceTree = "<group>";
 		};
 		89FE9741142421A500FF18EC /* HATools */ = {
@@ -1220,7 +1220,7 @@
 				89FE97A4142421A500FF18EC /* Utilities */,
 			);
 			name = HATools;
-			path = ../../../HATools/HATools;
+			path = ../../HATools/HATools;
 			sourceTree = "<group>";
 		};
 		89FE9766142421A500FF18EC /* HAListViewController */ = {
@@ -1631,7 +1631,7 @@
 				INFOPLIST_FILE = "HoosBus-Info.plist";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
-					"\"$(SRCROOT)/../../../Vendor/FlurryAnalytics3.0.9\"",
+					"\"$(SRCROOT)/../../Vendor/FlurryAnalytics3.0.9\"",
 				);
 				PRODUCT_NAME = HoosBus;
 			};
@@ -1649,7 +1649,7 @@
 				INFOPLIST_FILE = "HoosBus-Info.plist";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
-					"\"$(SRCROOT)/../../../Vendor/FlurryAnalytics3.0.9\"",
+					"\"$(SRCROOT)/../../Vendor/FlurryAnalytics3.0.9\"",
 				);
 				PRODUCT_NAME = HoosBus;
 				VALIDATE_PRODUCT = YES;
@@ -1696,7 +1696,7 @@
 				INFOPLIST_FILE = "HoosBus-Info.plist";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
-					"\"$(SRCROOT)/../../../Vendor/FlurryAnalytics3.0.9\"",
+					"\"$(SRCROOT)/../../Vendor/FlurryAnalytics3.0.9\"",
 				);
 				PRODUCT_NAME = HoosBus;
 				VALIDATE_PRODUCT = YES;

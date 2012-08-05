@@ -35,6 +35,7 @@
 		8906B6C914E47018007C22AE /* DispatchQueueLogFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = 8906B6A314E47018007C22AE /* DispatchQueueLogFormatter.m */; };
 		8906B6CA14E47018007C22AE /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 8906B6A614E47018007C22AE /* MBProgressHUD.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		890CCE9A144484C200797298 /* UIColor+Utilities.m in Sources */ = {isa = PBXBuildFile; fileRef = 890CCE99144484C200797298 /* UIColor+Utilities.m */; };
+		8933C41115CECC0500B58E38 /* HALocationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 8933C41015CECC0500B58E38 /* HALocationManager.m */; };
 		893BAF0714256BC00002BA86 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 893BAF0614256BC00002BA86 /* QuartzCore.framework */; };
 		8977616E141C514100390D27 /* routesToDisplay.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8977611D141C514100390D27 /* routesToDisplay.plist */; };
 		898FF9C41446B178000B7278 /* 10.png in Resources */ = {isa = PBXBuildFile; fileRef = 898FF9641446B178000B7278 /* 10.png */; };
@@ -145,7 +146,6 @@
 		898FFAAD1446B43A000B7278 /* BTTransit.m in Sources */ = {isa = PBXBuildFile; fileRef = 898FFA391446B43A000B7278 /* BTTransit.m */; };
 		898FFAAE1446B43A000B7278 /* BTTransitDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 898FFA3B1446B43A000B7278 /* BTTransitDelegate.m */; };
 		898FFAAF1446B43A000B7278 /* BTFeedLoader.m in Sources */ = {isa = PBXBuildFile; fileRef = 898FFA3F1446B43A000B7278 /* BTFeedLoader.m */; };
-		898FFAB01446B43A000B7278 /* BTLocationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 898FFA411446B43A000B7278 /* BTLocationManager.m */; };
 		898FFAB11446B43A000B7278 /* BTMapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 898FFA431446B43A000B7278 /* BTMapViewController.m */; };
 		898FFAB21446B43A000B7278 /* BTMapViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 898FFA441446B43A000B7278 /* BTMapViewController.xib */; };
 		898FFAB31446B43A000B7278 /* BTPredictionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 898FFA461446B43A000B7278 /* BTPredictionViewController.m */; };
@@ -328,6 +328,8 @@
 		8906B6A614E47018007C22AE /* MBProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBProgressHUD.m; sourceTree = "<group>"; };
 		890CCE98144484C200797298 /* UIColor+Utilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+Utilities.h"; sourceTree = "<group>"; };
 		890CCE99144484C200797298 /* UIColor+Utilities.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+Utilities.m"; sourceTree = "<group>"; };
+		8933C40F15CECC0500B58E38 /* HALocationManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HALocationManager.h; sourceTree = "<group>"; };
+		8933C41015CECC0500B58E38 /* HALocationManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HALocationManager.m; sourceTree = "<group>"; };
 		893BAF0614256BC00002BA86 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		8977611D141C514100390D27 /* routesToDisplay.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = routesToDisplay.plist; sourceTree = "<group>"; };
 		898FF9641446B178000B7278 /* 10.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 10.png; sourceTree = "<group>"; };
@@ -443,8 +445,6 @@
 		898FFA3C1446B43A000B7278 /* Constants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Constants.h; sourceTree = "<group>"; };
 		898FFA3E1446B43A000B7278 /* BTFeedLoader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BTFeedLoader.h; sourceTree = "<group>"; };
 		898FFA3F1446B43A000B7278 /* BTFeedLoader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BTFeedLoader.m; sourceTree = "<group>"; };
-		898FFA401446B43A000B7278 /* BTLocationManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BTLocationManager.h; sourceTree = "<group>"; };
-		898FFA411446B43A000B7278 /* BTLocationManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BTLocationManager.m; sourceTree = "<group>"; };
 		898FFA421446B43A000B7278 /* BTMapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BTMapViewController.h; sourceTree = "<group>"; };
 		898FFA431446B43A000B7278 /* BTMapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BTMapViewController.m; sourceTree = "<group>"; };
 		898FFA441446B43A000B7278 /* BTMapViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BTMapViewController.xib; sourceTree = "<group>"; };
@@ -853,6 +853,15 @@
 			path = ../../Vendor/MBProgressHUD;
 			sourceTree = "<group>";
 		};
+		8933C40E15CECC0500B58E38 /* HALocationManager */ = {
+			isa = PBXGroup;
+			children = (
+				8933C40F15CECC0500B58E38 /* HALocationManager.h */,
+				8933C41015CECC0500B58E38 /* HALocationManager.m */,
+			);
+			path = HALocationManager;
+			sourceTree = "<group>";
+		};
 		8977611A141C514100390D27 /* Data */ = {
 			isa = PBXGroup;
 			children = (
@@ -1017,8 +1026,6 @@
 			children = (
 				898FFA3E1446B43A000B7278 /* BTFeedLoader.h */,
 				898FFA3F1446B43A000B7278 /* BTFeedLoader.m */,
-				898FFA401446B43A000B7278 /* BTLocationManager.h */,
-				898FFA411446B43A000B7278 /* BTLocationManager.m */,
 				898FFA421446B43A000B7278 /* BTMapViewController.h */,
 				898FFA431446B43A000B7278 /* BTMapViewController.m */,
 				898FFA441446B43A000B7278 /* BTMapViewController.xib */,
@@ -1211,6 +1218,7 @@
 		89FE9741142421A500FF18EC /* HATools */ = {
 			isa = PBXGroup;
 			children = (
+				8933C40E15CECC0500B58E38 /* HALocationManager */,
 				8997F65915A29608007454A2 /* PaPa */,
 				8997F64D15A29601007454A2 /* HAAboutController */,
 				89FE9766142421A500FF18EC /* HAListViewController */,
@@ -1565,7 +1573,6 @@
 				898FFAAD1446B43A000B7278 /* BTTransit.m in Sources */,
 				898FFAAE1446B43A000B7278 /* BTTransitDelegate.m in Sources */,
 				898FFAAF1446B43A000B7278 /* BTFeedLoader.m in Sources */,
-				898FFAB01446B43A000B7278 /* BTLocationManager.m in Sources */,
 				898FFAB11446B43A000B7278 /* BTMapViewController.m in Sources */,
 				898FFAB31446B43A000B7278 /* BTPredictionViewController.m in Sources */,
 				898FFAB51446B43A000B7278 /* BTRoutesViewController.m in Sources */,
@@ -1611,6 +1618,7 @@
 				8997F68215A29695007454A2 /* AFURLConnectionOperation.m in Sources */,
 				8997F68315A29695007454A2 /* AFXMLRequestOperation.m in Sources */,
 				8997F68415A29695007454A2 /* UIImageView+AFNetworking.m in Sources */,
+				8933C41115CECC0500B58E38 /* HALocationManager.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

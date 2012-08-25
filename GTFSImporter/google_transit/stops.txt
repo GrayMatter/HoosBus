@@ -226,7 +226,7 @@
 280,11730,"14th Street NW at John Street",38.037284,-78.497828,http://avlweb.charlottesville.org/RTT/Public/RoutePositionET.aspx?PlatformTag=280
 281,11822,"14th Street NW at Virginia Avenue",38.037573,-78.497789,http://avlweb.charlottesville.org/RTT/Public/RoutePositionET.aspx?PlatformTag=281
 282,16343,"University Avenue at Carr's Hill Field",38.039364,-78.505949,http://avlweb.charlottesville.org/RTT/Public/RoutePositionET.aspx?PlatformTag=282
-283,16358,"University Ave at Snyder Tennis Courts",38.038689,-78.505740,http://avlweb.charlottesville.org/RTT/Public/RoutePositionET.aspx?PlatformTag=283
+283,16358,"University Ave at Snyder Tennis Courts",38.037517,-78.505028,http://avlweb.charlottesville.org/RTT/Public/RoutePositionET.aspx?PlatformTag=283
 300,12178,"Millmont Street behind US Post Office",38.050993,-78.504214,http://avlweb.charlottesville.org/RTT/Public/RoutePositionET.aspx?PlatformTag=300
 302,13161,"Barracks Road at Cedars Court (northbound)",38.055275,-78.501341,http://avlweb.charlottesville.org/RTT/Public/RoutePositionET.aspx?PlatformTag=302
 303,14387,"Barracks Road at Cedars Court (southbound)",38.055156,-78.501502,http://avlweb.charlottesville.org/RTT/Public/RoutePositionET.aspx?PlatformTag=303

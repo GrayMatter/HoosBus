@@ -4,8 +4,6 @@
 3,15825,"Southwood Community Center",37.999086,-78.521059,http://avlweb.charlottesville.org/RTT/Public/RoutePositionET.aspx?PlatformTag=3
 4,15841,"County Office Building South",38.005408,-78.519352,http://avlweb.charlottesville.org/RTT/Public/RoutePositionET.aspx?PlatformTag=4
 5,12800,"PVCC at Dickinson Building",38.005175,-78.488145,http://avlweb.charlottesville.org/RTT/Public/RoutePositionET.aspx?PlatformTag=5
-6,12844,"College Road leaving PVCC",38.005716,-78.480870,http://avlweb.charlottesville.org/RTT/Public/RoutePositionET.aspx?PlatformTag=6
-7,12828,"College Road to PVCC",38.006008,-78.480990,http://avlweb.charlottesville.org/RTT/Public/RoutePositionET.aspx?PlatformTag=7
 8,15771,"Opposite Willoughby Square Shopping Center",38.011959,-78.502650,http://avlweb.charlottesville.org/RTT/Public/RoutePositionET.aspx?PlatformTag=8
 9,12925,"Willoughby Square Shopping Center",38.013533,-78.501299,http://avlweb.charlottesville.org/RTT/Public/RoutePositionET.aspx?PlatformTag=9
 10,15785,"5th Street SW at Harris Road",38.014503,-78.499801,http://avlweb.charlottesville.org/RTT/Public/RoutePositionET.aspx?PlatformTag=10
@@ -21,18 +19,13 @@
 21,11366,"JPA at Monte Vista Avenue",38.017566,-78.512694,http://avlweb.charlottesville.org/RTT/Public/RoutePositionET.aspx?PlatformTag=21
 22,11378,"JPA at Azalea Drive",38.015980,-78.511450,http://avlweb.charlottesville.org/RTT/Public/RoutePositionET.aspx?PlatformTag=22
 27,11210,"JPA at Maury Avenue",38.026126,-78.514559,http://avlweb.charlottesville.org/RTT/Public/RoutePositionET.aspx?PlatformTag=27
-29,11206,"JPA at Observatory Avenue",38.026523,-78.513392,http://avlweb.charlottesville.org/RTT/Public/RoutePositionET.aspx?PlatformTag=29
 31,11172,"JPA at Shamrock Road",38.027631,-78.511588,http://avlweb.charlottesville.org/RTT/Public/RoutePositionET.aspx?PlatformTag=31
 33,11164,"JPA at Montebello Circle",38.028819,-78.509810,http://avlweb.charlottesville.org/RTT/Public/RoutePositionET.aspx?PlatformTag=33
-34,11140,"JPA opposite Valley Road",38.031019,-78.508358,http://avlweb.charlottesville.org/RTT/Public/RoutePositionET.aspx?PlatformTag=34
 37,10687,"Alderman Road opposite Gooch Houses",38.029072,-78.516357,http://avlweb.charlottesville.org/RTT/Public/RoutePositionET.aspx?PlatformTag=37
 44,11223,"Maury Avenue at Clark Court",38.027004,-78.515808,http://avlweb.charlottesville.org/RTT/Public/RoutePositionET.aspx?PlatformTag=44
-47,11234,"Alderman Road at Whitehead Road",38.033825,-78.514094,http://avlweb.charlottesville.org/RTT/Public/RoutePositionET.aspx?PlatformTag=47
+47,11234,"Alderman Road at AFC",38.033825,-78.514094,http://avlweb.charlottesville.org/RTT/Public/RoutePositionET.aspx?PlatformTag=47
 50,11931,"McCormick Road at Gilmer Hall",38.034809,-78.513184,http://avlweb.charlottesville.org/RTT/Public/RoutePositionET.aspx?PlatformTag=50
 52,11782,"McCormick Road at Chemistry Building",38.034176,-78.511684,http://avlweb.charlottesville.org/RTT/Public/RoutePositionET.aspx?PlatformTag=52
-53,11898,"McCormick Road at Thornton Hall",38.033683,-78.509262,http://avlweb.charlottesville.org/RTT/Public/RoutePositionET.aspx?PlatformTag=53
-54,11920,"McCormick Road at Clark Hall",38.033732,-78.507379,http://avlweb.charlottesville.org/RTT/Public/RoutePositionET.aspx?PlatformTag=54
-57,11908,"McCormick Road at UVA Chapel",38.036177,-78.504695,http://avlweb.charlottesville.org/RTT/Public/RoutePositionET.aspx?PlatformTag=57
 58,11281,"University Ave at Rotunda",38.036510,-78.502843,http://avlweb.charlottesville.org/RTT/Public/RoutePositionET.aspx?PlatformTag=58
 59,11252,"University Ave at Madison Hall",38.036599,-78.502789,http://avlweb.charlottesville.org/RTT/Public/RoutePositionET.aspx?PlatformTag=59
 60,11275,"University Avenue opposite Elliewood Avenue",38.035204,-78.500886,http://avlweb.charlottesville.org/RTT/Public/RoutePositionET.aspx?PlatformTag=60
@@ -132,6 +125,7 @@
 169,13784,"Abbey Road at Division of Motor Vehicles",38.028559,-78.442794,http://avlweb.charlottesville.org/RTT/Public/RoutePositionET.aspx?PlatformTag=169
 172,13946,"South Pantops Drive at Beverley Way",38.028021,-78.449750,http://avlweb.charlottesville.org/RTT/Public/RoutePositionET.aspx?PlatformTag=172
 173,14151,"South Pantops Drive at Riverbend Drive",38.031344,-78.454524,http://avlweb.charlottesville.org/RTT/Public/RoutePositionET.aspx?PlatformTag=173
+174,14122,"155 Riverbend Dr",38.032722,-78.454987,http://avlweb.charlottesville.org/RTT/Public/RoutePositionET.aspx?PlatformTag=174
 175,14095,"Pantops Shopping Center at Food Lion",38.031347,-78.457236,http://avlweb.charlottesville.org/RTT/Public/RoutePositionET.aspx?PlatformTag=175
 180,13709,"East High Street at Riverdale Drive",38.034092,-78.460227,http://avlweb.charlottesville.org/RTT/Public/RoutePositionET.aspx?PlatformTag=180
 181,14285,"East High Street at Hazel Street",38.032898,-78.462635,http://avlweb.charlottesville.org/RTT/Public/RoutePositionET.aspx?PlatformTag=181
@@ -156,7 +150,9 @@
 200,12546,"East Market Street at 10th Street NE",38.028714,-78.473234,http://avlweb.charlottesville.org/RTT/Public/RoutePositionET.aspx?PlatformTag=200
 201,11321,"10th Street NE at Water Street",38.028639,-78.473722,http://avlweb.charlottesville.org/RTT/Public/RoutePositionET.aspx?PlatformTag=201
 202,11332,"East Water St at 9th St Ne",38.028647,-78.475473,http://avlweb.charlottesville.org/RTT/Public/RoutePositionET.aspx?PlatformTag=202
+203,11004,"5th St Se & East Water St",38.029185,-78.478953,http://avlweb.charlottesville.org/RTT/Public/RoutePositionET.aspx?PlatformTag=203
 204,11015,"East Water St at 3rd St Se",38.029557,-78.480143,http://avlweb.charlottesville.org/RTT/Public/RoutePositionET.aspx?PlatformTag=204
+205,11027,"2nd St Se & East Water St",38.029963,-78.481369,http://avlweb.charlottesville.org/RTT/Public/RoutePositionET.aspx?PlatformTag=205
 206,11036,"West Water St at Omni",38.030839,-78.483962,http://avlweb.charlottesville.org/RTT/Public/RoutePositionET.aspx?PlatformTag=206
 207,11043,"Ridge McIntire Rd at Omni",38.031635,-78.484868,http://avlweb.charlottesville.org/RTT/Public/RoutePositionET.aspx?PlatformTag=207
 208,11494,"West Market St at Old Preston",38.032708,-78.483368,http://avlweb.charlottesville.org/RTT/Public/RoutePositionET.aspx?PlatformTag=208
@@ -226,7 +222,7 @@
 280,11730,"14th Street NW at John Street",38.037284,-78.497828,http://avlweb.charlottesville.org/RTT/Public/RoutePositionET.aspx?PlatformTag=280
 281,11822,"14th Street NW at Virginia Avenue",38.037573,-78.497789,http://avlweb.charlottesville.org/RTT/Public/RoutePositionET.aspx?PlatformTag=281
 282,16343,"University Avenue at Carr's Hill Field",38.039364,-78.505949,http://avlweb.charlottesville.org/RTT/Public/RoutePositionET.aspx?PlatformTag=282
-283,16358,"University Ave at Snyder Tennis Courts",38.037517,-78.505028,http://avlweb.charlottesville.org/RTT/Public/RoutePositionET.aspx?PlatformTag=283
+283,16358,"University Ave at Newcomb Road",38.037517,-78.505028,http://avlweb.charlottesville.org/RTT/Public/RoutePositionET.aspx?PlatformTag=283
 300,12178,"Millmont Street behind US Post Office",38.050993,-78.504214,http://avlweb.charlottesville.org/RTT/Public/RoutePositionET.aspx?PlatformTag=300
 302,13161,"Barracks Road at Cedars Court (northbound)",38.055275,-78.501341,http://avlweb.charlottesville.org/RTT/Public/RoutePositionET.aspx?PlatformTag=302
 303,14387,"Barracks Road at Cedars Court (southbound)",38.055156,-78.501502,http://avlweb.charlottesville.org/RTT/Public/RoutePositionET.aspx?PlatformTag=303
@@ -297,6 +293,7 @@
 374,14926,"College Drive at PVCC",38.007014,-78.484236,http://avlweb.charlottesville.org/RTT/Public/RoutePositionET.aspx?PlatformTag=374
 375,15106,"Montrose Avenue at Avon Street",38.022073,-78.480585,http://avlweb.charlottesville.org/RTT/Public/RoutePositionET.aspx?PlatformTag=375
 376,17333,"Downtown Transit Station",38.028965,-78.477501,http://avlweb.charlottesville.org/RTT/Public/RoutePositionET.aspx?PlatformTag=376
+377,11846,"JPA at Woodrow St",38.031267,-78.508190,http://avlweb.charlottesville.org/RTT/Public/RoutePositionET.aspx?PlatformTag=377
 378,14373,"Seminole Square Shopping Center at Marshall's",38.063828,-78.485711,http://avlweb.charlottesville.org/RTT/Public/RoutePositionET.aspx?PlatformTag=378
 379,13296,"Walmart",38.097085,-78.466637,http://avlweb.charlottesville.org/RTT/Public/RoutePositionET.aspx?PlatformTag=379
 381,13283,"Sam's Club",38.099941,-78.466628,http://avlweb.charlottesville.org/RTT/Public/RoutePositionET.aspx?PlatformTag=381
@@ -321,7 +318,6 @@
 408,16680,"Barracks Road Shopping Center opposite CVS",38.052681,-78.501057,http://avlweb.charlottesville.org/RTT/Public/RoutePositionET.aspx?PlatformTag=408
 410,11193,"JPA at UVA Hospital",38.032500,-78.500600,http://avlweb.charlottesville.org/RTT/Public/RoutePositionET.aspx?PlatformTag=410
 411,14394,"Rugby Road at Rugby Avenue",38.046719,-78.493203,http://avlweb.charlottesville.org/RTT/Public/RoutePositionET.aspx?PlatformTag=411
-412,11802,"McCormick Road at Garrett Hall",38.034325,-78.506016,http://avlweb.charlottesville.org/RTT/Public/RoutePositionET.aspx?PlatformTag=412
 413,11268,"University Ave at Chancellor St",38.035958,-78.501359,http://avlweb.charlottesville.org/RTT/Public/RoutePositionET.aspx?PlatformTag=413
 414,15272,"Cherry Avenue at Shamrock Road (westbound)",38.023749,-78.506648,http://avlweb.charlottesville.org/RTT/Public/RoutePositionET.aspx?PlatformTag=414
 415,10417,"Grady Avenue at 14th Street",38.040120,-78.496051,http://avlweb.charlottesville.org/RTT/Public/RoutePositionET.aspx?PlatformTag=415
@@ -344,6 +340,8 @@
 480,15319,"Village Road at Antoinette Road",38.018710,-78.501280,http://avlweb.charlottesville.org/RTT/Public/RoutePositionET.aspx?PlatformTag=480
 481,15261,"Bainbridge St at Monticello Rd",38.023030,-78.473080,http://avlweb.charlottesville.org/RTT/Public/RoutePositionET.aspx?PlatformTag=481
 482,15199,"Hampton St at Rives St",38.019190,-78.469010,http://avlweb.charlottesville.org/RTT/Public/RoutePositionET.aspx?PlatformTag=482
+486,10660,"Emmet St at Snyder Tennis Courts",38.038511,-78.506992,http://avlweb.charlottesville.org/RTT/Public/RoutePositionET.aspx?PlatformTag=486
+487,10472,"Emmet St & Central Grounds Garage",38.036543,-78.507702,http://avlweb.charlottesville.org/RTT/Public/RoutePositionET.aspx?PlatformTag=487
 495,18005,"Garrett Street at Friendship Court",38.028320,-78.481410,http://avlweb.charlottesville.org/RTT/Public/RoutePositionET.aspx?PlatformTag=495
 496,18014,"Garrett Street at 4th Street SE",38.027880,-78.480230,http://avlweb.charlottesville.org/RTT/Public/RoutePositionET.aspx?PlatformTag=496
 498,16370,"Emmet Street North at Lambeth (northbound)",38.042331,-78.505632,http://avlweb.charlottesville.org/RTT/Public/RoutePositionET.aspx?PlatformTag=498
@@ -373,4 +371,6 @@
 545,17276,"Beverly Drive",38.027960,-78.449978,http://avlweb.charlottesville.org/RTT/Public/RoutePositionET.aspx?PlatformTag=545
 546,18226,"Wilton Farms Shelter @ Avemore",38.038188,-78.446082,http://avlweb.charlottesville.org/RTT/Public/RoutePositionET.aspx?PlatformTag=546
 547,17282,"Stoney Point Road Turnout",38.038003,-78.449679,http://avlweb.charlottesville.org/RTT/Public/RoutePositionET.aspx?PlatformTag=547
+549,,"Abbey Rd & Rolkin Rd",38.029493,-78.444102,http://avlweb.charlottesville.org/RTT/Public/RoutePositionET.aspx?PlatformTag=549
 552,,"Avon St & Bolling Ave",38.023644,-78.479609,http://avlweb.charlottesville.org/RTT/Public/RoutePositionET.aspx?PlatformTag=552
+553,,"McCormick Rd/Thornton Hall",38.033721,-78.509884,http://avlweb.charlottesville.org/RTT/Public/RoutePositionET.aspx?PlatformTag=553

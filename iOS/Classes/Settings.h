@@ -33,24 +33,6 @@
 
 // App settings
 #define APP_SETTINGS_XML @"http://artisticfrog.com/cross_promote/hoosbus/app_settings.xml"
-#define APP_SETTINGS_OS3_XML @"http://artisticfrog.com/cross_promote/hoosbus/app_settings_os3.xml"
-
-#define AD_ZONE_1 1 // stops view, trip view
-#define AD_ZONE_2 2 // routes view
-#define AD_ZONE_3 3 // prediction view
-
-//#define AD_FREE [AdWhirlManager testAdFree]
-#define AD_FREE [AppSettings adFree]
-// Remember to call [AdWhirlManager removeAds] to stop timers when we want to switch off ads
-
-// Ad networks settings
-#define ADWHIRL_API_KEY @"00e9827988454c9d8079529617fe540f"
-#define ADMOB_APP_ID @"a14cee7368e76fb"
-#define INMOBI_APP_ID @"4028cba630724cd90130a9788bd10134"
-
-// Appirater
-#define APP_NAME	@"HoosBus"
-#define APP_ID 334856530
 
 // Flurry
 #define FLURRY_KEY @"HRQJ5Z5UC7TUEANL7UXE"

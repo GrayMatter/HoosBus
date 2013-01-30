@@ -1728,7 +1728,7 @@
 					"-weak_library",
 					/usr/lib/libSystem.B.dylib,
 				);
-				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "3C182574-9DFF-41E8-B6BF-BF89A98A9D88";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "4EED1220-29C6-4854-970F-39804AD72150";
 				SDKROOT = iphoneos;
 			};
 			name = Debug;

@@ -1,28 +1,31 @@
-application: hoosbus
+application: app-name
 version: 1
-runtime: python
+runtime: python27
 api_version: 1
+threadsafe: true
 
 builtins:
-- datastore_admin: on
 - appstats: on
 - remote_api: on
 
+libraries:
+- name: lxml
+  version: latest
+
+inbound_services:
+- warmup
+
 handlers:
-- url: /admin/.*
-  script: $PYTHON_LIB/google/appengine/ext/admin
-  login: admin
+- url: /api/v1/.*
+  script: app.api_v1.application
+  
 - url: /favicon.ico
   static_files: static/images/favicon.ico
   upload: static/images/favicon.ico
-- url: /.*
-  script: main.py
   
-admin_console:
-  pages:
-  - name: My Console
-    url: /admin/interactive
-  - name: My Memcache
-    url: /admin/memcache
-  - name: My Inbound Mail
-    url: /admin/inboundmail
+# - url: /admin
+#   script: app.admin.application
+#   login: admin
+
+- url: /.*
+  script: app.main.application

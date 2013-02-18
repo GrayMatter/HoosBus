@@ -8,25 +8,47 @@
 
 #import "HBFeedLoader.h"
 #import "BTPredictionEntry.h"
+#import "HAAppSettings.h"
 #import "NSString+HAUtils.h"
 #import "PaPa.h"
 
 @implementation HBFeedLoader
 
-
 - (id)init
 {
-	if (self = [super init]) {
+    self = [super init];
+	if (self) {
 	}
 	return self;
 }
 
 - (NSString *)dataSourceForStop:(BTStop *)stop
 {
-	return [NSString stringWithFormat:@"http://avlweb.charlottesville.org/RTT/Public/RoutePositionET.aspx?PlatformNo=%@&Referrer=uvamobile", stop.stopCode];
+    NSString * dataSource = [[HAAppSettings sharedSettings] objectForKey:@"datasource"];
+    if ([dataSource isEqualToString:@"happentransit"]) {
+        return [NSString stringWithFormat:@"%@/prediction?busstop=%@", API_BASE_URL, stop.stopCode];
+    } else {
+        return [NSString stringWithFormat:@"http://avlweb.charlottesville.org/RTT/Public/RoutePositionET.aspx?PlatformNo=%@&Referrer=uvamobile", stop.stopCode];
+    }
 }
 
 - (void)getPredictionForStop:(BTStop *)stop
+{
+    NSString * dataSource = [[HAAppSettings sharedSettings] objectForKey:@"datasource"];
+    
+    if ([dataSource isEqualToString:@"happentransit"]) {
+        [self getPredictionFromHappenTransitForStop:stop];
+    } else if ([dataSource isEqualToString:@"connexionz"]) {
+        [self getPredictionFromConnexionzForStop:stop];
+    }
+}
+
+- (void)getPredictionFromHappenTransitForStop:(BTStop *)stop
+{
+    
+}
+
+- (void)getPredictionFromConnexionzForStop:(BTStop *)stop
 {
     // Cancel previous requests
     [httpClient.operationQueue cancelAllOperations];

@@ -136,7 +136,6 @@
 		8906B6C814E47018007C22AE /* ContextFilterLogFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = 8906B6A114E47018007C22AE /* ContextFilterLogFormatter.m */; };
 		8906B6C914E47018007C22AE /* DispatchQueueLogFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = 8906B6A314E47018007C22AE /* DispatchQueueLogFormatter.m */; };
 		8906B6CA14E47018007C22AE /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 8906B6A614E47018007C22AE /* MBProgressHUD.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		8922D1D816D175F7004FABA6 /* HASettings2.m in Sources */ = {isa = PBXBuildFile; fileRef = 8922D1D616D175F7004FABA6 /* HASettings2.m */; };
 		8922D1DB16D1760C004FABA6 /* HAAppSettings.m in Sources */ = {isa = PBXBuildFile; fileRef = 8922D1DA16D1760C004FABA6 /* HAAppSettings.m */; };
 		8933C41115CECC0500B58E38 /* HALocationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 8933C41015CECC0500B58E38 /* HALocationManager.m */; };
 		893BAF0714256BC00002BA86 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 893BAF0614256BC00002BA86 /* QuartzCore.framework */; };
@@ -467,8 +466,6 @@
 		8906B6A314E47018007C22AE /* DispatchQueueLogFormatter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DispatchQueueLogFormatter.m; sourceTree = "<group>"; };
 		8906B6A514E47018007C22AE /* MBProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBProgressHUD.h; sourceTree = "<group>"; };
 		8906B6A614E47018007C22AE /* MBProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBProgressHUD.m; sourceTree = "<group>"; };
-		8922D1D516D175F7004FABA6 /* HASettings2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HASettings2.h; sourceTree = "<group>"; };
-		8922D1D616D175F7004FABA6 /* HASettings2.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HASettings2.m; sourceTree = "<group>"; };
 		8922D1D916D1760C004FABA6 /* HAAppSettings.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HAAppSettings.h; sourceTree = "<group>"; };
 		8922D1DA16D1760C004FABA6 /* HAAppSettings.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HAAppSettings.m; sourceTree = "<group>"; };
 		8933C40F15CECC0500B58E38 /* HALocationManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HALocationManager.h; sourceTree = "<group>"; };
@@ -1056,8 +1053,6 @@
 		8922D1D216D175F7004FABA6 /* HAAppSettings */ = {
 			isa = PBXGroup;
 			children = (
-				8922D1D516D175F7004FABA6 /* HASettings2.h */,
-				8922D1D616D175F7004FABA6 /* HASettings2.m */,
 				8922D1D916D1760C004FABA6 /* HAAppSettings.h */,
 				8922D1DA16D1760C004FABA6 /* HAAppSettings.m */,
 			);
@@ -1632,7 +1627,6 @@
 				890276DD16B5A6910051373D /* NSString+HAUtils.m in Sources */,
 				890276DE16B5A6910051373D /* UIColor+HAUtils.m in Sources */,
 				890276DF16B5A6910051373D /* UIImage+HAUtils.m in Sources */,
-				8922D1D816D175F7004FABA6 /* HASettings2.m in Sources */,
 				8922D1DB16D1760C004FABA6 /* HAAppSettings.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

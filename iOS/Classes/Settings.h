@@ -29,7 +29,11 @@
 #define COLOR_NAV_BAR_BG [UIColor colorWithRed:0.118 green:0.243 blue:0.357 alpha:1.0]
 
 // API
-#define API_BASE_URL @"http://hoosbus.appspot.com/v1"
+#ifdef PRODUCTION_READY
+#define API_BASE_URL @"http://hoosbus.appspot.com/api/v1"
+#else
+#define API_BASE_URL @"http://localhost:8081/api/v1/"
+#endif
 
 // App settings
 #define APP_SETTINGS_XML @"http://artisticfrog.com/cross_promote/hoosbus/app_settings.xml"

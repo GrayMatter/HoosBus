@@ -15,7 +15,8 @@
 {
     [super application:application didFinishLaunchingWithOptions:launchOptions];
     
-    [[HAAppSettings sharedSettings] initWithUrl:APP_SETTINGS_XML];
+    // Load app settings
+    [HAAppSettings loadFromUrl:APP_SETTINGS_XML];
     
     return YES;
 }

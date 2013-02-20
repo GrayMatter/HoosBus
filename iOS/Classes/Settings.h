@@ -32,7 +32,7 @@
 #ifdef PRODUCTION_READY
 #define API_BASE_URL @"http://hoosbus.appspot.com/api/v1"
 #else
-#define API_BASE_URL @"http://localhost:8081/api/v1/"
+#define API_BASE_URL @"http://localhost:8081/api/v1"
 #endif
 
 // App settings

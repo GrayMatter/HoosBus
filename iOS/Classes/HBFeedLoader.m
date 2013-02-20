@@ -14,19 +14,11 @@
 
 @implementation HBFeedLoader
 
-- (id)init
-{
-    self = [super init];
-	if (self) {
-	}
-	return self;
-}
-
 - (NSString *)dataSourceForStop:(BTStop *)stop
 {
-    NSString * dataSource = [[HAAppSettings sharedSettings] objectForKey:@"datasource"];
-    if ([dataSource isEqualToString:@"happentransit"]) {
-        return [NSString stringWithFormat:@"%@/prediction?busstop=%@", API_BASE_URL, stop.stopCode];
+    NSString * dataSource = [HAAppSettings settingsForKey:@"datasource"];
+    if ([dataSource isEqualToString:@"hoosbus"]) {
+        return [NSString stringWithFormat:@"%@/prediction?stop=%@", API_BASE_URL, stop.stopCode];
     } else {
         return [NSString stringWithFormat:@"http://avlweb.charlottesville.org/RTT/Public/RoutePositionET.aspx?PlatformNo=%@&Referrer=uvamobile", stop.stopCode];
     }
@@ -34,16 +26,15 @@
 
 - (void)getPredictionForStop:(BTStop *)stop
 {
-    NSString * dataSource = [[HAAppSettings sharedSettings] objectForKey:@"datasource"];
-    
-    if ([dataSource isEqualToString:@"happentransit"]) {
-        [self getPredictionFromHappenTransitForStop:stop];
-    } else if ([dataSource isEqualToString:@"connexionz"]) {
+    NSString * dataSource = [HAAppSettings settingsForKey:@"datasource"];
+    if ([dataSource isEqualToString:@"hoosbus"]) {
+        [self getPredictionFromHoosBusForStop:stop];
+    } else {
         [self getPredictionFromConnexionzForStop:stop];
     }
 }
 
-- (void)getPredictionFromHappenTransitForStop:(BTStop *)stop
+- (void)getPredictionFromHoosBusForStop:(BTStop *)stop
 {
     
 }

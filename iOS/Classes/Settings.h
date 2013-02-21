@@ -7,7 +7,7 @@
  *
  */
 
-//#define PRODUCTION_READY
+#define PRODUCTION_READY
 
 #define CENTER_LATITUDE 38.034039
 #define CENTER_LONGITUDE -78.499479
@@ -30,7 +30,7 @@
 
 // API
 #ifdef PRODUCTION_READY
-#define API_BASE_URL @"http://hoosbus.appspot.com/api/v1"
+#define API_BASE_URL @"http://hoosbus2.appspot.com/api/v1"
 #else
 #define API_BASE_URL @"http://localhost:8082/api/v1"
 #endif

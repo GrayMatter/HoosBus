@@ -51,7 +51,6 @@ class PredictionHandler(webapp.RequestHandler):
 		    
 		    if entry:
 		        result.append(entry)
-		logging.info(result)
 		return result
 
 #

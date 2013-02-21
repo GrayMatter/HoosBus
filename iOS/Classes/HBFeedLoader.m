@@ -17,9 +17,7 @@
 - (void)getPredictionForStop:(BTStop *)stop
 {
     NSString * dataSource = [HAAppSettings settingsForKey:@"datasource"];
-    
-    if (true) {
-    //if ([dataSource isEqualToString:@"hoosbus"]) {
+    if ([dataSource isEqualToString:@"hoosbus"]) {
         [self getPredictionFromHoosBusForStop:stop];
     } else {
         [self getPredictionFromConnexionzForStop:stop];
@@ -38,10 +36,10 @@
     NSDictionary * params = @{@"stop": stop.stopCode};
     [httpClient getPath:path parameters:params success:^(AFHTTPRequestOperation *operation, id responseObject) {
         NSError * error = nil;
-        NSDictionary * dict = [NSJSONSerialization JSONObjectWithData:(NSData *)responseObject options:kNilOptions error:&error];
+        NSArray * jsonArray = [NSJSONSerialization JSONObjectWithData:(NSData *)responseObject options:kNilOptions error:&error];
         
         // Return nil if the feed can not be downloaded
-        if (error != nil || dict == nil) {
+        if (error != nil || jsonArray == nil) {
 			[delegate updatePrediction:@"Bus arrival times currently not available"];
 			return;
         }
@@ -50,8 +48,13 @@
 		// Reset self.prediction
 		[self.prediction removeAllObjects];
         
-        
-        
+        for (NSDictionary * dict in jsonArray) {
+            BTPredictionEntry * entry = [[BTPredictionEntry alloc] init];
+            entry.route = [self.transit routeWithShortName:dict[@"route"]];
+            entry.destination = dict[@"note"];
+            entry.eta = dict[@"eta"];
+            [self.prediction addObject:entry];
+        }
         
         [self.delegate updatePrediction:self.prediction];
         

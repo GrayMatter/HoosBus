@@ -14,20 +14,12 @@
 
 @implementation HBFeedLoader
 
-- (NSString *)dataSourceForStop:(BTStop *)stop
-{
-    NSString * dataSource = [HAAppSettings settingsForKey:@"datasource"];
-    if ([dataSource isEqualToString:@"hoosbus"]) {
-        return [NSString stringWithFormat:@"%@/prediction?stop=%@", API_BASE_URL, stop.stopCode];
-    } else {
-        return [NSString stringWithFormat:@"http://avlweb.charlottesville.org/RTT/Public/RoutePositionET.aspx?PlatformNo=%@&Referrer=uvamobile", stop.stopCode];
-    }
-}
-
 - (void)getPredictionForStop:(BTStop *)stop
 {
     NSString * dataSource = [HAAppSettings settingsForKey:@"datasource"];
-    if ([dataSource isEqualToString:@"hoosbus"]) {
+    
+    if (true) {
+    //if ([dataSource isEqualToString:@"hoosbus"]) {
         [self getPredictionFromHoosBusForStop:stop];
     } else {
         [self getPredictionFromConnexionzForStop:stop];
@@ -36,7 +28,37 @@
 
 - (void)getPredictionFromHoosBusForStop:(BTStop *)stop
 {
+    // Cancel previous requests
+    [httpClient.operationQueue cancelAllOperations];
     
+    self.currentStop = stop;
+    
+    // Fetch prediction
+    NSString * path = [NSString stringWithFormat:@"%@/prediction", API_BASE_URL];
+    NSDictionary * params = @{@"stop": stop.stopCode};
+    [httpClient getPath:path parameters:params success:^(AFHTTPRequestOperation *operation, id responseObject) {
+        NSError * error = nil;
+        NSDictionary * dict = [NSJSONSerialization JSONObjectWithData:(NSData *)responseObject options:kNilOptions error:&error];
+        
+        // Return nil if the feed can not be downloaded
+        if (error != nil || dict == nil) {
+			[delegate updatePrediction:@"Bus arrival times currently not available"];
+			return;
+        }
+        
+        // The feed has been acquired; start processing.
+		// Reset self.prediction
+		[self.prediction removeAllObjects];
+        
+        
+        
+        
+        [self.delegate updatePrediction:self.prediction];
+        
+    } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
+        DDLogError(@"request did fail with error: %@", error);
+        [delegate updatePrediction:nil];
+    }];
 }
 
 - (void)getPredictionFromConnexionzForStop:(BTStop *)stop
@@ -45,8 +67,12 @@
     [httpClient.operationQueue cancelAllOperations];
 	
 	self.currentStop = stop;
+    
+    // Fetch prediction
+    NSString * path = @"http://avlweb.charlottesville.org/RTT/Public/RoutePositionET.aspx";
+    NSDictionary * params = @{@"PlatformNo": stop.stopCode, @"Referrer": @"uvamobile"};
 	
-    [httpClient getPath:[self dataSourceForStop:stop] parameters:nil success:^(AFHTTPRequestOperation *operation, id responseObject) {
+    [httpClient getPath:path parameters:params success:^(AFHTTPRequestOperation *operation, id responseObject) {
         PaPaDoc * doc = [PaPaDoc docWithHTMLData:(NSData *)responseObject];
         NSArray * rows = [doc findAll:@"//tbody/tr"];
 		

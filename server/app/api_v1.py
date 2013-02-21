@@ -2,9 +2,11 @@
 
 import fix_path
 import webapp2 as webapp
+from google.appengine.api import urlfetch
 from decorators import *
 from models import *
 import json, re, logging, datetime
+from pyquery import PyQuery
 
 #
 # Prediction
@@ -15,27 +17,24 @@ class PredictionHandler(webapp.RequestHandler):
 	def get(self):
 		stopNumber = self.request.get('stop')
 		url = "http://avlweb.charlottesville.org/RTT/Public/RoutePositionET.aspx?PlatformNo=%s&Referrer=uvamobile" % (stopNumber)
-		
+        
 		result = urlfetch.fetch(url, deadline=10)
 		if result.status_code == 200:
-		    soup = BeautifulSoup(result.content, convertEntities=BeautifulSoup.HTML_ENTITIES)
+		    S = PyQuery(PyQuery(result.content).html())
 		else:
 		    self.error(500)
 		
-		tableTag = soup.find('table', {"class": "tableET"})
-		if tableTag is None:
-		    self.error(501) # 501: no bus is coming
-
 		result = []
-		for trTag in tableTag.tbody.findAll('tr'):
+		for el in S('table.tableET tbody tr'):
 		    count = 0
 		    entry = {}
-		    for tdTag in trTag.findAll('td'):
+		    trTag = S(el)
+		    for ell in trTag.find('td'):
+		        tdTag = S(ell)
 		        if count == 0:
-		            entry["route"] = tdTag.renderContents()
-      
+		            entry['route'] = tdTag.text()
 		        elif count == 1:
-		            dest = tdTag.renderContents()
+		            dest = tdTag.text()
 		            note = None
 		            matchObj = re.search("(via .*)", dest)
 		            if matchObj is not None:
@@ -46,16 +45,14 @@ class PredictionHandler(webapp.RequestHandler):
 		                    note = matchObj.group(1)
 		            if note is not None:
 		                entry["note"] = note
-          
 		        elif count == 2:
-		            entry["eta"] = tdTag.renderContents()
-      
-		        count = count+1
-  
+		            entry['eta'] = tdTag.text()
+		        count = count + 1
+		    
 		    if entry:
 		        result.append(entry)
-		
-		return json.dumps(result)
+		logging.info(result)
+		return result
 
 #
 # Router

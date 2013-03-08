@@ -17,8 +17,7 @@
 - (void)getPredictionForStop:(BTStop *)stop
 {
     NSString * dataSource = [HAAppSettings settingsForKey:@"datasource"];
-    if (true) {
-    //if ([dataSource isEqualToString:@"hoosbus"]) {
+    if ([dataSource isEqualToString:@"hoosbus"]) {
         [self getPredictionFromHoosBusForStop:stop];
     } else {
         [self getPredictionFromConnexionzForStop:stop];

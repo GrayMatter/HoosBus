@@ -8,6 +8,12 @@ from models import *
 import json, re, logging, datetime
 from pyquery import PyQuery
 
+
+route_map = {
+    "001": "CGS",
+    "002": "1B"
+}
+
 #
 # Prediction
 #
@@ -50,7 +56,7 @@ class PredictionHandler(webapp.RequestHandler):
 	                            if matchObj is not None:
 	                                note = matchObj.group(1)
 	                        if note is not None:
-	                            entry["note"] = note
+	                            entry['note'] = note
 	                    elif count == 2:
 	                        entry['eta'] = tdTag.text()
 	                    count = count + 1
@@ -68,12 +74,20 @@ class PredictionHandler(webapp.RequestHandler):
 	            S = PyQuery(result2.content)
 	            for el in S('ul#routes li'):
 	                entry = {}
-	                rowTag = S(el)
-	                etaTag = rowTag.find('.wait_time')
-	                logging.info(etaTag.text())
 	                
-	                if entry:
-	                    predictions.append(entry)
+	                rowTag = S(el)
+	                routeNumber = rowTag.attr('id').split('_')[1].strip()
+	                
+	                etaTag = rowTag.find('.wait_time')
+	                minutes = etaTag.text().split('min')[0].strip()
+                    
+	                if minutes != '' and minutes != '--':
+	                    entry['eta'] = minutes
+	                    entry['route'] = 'transLoc' #route_map[routeNumber]
+	                
+                    if entry:
+                        predictions.append(entry)
+        
 	    except urlfetch.DownloadError:
 	        # Request time out or failed
 	        logging.error("Request time out or failed for TransLoc.")

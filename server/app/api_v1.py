@@ -7,11 +7,20 @@ from decorators import *
 from models import *
 import json, re, logging, datetime
 from pyquery import PyQuery
+import json, time
 
+routes_map = {
+    "4003306": "CGS",
+    "4003314": "CS",
+    "4003302": "G",
+    "4003290": "ULA",
+    "4003286": "NL",
+    "4003294": "ULB",
+    "4003298": "SHS"
+}
 
-route_map = {
-    "001": "CGS",
-    "002": "1B"
+stops_map = {
+    
 }
 
 #
@@ -30,7 +39,7 @@ class PredictionHandler(webapp.RequestHandler):
 	    
 	    # Make asynchronous request to the TransLoc system.
 	    rpc2 = urlfetch.create_rpc()
-	    urlfetch.make_fetch_call(rpc2, "http://vcu.transloc.com/m/stop/code/117")
+	    urlfetch.make_fetch_call(rpc2, "http://feeds.transloc.com/2/arrivals?stop_id=%s&agencies=347" % (stops_map[stopNumber]))
 	    
 	    # Check result from Connexionz
 	    try:
@@ -71,22 +80,22 @@ class PredictionHandler(webapp.RequestHandler):
 	    try:
 	        result2 = rpc2.get_result()
 	        if result2.status_code == 200:
-	            S = PyQuery(result2.content)
-	            for el in S('ul#routes li'):
-	                entry = {}
+	            feed = JSON.loads(result2)
+	            if feed['success']:
+	                arrivals = {}
+	                for item in feed['arrivals']:
+	                    routeNumber = item['route_id']
+	                    if not arrivals[routeNumber]:
+	                        arrivals[routeNumber] = []
+	                    
+	                    eta = int((int(item['timestamp']) - int(time.time())*1000)/(1000*60))
+	                    arrivals[routeNumber].append(eta)
 	                
-	                rowTag = S(el)
-	                routeNumber = rowTag.attr('id').split('_')[1].strip()
-	                
-	                etaTag = rowTag.find('.wait_time')
-	                minutes = etaTag.text().split('min')[0].strip()
-                    
-	                if minutes != '' and minutes != '--':
-	                    entry['eta'] = minutes
-	                    entry['route'] = 'transLoc' #route_map[routeNumber]
-	                
-                    if entry:
-                        predictions.append(entry)
+	                for k, v in arrivals.items():
+	                    entry = {}
+	                    entry['route'] = routes_map[k]
+	                    entry['eta'] = v.join(', ')
+	                    predictions.append(entry)
         
 	    except urlfetch.DownloadError:
 	        # Request time out or failed

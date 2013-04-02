@@ -1,0 +1,16 @@
+{
+  "name": "ScrapeTransloc",
+  "version": "0.0.1",
+  "description": "A utility to scrape UVA bus stops from TrannsLoc map.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": "",
+  "author": "Yaogang Lian",
+  "license": "BSD",
+  "dependencies": {
+    "request": "~2.16.6",
+    "coffee-script": "~1.6.2"
+  }
+}

@@ -119,7 +119,7 @@ class PredictionHandler(webapp.RequestHandler):
 	    rpc1 = urlfetch.create_rpc()
 	    urlfetch.make_fetch_call(rpc1, "http://avlweb.charlottesville.org/RTT/Public/RoutePositionET.aspx?PlatformNo=%s&Referrer=uvamobile" % (stopNumber))
 	    
-	    if stops_map[stopNumber] is not None:
+	    if stops_map.get(stopNumber) is not None:
 	        # Make asynchronous request to the TransLoc system.
 	        rpc2 = urlfetch.create_rpc()
 	        urlfetch.make_fetch_call(rpc2, "http://feeds.transloc.com/2/arrivals?stop_id=%s&agencies=347" % (stops_map[stopNumber]))
@@ -159,31 +159,29 @@ class PredictionHandler(webapp.RequestHandler):
 	        # Request time out or failed
 	        logging.error("Request time out or failed for Connexionz.")
 	    
-	    if stops_map[stopNumber] is not None:
-    	    # Check result from TransLoc
-    	    try:
-    	        result2 = rpc2.get_result()
-    	        if result2.status_code == 200:
-    	            feed = JSON.loads(result2)
-    	            if feed['success']:
-    	                arrivals = {}
-    	                for item in feed['arrivals']:
-    	                    routeNumber = item['route_id']
-    	                    if not arrivals[routeNumber]:
-    	                        arrivals[routeNumber] = []
-	                    
-    	                    eta = int((int(item['timestamp']) - int(time.time())*1000)/(1000*60))
-    	                    arrivals[routeNumber].append(eta)
-	                
-    	                for k, v in arrivals.items():
-    	                    entry = {}
-    	                    entry['route'] = routes_map[k]
-    	                    entry['eta'] = v.join(', ')
-    	                    predictions.append(entry)
-        
-    	    except urlfetch.DownloadError:
-    	        # Request time out or failed
-    	        logging.error("Request time out or failed for TransLoc.")
+	    if stops_map.get(stopNumber) is not None:
+	        try:
+	            result2 = rpc2.get_result()
+	            if result2.status_code == 200:
+	                #logging.info(result2.content)
+	                feed = json.loads(result2.content)
+	                if feed['success']:
+	                    arrivals = {}
+	                    for item in feed['arrivals']:
+	                        routeNumber = str(item['route_id'])
+	                        if not arrivals.get(routeNumber):
+	                            arrivals[routeNumber] = []
+	                        eta = int((int(item['timestamp']) - int(time.time())*1000)/(1000*60))
+	                        arrivals[routeNumber].append(eta)
+	                    for k, v in arrivals.items():
+	                        entry = {}
+	                        entry['route'] = routes_map[k]
+	                        v.sort()
+	                        entry['eta'] = ', '.join([str(eta) for eta in v])
+	                        predictions.append(entry)
+	        except urlfetch.DownloadError:
+	            # Request time out or failed
+	            logging.error("Request time out or failed for TransLoc.")
 	    
 	    # Return combined results from two systems.
 	    return predictions

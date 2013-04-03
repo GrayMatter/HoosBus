@@ -179,7 +179,7 @@ class PredictionHandler(webapp.RequestHandler):
 	                        entry = {}
 	                        entry['route'] = routes_map[k]
 	                        v.sort()
-	                        entry['eta'] = ', '.join([str(eta) for eta in v])
+	                        entry['eta'] = ', '.join([str(eta) for eta in v[:2]])
 	                        predictions.append(entry)
 	        except urlfetch.DownloadError:
 	            # Request time out or failed

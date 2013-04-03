@@ -116,6 +116,7 @@ class PredictionHandler(webapp.RequestHandler):
     def get(self):
 	    stopNumber = self.request.get('stop')
 	    predictions = []
+	    arrivals = {}
 	    
 	    # Make asynchronous request to the Connexionz system.
 	    rpc1 = urlfetch.create_rpc()
@@ -133,30 +134,18 @@ class PredictionHandler(webapp.RequestHandler):
 	            S = PyQuery(PyQuery(result1.content).html())
 	            for el in S('table.tableET tbody tr'):
 	                count = 0
-	                entry = {}
 	                trTag = S(el)
+	                routeNumber = None
 	                for ell in trTag.find('td'):
 	                    tdTag = S(ell)
 	                    if count == 0:
-	                        entry['route'] = tdTag.text()
-	                    elif count == 1:
-	                        dest = tdTag.text()
-	                        note = None
-	                        matchObj = re.search("(via .*)", dest)
-	                        if matchObj is not None:
-	                            note = matchObj.group(1)
-	                        else:
-	                            matchObj = re.search("(to .*)", dest)
-	                            if matchObj is not None:
-	                                note = matchObj.group(1)
-	                        if note is not None:
-	                            entry['note'] = note
+	                        routeNumber = tdTag.text()
+	                        if not arrivals.get(routeNumber):
+	                            arrivals[routeNumber] = []
 	                    elif count == 2:
-	                        entry['eta'] = tdTag.text()
+	                        eta = int(tdTag.text())
+	                        arrivals[routeNumber].append(eta)
 	                    count = count + 1
-	                
-	                if entry:
-	                    predictions.append(entry)
 	    except urlfetch.DownloadError:
 	        # Request time out or failed
 	        logging.error("Request time out or failed for Connexionz.")
@@ -168,22 +157,26 @@ class PredictionHandler(webapp.RequestHandler):
 	                #logging.info(result2.content)
 	                feed = json.loads(result2.content)
 	                if feed['success']:
-	                    arrivals = {}
 	                    for item in feed['arrivals']:
-	                        routeNumber = str(item['route_id'])
+	                        routeNumber = routes_map.get(str(item['route_id']))
+	                        if routeNumber is None:
+	                            continue
 	                        if not arrivals.get(routeNumber):
 	                            arrivals[routeNumber] = []
 	                        eta = int((int(item['timestamp']) - int(time.time())*1000)/(1000*60))
 	                        arrivals[routeNumber].append(eta)
-	                    for k, v in arrivals.items():
-	                        entry = {}
-	                        entry['route'] = routes_map[k]
-	                        v.sort()
-	                        entry['eta'] = ', '.join([str(eta) for eta in v[:2]])
-	                        predictions.append(entry)
 	        except urlfetch.DownloadError:
 	            # Request time out or failed
 	            logging.error("Request time out or failed for TransLoc.")
+	    
+	    for k, v in arrivals.items():
+	        if len(v) == 0:
+	            continue
+	        entry = {}
+	        entry['route'] = k
+	        v.sort()
+	        entry['eta'] = ', '.join([str(eta) for eta in v[:3]])
+	        predictions.append(entry)
 	    
 	    # Return combined results from two systems.
 	    return predictions

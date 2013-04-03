@@ -37,6 +37,8 @@ csv()
   if stopId?
     hoosbus_stops[stop_code] = stopId
 .on 'end', ->
+  console.log hoosbus_stops
+  
   # Find the ones not matched. Have to manually add these to the map.
   for stop in transloc_stops
     found = false

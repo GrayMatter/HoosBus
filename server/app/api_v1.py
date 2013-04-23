@@ -114,78 +114,78 @@ stops_map = {
 class PredictionHandler(webapp.RequestHandler):
     @memcached (30)
     def get(self):
-	    stopNumber = self.request.get('stop')
-	    predictions = []
-	    arrivals = {}
-	    
-	    # Make asynchronous request to the Connexionz system.
-	    rpc1 = urlfetch.create_rpc()
-	    urlfetch.make_fetch_call(rpc1, "http://avlweb.charlottesville.org/RTT/Public/RoutePositionET.aspx?PlatformNo=%s&Referrer=uvamobile" % (stopNumber))
-	    
-	    if stops_map.get(stopNumber) is not None:
-	        # Make asynchronous request to the TransLoc system.
-	        rpc2 = urlfetch.create_rpc()
-	        urlfetch.make_fetch_call(rpc2, "http://feeds.transloc.com/2/arrivals?stop_id=%s&agencies=347" % (stops_map[stopNumber]))
-	    
-	    # Check result from Connexionz
-	    try:
-	        result1 = rpc1.get_result()
-	        if result1.status_code == 200:
-	            S = PyQuery(PyQuery(result1.content).html())
-	            for el in S('table.tableET tbody tr'):
-	                count = 0
-	                trTag = S(el)
-	                routeNumber = None
-	                for ell in trTag.find('td'):
-	                    tdTag = S(ell)
-	                    if count == 0:
-	                        routeNumber = tdTag.text()
-	                        if not arrivals.get(routeNumber):
-	                            arrivals[routeNumber] = []
-	                    elif count == 2:
-	                        eta = int(tdTag.text())
-	                        arrivals[routeNumber].append(eta)
-	                    count = count + 1
-	    except urlfetch.DownloadError:
-	        # Request time out or failed
-	        logging.error("Request time out or failed for Connexionz.")
-	    
-	    if stops_map.get(stopNumber) is not None:
-	        try:
-	            result2 = rpc2.get_result()
-	            if result2.status_code == 200:
-	                #logging.info(result2.content)
-	                feed = json.loads(result2.content)
-	                if feed['success']:
-	                    for item in feed['arrivals']:
-	                        routeNumber = routes_map.get(str(item['route_id']))
-	                        if routeNumber is None:
-	                            continue
-	                        if not arrivals.get(routeNumber):
-	                            arrivals[routeNumber] = []
-	                        eta = int((int(item['timestamp']) - int(time.time())*1000)/(1000*60))
-	                        arrivals[routeNumber].append(eta)
-	        except urlfetch.DownloadError:
-	            # Request time out or failed
-	            logging.error("Request time out or failed for TransLoc.")
-	    
-	    for k, v in arrivals.items():
-	        if len(v) == 0:
-	            continue
-	        entry = {}
-	        entry['route'] = k
-	        v.sort()
-	        entry['eta'] = ', '.join([str(eta) for eta in v[:3]])
-	        predictions.append(entry)
-	    
-	    # Return combined results from two systems.
-	    return predictions
+        stopNumber = self.request.get('stop')
+        predictions = []
+        arrivals = {}
+        
+        # Make asynchronous request to the Connexionz system.
+        rpc1 = urlfetch.create_rpc()
+        urlfetch.make_fetch_call(rpc1, "http://avlweb.charlottesville.org/RTT/Public/RoutePositionET.aspx?PlatformNo=%s&Referrer=uvamobile" % (stopNumber))
+        
+        if stops_map.get(stopNumber) is not None:
+            # Make asynchronous request to the TransLoc system.
+            rpc2 = urlfetch.create_rpc()
+            urlfetch.make_fetch_call(rpc2, "http://feeds.transloc.com/2/arrivals?stop_id=%s&agencies=347" % (stops_map[stopNumber]))
+        
+        # Check result from Connexionz
+        try:
+            result1 = rpc1.get_result()
+            if result1.status_code == 200:
+                S = PyQuery(PyQuery(result1.content).html())
+                for el in S('table.tableET tbody tr'):
+                    count = 0
+                    trTag = S(el)
+                    routeNumber = None
+                    for ell in trTag.find('td'):
+                        tdTag = S(ell)
+                        if count == 0:
+                            routeNumber = tdTag.text()
+                            if not arrivals.get(routeNumber):
+                                arrivals[routeNumber] = []
+                        elif count == 2:
+                            eta = int(tdTag.text())
+                            arrivals[routeNumber].append(eta)
+                        count = count + 1
+        except urlfetch.DownloadError:
+            # Request time out or failed
+            logging.error("Request time out or failed for Connexionz.")
+        
+        if stops_map.get(stopNumber) is not None:
+            try:
+                result2 = rpc2.get_result()
+                if result2.status_code == 200:
+                    #logging.info(result2.content)
+                    feed = json.loads(result2.content)
+                    if feed['success']:
+                        for item in feed['arrivals']:
+                            routeNumber = routes_map.get(str(item['route_id']))
+                            if routeNumber is None:
+                                continue
+                            if not arrivals.get(routeNumber):
+                                arrivals[routeNumber] = []
+                            eta = int((int(item['timestamp']) - int(time.time())*1000)/(1000*60))
+                            arrivals[routeNumber].append(eta)
+            except urlfetch.DownloadError:
+                # Request time out or failed
+                logging.error("Request time out or failed for TransLoc.")
+        
+        for k, v in arrivals.items():
+            if len(v) == 0:
+                continue
+            entry = {}
+            entry['route'] = k
+            v.sort()
+            entry['eta'] = ', '.join([str(eta) for eta in v[:3]])
+            predictions.append(entry)
+        
+        # Return combined results from two systems.
+        return predictions
 
 #
 # Router
 #
 routes = [
-	(r'/api/v1/prediction', PredictionHandler)
+    (r'/api/v1/prediction', PredictionHandler)
 ]
 
 application = webapp.WSGIApplication(routes, debug=False)

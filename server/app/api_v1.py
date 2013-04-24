@@ -175,7 +175,7 @@ class PredictionHandler(webapp.RequestHandler):
             entry = {}
             entry['route'] = k
             v.sort()
-            entry['eta'] = ', '.join([str(eta) for eta in v[:3]])
+            entry['eta'] = ', '.join([str(eta) for eta in v[:2]])
             predictions.append(entry)
         
         # Return combined results from two systems.

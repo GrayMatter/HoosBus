@@ -7,17 +7,12 @@
 //
 
 #import "HoosBusAppDelegate.h"
-#import "HAAppSettings.h"
 
 @implementation HoosBusAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     [super application:application didFinishLaunchingWithOptions:launchOptions];
-    
-    // Load app settings
-    [HAAppSettings loadFromUrl:APP_SETTINGS_XML];
-    
     return YES;
 }
 

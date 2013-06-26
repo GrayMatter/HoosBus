@@ -8,7 +8,6 @@
 
 #import "HBFeedLoader.h"
 #import "BTPredictionEntry.h"
-#import "HAAppSettings.h"
 #import "NSString+HAUtils.h"
 #import "PaPa.h"
 

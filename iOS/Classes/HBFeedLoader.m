@@ -16,56 +16,6 @@
 
 - (void)getPredictionForStop:(BTStop *)stop
 {
-    NSString * dataSource = [HAAppSettings settingsForKey:@"datasource"];
-    if ([dataSource isEqualToString:@"hoosbus"]) {
-        [self getPredictionFromHoosBusForStop:stop];
-    } else {
-        [self getPredictionFromConnexionzForStop:stop];
-    }
-}
-
-- (void)getPredictionFromHoosBusForStop:(BTStop *)stop
-{
-    // Cancel previous requests
-    [httpClient.operationQueue cancelAllOperations];
-    
-    self.currentStop = stop;
-    
-    // Fetch prediction
-    NSString * path = [NSString stringWithFormat:@"%@/prediction", API_BASE_URL];
-    NSDictionary * params = @{@"stop": stop.stopCode};
-    [httpClient getPath:path parameters:params success:^(AFHTTPRequestOperation *operation, id responseObject) {
-        NSError * error = nil;
-        NSArray * jsonArray = [NSJSONSerialization JSONObjectWithData:(NSData *)responseObject options:kNilOptions error:&error];
-        
-        // Return nil if the feed can not be downloaded
-        if (error != nil || jsonArray == nil) {
-			[delegate updatePrediction:@"Bus arrival times currently not available"];
-			return;
-        }
-        
-        // The feed has been acquired; start processing.
-		// Reset self.prediction
-		[self.prediction removeAllObjects];
-        
-        for (NSDictionary * dict in jsonArray) {
-            BTPredictionEntry * entry = [[BTPredictionEntry alloc] init];
-            entry.route = [self.transit routeWithShortName:dict[@"route"]];
-            entry.destination = dict[@"note"];
-            entry.eta = dict[@"eta"];
-            [self.prediction addObject:entry];
-        }
-        
-        [self.delegate updatePrediction:self.prediction];
-        
-    } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
-        DDLogError(@"request did fail with error: %@", error);
-        [delegate updatePrediction:nil];
-    }];
-}
-
-- (void)getPredictionFromConnexionzForStop:(BTStop *)stop
-{
     // Cancel previous requests
     [httpClient.operationQueue cancelAllOperations];
 	

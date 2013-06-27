@@ -20,13 +20,15 @@ In order to compile the app, you need to have latest XCode installed. Also, you 
 * Each route has a trip view, which can be inbound or outbound.
 
 
-## How to use GTFSImporter
+## How to update static transit data
 
 A single script "import_gtfs.py" converts the GTFS data into a sqlite database to be used by the app. To update the database, first download the lastest GTFS data files from Connexionz's website, unzip into "google_transit" folder, and run
     
     python import_gtfs.py
 
 This creates the database file in the same folder, which can then be copied to the iOS folder.
+
+You may also need to update "routesToDisplay.plist" with the new routes.
 
 ## License
 Released under the MIT license.

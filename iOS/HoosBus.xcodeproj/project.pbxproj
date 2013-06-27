@@ -63,13 +63,11 @@
 		89334F26177BF25000325BCC /* BTStopsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 89334EC0177BF25000325BCC /* BTStopsViewController.xib */; };
 		89334F27177BF25000325BCC /* BTTripViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 89334EC2177BF25000325BCC /* BTTripViewController.m */; };
 		89334F28177BF25000325BCC /* BTTripViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 89334EC3177BF25000325BCC /* BTTripViewController.xib */; };
-		89334F29177BF25000325BCC /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = 89334EC4177BF25000325BCC /* LICENSE */; };
 		89334F2A177BF25000325BCC /* BTAnnotation.m in Sources */ = {isa = PBXBuildFile; fileRef = 89334EC7177BF25000325BCC /* BTAnnotation.m */; };
 		89334F2B177BF25000325BCC /* BTPredictionEntry.m in Sources */ = {isa = PBXBuildFile; fileRef = 89334EC9177BF25000325BCC /* BTPredictionEntry.m */; };
 		89334F2C177BF25000325BCC /* BTRoute.m in Sources */ = {isa = PBXBuildFile; fileRef = 89334ECB177BF25000325BCC /* BTRoute.m */; };
 		89334F2D177BF25000325BCC /* BTStop.m in Sources */ = {isa = PBXBuildFile; fileRef = 89334ECD177BF25000325BCC /* BTStop.m */; };
 		89334F2E177BF25000325BCC /* BTTrip.m in Sources */ = {isa = PBXBuildFile; fileRef = 89334ECF177BF25000325BCC /* BTTrip.m */; };
-		89334F2F177BF25000325BCC /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 89334ED0177BF25000325BCC /* README.md */; };
 		89334F30177BF25000325BCC /* addToFavs.png in Resources */ = {isa = PBXBuildFile; fileRef = 89334ED2177BF25000325BCC /* addToFavs.png */; };
 		89334F31177BF25000325BCC /* app_icon_placeholder.png in Resources */ = {isa = PBXBuildFile; fileRef = 89334ED3177BF25000325BCC /* app_icon_placeholder.png */; };
 		89334F32177BF25000325BCC /* backdrop.png in Resources */ = {isa = PBXBuildFile; fileRef = 89334ED4177BF25000325BCC /* backdrop.png */; };
@@ -135,8 +133,6 @@
 		89334F6E177BF25000325BCC /* BTStopCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 89334F14177BF25000325BCC /* BTStopCell.m */; };
 		89334FA5177BF2E000325BCC /* HAAboutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 89334F72177BF2E000325BCC /* HAAboutViewController.m */; };
 		89334FA6177BF2E000325BCC /* HAAboutViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 89334F73177BF2E000325BCC /* HAAboutViewController.xib */; };
-		89334FA7177BF2E000325BCC /* HAFAQItemViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 89334F75177BF2E000325BCC /* HAFAQItemViewController.m */; };
-		89334FA8177BF2E000325BCC /* HAFAQViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 89334F77177BF2E000325BCC /* HAFAQViewController.m */; };
 		89334FA9177BF2E000325BCC /* HAListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 89334F7A177BF2E000325BCC /* HAListViewController.m */; };
 		89334FAA177BF2E000325BCC /* HAListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 89334F7B177BF2E000325BCC /* HAListViewController.xib */; };
 		89334FAB177BF2E000325BCC /* HALocationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 89334F7E177BF2E000325BCC /* HALocationManager.m */; };
@@ -380,7 +376,6 @@
 		89334EC1177BF25000325BCC /* BTTripViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BTTripViewController.h; sourceTree = "<group>"; };
 		89334EC2177BF25000325BCC /* BTTripViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BTTripViewController.m; sourceTree = "<group>"; };
 		89334EC3177BF25000325BCC /* BTTripViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BTTripViewController.xib; sourceTree = "<group>"; };
-		89334EC4177BF25000325BCC /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		89334EC6177BF25000325BCC /* BTAnnotation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BTAnnotation.h; sourceTree = "<group>"; };
 		89334EC7177BF25000325BCC /* BTAnnotation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BTAnnotation.m; sourceTree = "<group>"; };
 		89334EC8177BF25000325BCC /* BTPredictionEntry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BTPredictionEntry.h; sourceTree = "<group>"; };
@@ -391,7 +386,6 @@
 		89334ECD177BF25000325BCC /* BTStop.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BTStop.m; sourceTree = "<group>"; };
 		89334ECE177BF25000325BCC /* BTTrip.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BTTrip.h; sourceTree = "<group>"; };
 		89334ECF177BF25000325BCC /* BTTrip.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BTTrip.m; sourceTree = "<group>"; };
-		89334ED0177BF25000325BCC /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
 		89334ED2177BF25000325BCC /* addToFavs.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = addToFavs.png; sourceTree = "<group>"; };
 		89334ED3177BF25000325BCC /* app_icon_placeholder.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = app_icon_placeholder.png; sourceTree = "<group>"; };
 		89334ED4177BF25000325BCC /* backdrop.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = backdrop.png; sourceTree = "<group>"; };
@@ -461,10 +455,6 @@
 		89334F71177BF2E000325BCC /* HAAboutViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HAAboutViewController.h; sourceTree = "<group>"; };
 		89334F72177BF2E000325BCC /* HAAboutViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HAAboutViewController.m; sourceTree = "<group>"; };
 		89334F73177BF2E000325BCC /* HAAboutViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HAAboutViewController.xib; sourceTree = "<group>"; };
-		89334F74177BF2E000325BCC /* HAFAQItemViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HAFAQItemViewController.h; sourceTree = "<group>"; };
-		89334F75177BF2E000325BCC /* HAFAQItemViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HAFAQItemViewController.m; sourceTree = "<group>"; };
-		89334F76177BF2E000325BCC /* HAFAQViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HAFAQViewController.h; sourceTree = "<group>"; };
-		89334F77177BF2E000325BCC /* HAFAQViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HAFAQViewController.m; sourceTree = "<group>"; };
 		89334F79177BF2E000325BCC /* HAListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HAListViewController.h; sourceTree = "<group>"; };
 		89334F7A177BF2E000325BCC /* HAListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HAListViewController.m; sourceTree = "<group>"; };
 		89334F7B177BF2E000325BCC /* HAListViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HAListViewController.xib; sourceTree = "<group>"; };
@@ -681,9 +671,9 @@
 		29B97314FDCFA39411CA2CEA /* CustomTemplate */ = {
 			isa = PBXGroup;
 			children = (
-				89334EA1177BF25000325BCC /* BetterTransit */,
 				890DCE99177B995C00750CD4 /* Vendor */,
 				89334F6F177BF2E000325BCC /* HATools */,
+				89334EA1177BF25000325BCC /* BetterTransit */,
 				080E96DDFE201D6D7F000001 /* Classes */,
 				29B97315FDCFA39411CA2CEA /* Other Sources */,
 				29B97317FDCFA39411CA2CEA /* Resources */,
@@ -879,9 +869,7 @@
 				89334EA7177BF25000325BCC /* BTTransitDelegate.m */,
 				89334EA8177BF25000325BCC /* Constants.h */,
 				89334EA9177BF25000325BCC /* Controllers */,
-				89334EC4177BF25000325BCC /* LICENSE */,
 				89334EC5177BF25000325BCC /* Models */,
-				89334ED0177BF25000325BCC /* README.md */,
 				89334ED1177BF25000325BCC /* Resources */,
 				89334F0D177BF25000325BCC /* Views */,
 			);
@@ -1040,10 +1028,6 @@
 				89334F71177BF2E000325BCC /* HAAboutViewController.h */,
 				89334F72177BF2E000325BCC /* HAAboutViewController.m */,
 				89334F73177BF2E000325BCC /* HAAboutViewController.xib */,
-				89334F74177BF2E000325BCC /* HAFAQItemViewController.h */,
-				89334F75177BF2E000325BCC /* HAFAQItemViewController.m */,
-				89334F76177BF2E000325BCC /* HAFAQViewController.h */,
-				89334F77177BF2E000325BCC /* HAFAQViewController.m */,
 			);
 			path = HAAboutController;
 			sourceTree = "<group>";
@@ -1464,8 +1448,6 @@
 				89334F24177BF25000325BCC /* BTSettingsViewController.xib in Resources */,
 				89334F26177BF25000325BCC /* BTStopsViewController.xib in Resources */,
 				89334F28177BF25000325BCC /* BTTripViewController.xib in Resources */,
-				89334F29177BF25000325BCC /* LICENSE in Resources */,
-				89334F2F177BF25000325BCC /* README.md in Resources */,
 				89334F30177BF25000325BCC /* addToFavs.png in Resources */,
 				89334F31177BF25000325BCC /* app_icon_placeholder.png in Resources */,
 				89334F32177BF25000325BCC /* backdrop.png in Resources */,
@@ -1588,8 +1570,6 @@
 				89334F6D177BF25000325BCC /* BTRouteCell.m in Sources */,
 				89334F6E177BF25000325BCC /* BTStopCell.m in Sources */,
 				89334FA5177BF2E000325BCC /* HAAboutViewController.m in Sources */,
-				89334FA7177BF2E000325BCC /* HAFAQItemViewController.m in Sources */,
-				89334FA8177BF2E000325BCC /* HAFAQViewController.m in Sources */,
 				89334FA9177BF2E000325BCC /* HAListViewController.m in Sources */,
 				89334FAB177BF2E000325BCC /* HALocationManager.m in Sources */,
 				89334FAC177BF2E000325BCC /* EnhancedDefaultCell.m in Sources */,

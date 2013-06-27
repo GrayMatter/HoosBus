@@ -27,10 +27,3 @@
 #define COLOR_TABLE_VIEW_SEPARATOR [UIColor colorWithRed:0.345 green:0.482 blue:0.580 alpha:0.25]
 #define COLOR_TAB_BAR_BG [UIColor colorWithRed:0.0 green:0.42 blue:0.8 alpha:0.3]
 #define COLOR_NAV_BAR_BG [UIColor colorWithRed:0.118 green:0.243 blue:0.357 alpha:1.0]
-
-// Cross promotion
-#define APP_LIST_XML @"http://artisticfrog.com/cross_promote/hoosbus/app_list.xml"
-
-// FAQ, Blog
-#define URL_FAQ @"http://artisticfrog.com/cross_promote/hoosbus/faq.xml"
-#define URL_BLOG @"http://happenapps.tumblr.com"

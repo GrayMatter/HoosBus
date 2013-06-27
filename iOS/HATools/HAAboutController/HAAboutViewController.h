@@ -7,24 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "AFNetworking.h"
-#import <MessageUI/MessageUI.h>
 
 @interface HAAboutViewController : UIViewController
-<UITableViewDelegate, UITableViewDataSource,
-MFMailComposeViewControllerDelegate> 
-{
-	NSArray * appArray;
-    AFHTTPClient * httpClient;
-}
+<UITableViewDelegate, UITableViewDataSource> 
 
 @property (nonatomic, strong) IBOutlet UITableView * mainTableView;
 @property (nonatomic, assign) NSInteger sectionOffset;
-
-// Email
-- (void)showFAQ;
-- (void)showBlog;
-- (void)sendFeedback;
-- (void)launchMailAppOnDevice;
 
 @end

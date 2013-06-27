@@ -3,7 +3,7 @@
 //  HAToolsDemo
 //
 //  Created by Yaogang Lian on 9/9/11.
-//  Copyright 2011 Happen Next. All rights reserved.
+//  Copyright 2011 HappenApps, Inc. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>
